@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime2Performance — Your 2nd Prime starts here</title>
+<meta name="description" content="A 24-hour performance system for men in their second prime. Every dose on the label. Veteran-owned. Made in the USA.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="topo" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="veil" aria-hidden="true"></div>
+<div class="reticle" id="reticle" aria-hidden="true"></div>
+
+<!-- boot sequence -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-in">
+    <ul class="boot-lines mono">
+      <li><span>Doses</span><b>Disclosed</b></li>
+      <li><span>Proprietary blends</span><b>None</b></li>
+      <li><span>Origin</span><b>Made in the USA</b></li>
+      <li><span>Founder</span><b>Recon Marine</b></li>
+    </ul>
+    <div class="boot-clock"><span id="bootClock">0000</span><small class="mono">hours</small></div>
+    <div class="boot-bar"><i id="bootBar"></i></div>
+  </div>
+</div>
+
+<!-- HUD -->
+<div class="hud hud-tl"><a class="logo-swap" href="#base" data-go="base" aria-label="Prime2Performance, back to top"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
+<div class="hud hud-tr">
+  <a class="hud-btn" href="#loadout" data-go="loadout" id="cartBtn" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
+  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+</div>
+<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
+<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx">01/09</span><span class="chap" id="hudChap">Base camp</span></div>
+<div class="alt" id="alt" aria-hidden="true"><div class="alt-scale" id="altScale"></div><div class="alt-needle" id="altNeedle"><i></i><b id="altRead">0 FT</b></div></div>
+<a class="btn btn-brass cta-pill" id="ctaPill" href="#loadout" data-go="loadout">Shop the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+<!-- menu -->
+<nav id="menu" aria-label="Site" aria-hidden="true">
+  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
+  <div>
+    <ol class="menu-list">
+      <li><a href="#base" data-go="base" aria-current="page"><span>01</span>Base camp</a></li>
+      <li><a href="#system" data-go="system"><span>02</span>The 24-hour system</a></li>
+      <li><a href="training-pair.html"><span>03</span>The Training Pair</a></li>
+      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
+      <li><a href="founders.html"><span>05</span>The 99 Founders</a></li>
+      <li><a href="faq.html"><span>06</span>Debrief</a></li>
+    </ol>
+    <div class="menu-sub">
+      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
+      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="menu-side">
+    <div>
+      <p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p>
+      <div class="menu-clock" data-clock>0000</div>
+    </div>
+    <div>
+      <p>Questions about a formula or an order? A real person answers within two business days.</p>
+      <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p>
+    </div>
+    <a class="btn btn-brass" href="#loadout" data-go="loadout" style="align-self:flex-start">Shop the system</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- 01 BASE CAMP -->
+<section class="hero" id="base" data-chapter="Base camp" data-tone="brass">
+  <span class="w w-your"><span class="ln"><span>Your</span></span></span>
+  <h1 class="sr">Your second prime starts here</h1>
+  <span class="w w-second" aria-hidden="true"><span class="ln"><span>Second</span></span></span>
+  <div class="foil-wrap" id="foilWrap">
+    <div class="foil-float" id="foilFloat">
+    <div class="foil" id="foil">
+      <img data-k="plus" src="assets/img/core-plus.png" alt="P2 Core+ pouch, huckleberry">
+      <img data-k="minus" class="off" src="assets/img/core-minus.png" alt="P2 Core− pouch, strawberry watermelon">
+      <img data-k="fuel" class="off" src="assets/img/fuel.png" alt="P2 Fuel pouch, tropical charge">
+      <div class="sheen" id="sheen"></div>
+      <div class="glare" id="glare"></div>
+    </div>
+    </div>
+    <div class="swatches" role="group" aria-label="Show formula">
+      <button data-k="minus" aria-pressed="false" style="--c:var(--cminus)"><i></i>Core−</button>
+      <button data-k="plus" aria-pressed="true" style="--c:var(--cplus)"><i></i>Core+</button>
+      <button data-k="fuel" aria-pressed="false" style="--c:var(--fuel)"><i></i>Fuel</button>
+    </div>
+  </div>
+  <span class="w w-prime" aria-hidden="true"><span class="ln"><span>Prime</span></span></span>
+  <span class="w w-here"><span class="ln"><span>starts here.</span></span></span>
+  <ul class="spec mono">
+    <li><span>Every dose</span><b>Disclosed</b></li>
+    <li><span>Proprietary blends</span><b>None</b></li>
+    <li><span>Owner</span><b>Veteran</b></li>
+    <li><span>Made in</span><b>USA</b></li>
+  </ul>
+  <div class="hero-copy">
+    <p>A 24-hour performance system for men who train from 45 on. Four moments in your day, a formula for each, and every dose printed on the label.</p>
+    <div class="row">
+      <a class="btn btn-brass" href="#loadout" data-go="loadout">Shop the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-line" href="#ledger" data-go="ledger">Read the label</a>
+    </div>
+  </div>
+</section>
+
+<!-- 02 WHY -->
+<section class="manifesto" id="why" data-chapter="Why we exist" data-tone="dim">
+  <div class="inner">
+    <span class="tag mono">Why we exist</span>
+    <p class="mf" data-split>The performance industry runs on noise. Quick fixes, filtered photos, blends that hide their amounts, and a message that a man past 45 should accept less.</p>
+    <p class="mf" data-split>We went the other way. Full doses. Every amount printed. One sachet for each part of the day.</p>
+  </div>
+</section>
+
+<!-- 03 SYSTEM -->
+<section id="system" data-chapter="The 24-hour system" data-tone="brass">
+  <div class="sys-intro">
+    <div>
+      <span class="tag mono">The 24-hour system</span>
+      <h2>Four moments.<span class="o">Five formulas.</span></h2>
+    </div>
+    <p>Each formula stands on its own. Together they cover a training day, from the first glass of water to the last hour of sleep. Scroll to run the clock.</p>
+  </div>
+  <div class="system is-static" id="systemPin">
+    <div class="system-inner">
+      <div class="dial-col">
+        <div class="dial">
+          <svg viewBox="-320 -320 640 640" role="img" aria-label="24-hour dial showing when each formula is taken">
+            <g id="dialStatic"></g>
+            <path id="dialProg" fill="none" stroke="#C9A24B" stroke-width="5" stroke-linecap="round"/>
+            <g id="dialMarkers"></g>
+            <g id="dialHand"><line x1="0" y1="-206" x2="0" y2="-244" stroke="#C9A24B" stroke-width="2.5"/><polygon points="0,-252 -10,-272 10,-272" fill="#E6C77E"/></g>
+          </svg>
+          <div class="dial-pouch" id="dialPouch">
+            <img data-key="reveille" class="on" src="assets/img/reveille-sm.png" alt="P2 Reveille pouch">
+            <img data-key="minus" src="assets/img/core-minus-sm.png" alt="P2 Core− pouch">
+            <img data-key="plus" src="assets/img/core-plus-sm.png" alt="P2 Core+ pouch">
+            <img data-key="fuel" src="assets/img/fuel-sm.png" alt="P2 Fuel pouch">
+            <img data-key="repair" src="assets/img/repair-sm.png" alt="P2 Repair pouch">
+          </div>
+        </div>
+        <div class="stopnav" id="stopnav">
+          <button data-i="0" aria-current="true" style="--c:var(--rev)"><i></i>Reveille <em>0600</em></button>
+          <button data-i="1" style="--c:var(--cminus)"><i></i>Core <em>1600</em></button>
+          <button data-i="2" style="--c:var(--fuel)"><i></i>Fuel <em>1700</em></button>
+          <button data-i="3" style="--c:var(--repair)"><i></i>Repair <em>2200</em></button>
+        </div>
+        <p class="sample mono">Times shown for a sample training day</p>
+      </div>
+      <div>
+        <div class="readout" aria-hidden="true"><span class="t" id="clock">0600</span><small class="mono">hours</small></div>
+        <div class="stops" id="stops">
+          <article class="stop is-active" data-key="reveille" style="--c:var(--rev)">
+            <img class="m-img" src="assets/img/reveille-sm.png" alt="P2 Reveille pouch" loading="lazy">
+            <div><span class="m-time">0600</span><p class="when">Morning, every day</p><h3>Reveille</h3>
+            <p class="desc">The daily base layer. A full multivitamin for men 45+, creatine and electrolytes. Take it whether you train or not.</p>
+            <ul class="doses"><li><span>Creatine monohydrate</span><b>5 g</b></li><li><span>L-citrulline</span><b>4 g</b></li><li><span>Sodium</span><b>600 mg</b></li></ul>
+            <div class="buyrow"><span class="soon">Arrives Q1 2027</span><a class="textlink" href="reveille.html">See Reveille</a></div></div>
+          </article>
+          <article class="stop" data-key="core" data-variant="plus" style="--c:var(--cplus)">
+            <img class="m-img" data-show="minus" src="assets/img/core-minus-sm.png" alt="P2 Core− pouch" loading="lazy">
+            <img class="m-img" data-show="plus" src="assets/img/core-plus-sm.png" alt="P2 Core+ pouch" loading="lazy">
+            <div><span class="m-time">1600</span><p class="when">30 minutes before training</p>
+            <div class="seg" role="group" aria-label="Choose Core formula"><button aria-pressed="false" data-variant="minus">Stimulant-free</button><button aria-pressed="true" data-variant="plus">With caffeine</button></div>
+            <h3 data-show="minus">Core−</h3><h3 data-show="plus" style="color:var(--cplus)">Core+</h3>
+            <p class="desc" data-show="minus">Strength, blood flow, hydration and focus in one sachet. No caffeine, so you can train late and sleep.</p>
+            <p class="desc" data-show="plus">The complete Core formula with 200 mg of caffeine and 150 mg of theobromine for the sessions that need more.</p>
+            <ul class="doses" data-show="minus"><li><span>L-citrulline</span><b>8 g</b></li><li><span>Creatine monohydrate</span><b>5 g</b></li><li><span>Beta-alanine</span><b>3.2 g</b></li></ul>
+            <ul class="doses" data-show="plus"><li><span>Caffeine</span><b>200 mg</b></li><li><span>L-citrulline</span><b>8 g</b></li><li><span>Creatine monohydrate</span><b>5 g</b></li></ul>
+            <div class="buyrow"><span class="price">$69.99<small>$59.99 on subscription</small></span><a class="btn btn-brass" href="#loadout" data-go="loadout">Add to loadout</a><a class="textlink" data-show="minus" href="core-minus.html">Full details</a><a class="textlink" data-show="plus" href="core-plus.html">Full details</a></div></div>
+          </article>
+          <article class="stop" data-key="fuel" style="--c:var(--fuel)">
+            <img class="m-img" src="assets/img/fuel-sm.png" alt="P2 Fuel pouch" loading="lazy">
+            <div><span class="m-time">1700</span><p class="when">During training</p><h3>Fuel</h3>
+            <p class="desc">Carbohydrate and electrolytes for sessions over an hour, in the heat, or at altitude.</p>
+            <ul class="doses"><li><span>Highly branched cyclic dextrin</span><b>30 g</b></li><li><span>Sodium</span><b>600 mg</b></li><li><span>Taurine</span><b>2 g</b></li></ul>
+            <div class="buyrow"><span class="price">$69.99<small>$59.99 on subscription</small></span><a class="btn btn-brass" href="#loadout" data-go="loadout">Add to loadout</a><a class="textlink" href="fuel.html">Full details</a></div></div>
+          </article>
+          <article class="stop" data-key="repair" style="--c:var(--repair)">
+            <img class="m-img" src="assets/img/repair-sm.png" alt="P2 Repair pouch" loading="lazy">
+            <div><span class="m-time">2200</span><p class="when">30 to 60 minutes before bed</p><h3>Repair</h3>
+            <p class="desc">Recovery support for muscle, connective tissue and the sleep where most rebuilding happens.</p>
+            <ul class="doses"><li><span>Collagen peptides</span><b>10 g</b></li><li><span>Glycine</span><b>5 g</b></li><li><span>Urolithin A</span><b>500 mg</b></li></ul>
+            <div class="buyrow"><span class="soon">Arrives Q1 2027</span><a class="textlink" href="repair.html">See Repair</a></div></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 LEDGER -->
+<section class="ledger is-static" id="ledger" data-chapter="Every dose" data-tone="paper">
+  <div class="ledger-pin">
+    <div class="track" id="track">
+      <article class="panel panel-intro">
+        <div>
+          <span class="tag mono" style="color:#7A5F22">Full disclosure, Core formula</span>
+          <h2>Every dose. At full size.</h2>
+          <p>No proprietary blends. These are the sixteen actives across Core: thirteen in every sachet of Core−, three more in Core+. Keep scrolling and read the whole label.</p>
+        </div>
+        <img src="assets/img/core-minus.png" alt="P2 Core− pouch, strawberry watermelon" loading="lazy">
+      </article>
+      <!-- dose panels are generated from the DOSES list in the script -->
+      <article class="panel panel-end">
+        <h2>Four products.<br>Or one sachet.</h2>
+        <div class="replaces">
+          <div><b>Strength</b><span>Creatine, beta-alanine and betaine</span></div>
+          <div><b>Blood flow</b><span>A citrulline or pump product</span></div>
+          <div><b>Hydration</b><span>An electrolyte mix</span></div>
+          <div><b>Focus</b><span>Focus capsules</span></div>
+        </div>
+        <div><a class="btn btn-ink" href="#loadout" data-go="loadout">Add Core to your loadout <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </article>
+    </div>
+    <div class="ledger-hint mono" aria-hidden="true"><span id="ledgerCount">01/16</span><i><b id="ledgerBar"></b></i><span>Keep scrolling</span></div>
+  </div>
+</section>
+
+<!-- 05 ASCENT -->
+<section class="ascent is-static" id="ascent" data-chapter="The ascent" data-tone="climb">
+  <div class="ascent-pin">
+    <div class="phases" id="phases">
+      <div class="phase"><span class="tag mono">The founder</span><h3>Reconnaissance Marine. FBI Special Agent. Operations in twenty-six countries.</h3></div>
+      <div class="phase"><span class="tag mono">The injury</span><h3>Then he tore both hamstring tendons.</h3></div>
+      <div class="phase"><span class="tag mono">The low point</span><h3>At one point he couldn't curl five pounds.</h3></div>
+      <div class="phase"><span class="tag mono">The work</span><h3>Standard recovery wasn't enough. He spent three years formulating what he needed to rebuild.</h3></div>
+      <div class="phase"><span class="tag mono">Eleven months later</span><h3>Hunting in the mountains of Mongolia at 11,000 feet.</h3></div>
+      <div class="phase last"><span class="tag mono">Tim, founder</span><h3>Your first prime does not have to be your last.</h3><a class="btn btn-line" href="story.html">Read Tim's story</a></div>
+    </div>
+    <div class="ap-wrap">
+      <div class="aperture" id="aperture"><img src="assets/img/tim-fbi.jpg" alt="Tim, founder of Prime2Performance, during his service years" loading="lazy"></div>
+      <div class="cross" aria-hidden="true"></div>
+      <p class="ap-cap mono">Tim, during his service years</p>
+    </div>
+    <div class="altim" aria-hidden="true">
+      <span class="n" id="altN">0</span>
+      <span class="u mono">Feet above sea level</span>
+      <span class="loc mono" id="altLoc">Rehab, year one</span>
+    </div>
+  </div>
+</section>
+
+<!-- 06 GIVING -->
+<section class="giving" id="giving" data-chapter="Giving back" data-tone="brass">
+  <div class="ten" aria-hidden="true">10%</div>
+  <div>
+    <span class="tag mono">Force Recon Association</span>
+    <h2>Ten percent of net profit goes to Recon Marines and their families.</h2>
+    <p>Prime2Performance was founded by a Recon Marine. Ten percent of Prime2Performance net profit goes to the Force Recon Association.</p>
+    <div class="fra"><img src="assets/img/fra-logo.png" alt="Force Recon Association" loading="lazy"><span>Supporting Recon Marines and their families.</span></div>
+  </div>
+</section>
+
+
+<!-- THE 99 FOUNDERS -->
+<section class="sect wide founders-home" id="founders" data-chapter="The 99 Founders" data-tone="dim">
+  <span class="tag mono">Still open</span>
+  <h2 style="font-family:var(--stencil)">The 99 Founders.</h2>
+  <p class="lead" style="margin:0 auto;max-width:54ch">Ninety-nine men, capped for good: $49.99 a bag locked for life, shipped before the public, first access to every new formula. When the spots are gone, they are gone.</p>
+  <div data-founders-grid></div>
+  <form class="wl-form" data-notify="Received. We&rsquo;ll reply to {email} personally about the remaining Founder spots.">
+    <label class="sr" for="fhEmail">Request a Founder spot</label>
+    <input id="fhEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+    <button class="btn btn-brass" type="submit">Request a spot</button>
+    <p class="wl-msg" role="status" aria-live="polite" style="text-align:center"></p>
+  </form>
+  <p style="margin-top:1.25rem"><a class="textlink" href="founders.html">Read the full Founder terms</a></p>
+</section>
+
+<!-- TRAINING PAIR BAND -->
+<section class="pairband" data-chapter="Start here" data-tone="dim">
+  <div>
+    <span class="tag mono">Start here</span>
+    <h2>The Training Pair</h2>
+    <p>One sachet before you train. One while you train. Core and Fuel together, with free shipping on the pair.</p>
+    <p><span class="pricebig">$129.99</span><a class="btn btn-brass" href="training-pair.html">See the pair <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+  <div class="imgs" aria-hidden="true"><img src="assets/img/core-plus-sm.png" alt=""><img src="assets/img/fuel-sm.png" alt=""></div>
+</section>
+
+<!-- 07 LOADOUT -->
+<section class="loadout" id="loadout" data-chapter="Your loadout" data-tone="dim">
+  <div class="lo-head">
+    <div><span class="tag mono">Shipping now</span><h2>Build your loadout.</h2></div>
+    <p>Pick what you train with. Each formula works on its own. Subscribe for $10 off a bag; free shipping on 2 bags or more. Pause, skip or cancel from your account.</p>
+  </div>
+  <div class="case">
+    <div class="slots" id="slots">
+      <button class="slot" data-id="minus" aria-pressed="false" style="--c:var(--cminus)">
+        <div class="shot"><img src="assets/img/core-minus-sm.png" alt="" loading="lazy"></div>
+        <span class="when">Before training, stimulant-free</span><h3>P2 Core−</h3><span class="p">$69.99 · <small>$59.99 sub</small></span>
+        <span class="state"><i aria-hidden="true">✓</i><span class="st">Add</span></span>
+      </button>
+      <button class="slot" data-id="plus" aria-pressed="false" style="--c:var(--cplus)">
+        <div class="shot"><img src="assets/img/core-plus-sm.png" alt="" loading="lazy"></div>
+        <span class="when">Before training, with caffeine</span><h3>P2 Core+</h3><span class="p">$69.99 · <small>$59.99 sub</small></span>
+        <span class="state"><i aria-hidden="true">✓</i><span class="st">Add</span></span>
+      </button>
+      <button class="slot" data-id="fuel" aria-pressed="false" style="--c:var(--fuel)">
+        <div class="shot"><img src="assets/img/fuel-sm.png" alt="" loading="lazy"></div>
+        <span class="when">During training</span><h3>P2 Fuel</h3><span class="p">$69.99 · <small>$59.99 sub</small></span>
+        <span class="state"><i aria-hidden="true">✓</i><span class="st">Add</span></span>
+      </button>
+      <div class="slot locked" style="--c:var(--rev)">
+        <div class="shot"><img src="assets/img/reveille-sm.png" alt="" loading="lazy"></div>
+        <span class="when">Morning</span><h3>P2 Reveille</h3><span class="p">Q1 2027</span>
+        <a class="state" href="#waitlist" data-go="waitlist">Get notified</a>
+      </div>
+      <div class="slot locked" style="--c:var(--repair)">
+        <div class="shot"><img src="assets/img/repair-sm.png" alt="" loading="lazy"></div>
+        <span class="when">Night</span><h3>P2 Repair</h3><span class="p">Q1 2027</span>
+        <a class="state" href="#waitlist" data-go="waitlist">Get notified</a>
+      </div>
+    </div>
+    <div class="manifest">
+      <p class="items" id="loItems" aria-live="polite"></p>
+      <button class="switch" id="subSwitch" role="switch" aria-checked="true"><span class="t" aria-hidden="true"></span>Subscribe · $59.99 a bag</button>
+      <div class="total"><span class="sum" id="loSum">$0</span><button class="btn btn-brass" id="checkout">Check out</button></div>
+      <p class="lo-msg" id="loMsg" role="status"></p>
+    </div>
+  </div>
+  <div class="waitlist" id="waitlist">
+    <div><h3>Reveille and Repair arrive Q1 2027</h3><p>The morning and night formulas that complete the day.</p></div>
+    <form class="wl-form" id="wlForm" data-notify="You're on the list. We'll email {email} when Reveille and Repair ship." novalidate>
+      <label for="wlEmail">Email me when they ship</label>
+      <input id="wlEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <button class="btn btn-line" type="submit">Notify me</button>
+      <p class="wl-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- 08 DEBRIEF -->
+<section class="debrief" id="debrief" data-chapter="Debrief" data-tone="dim">
+  <div class="side">
+    <span class="tag mono">Debrief</span>
+    <h2>Questions, answered directly.</h2>
+    <p>Still unsure? A real person answers every message within two business days.</p>
+    <p class="mono" style="color:var(--bone)">team@prime2performance.com</p>
+    <p style="margin-top:1rem"><a class="textlink" href="faq.html">More questions, answered</a></p>
+  </div>
+  <div class="qa">
+    <details open><summary>Who is this built for?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Men training seriously from about 45 on. Nothing in the formulas is age-specific. They are dosed for men who train hard and read labels.</p></div></details>
+    <details><summary>Core− or Core+?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>The base formula is identical. Core+ adds 200 mg of caffeine, 150 mg of theobromine and 100 mg of L-theanine. Choose Core− if you train in the evening, avoid caffeine, or already have your coffee.</p></div></details>
+    <details><summary>Do I need all five?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>No. Each formula is complete on its own. Most men start with the Training Pair, Core and Fuel, and add from there.</p></div></details>
+    <details><summary>How does a subscription work?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>It ships every 30 days at $59.99 a bag, $10 off list, with free shipping on 2 bags or more. You can pause, skip or cancel at any time from your account. Discounts do not stack.</p></div></details>
+    <details><summary>Should I check with my doctor?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>If you have a medical condition or take medication, yes. Take the full ingredient list to your physician. We can tell you what is in each formula and how much, but we can't advise on your own health.</p></div></details>
+  </div>
+</section>
+
+<!-- SUMMIT -->
+<footer class="summit" id="summit" data-chapter="Summit" data-tone="summit">
+  <div class="summit-top">
+    <div><span class="tag mono">Summit reached</span><div class="n">11,000 ft</div></div>
+    <div><p>You've scrolled the whole climb. The next one is yours to train for.</p><a class="btn btn-brass" href="#loadout" data-go="loadout">Shop the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
+  <div class="foot">
+    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="story.html">Tim's story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="#ledger" data-go="ledger">Every dose</a></li><li><a href="#giving" data-go="giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>© 2026 Prime2Performance · PO Box 220, Stevensville, MT</p></div>
+  </div>
+</footer>
+</main>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

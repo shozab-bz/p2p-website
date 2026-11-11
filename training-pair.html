@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Training Pair — P2 Core + P2 Fuel | Prime2Performance</title>
+<meta name="description" content="One sachet before you train, one while you train. P2 Core and P2 Fuel together for $129.99 with free shipping.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+
+</head>
+<body data-stage="#C9A24B" data-stage-amp="0.9">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="topo" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="veil" aria-hidden="true"></div>
+<div class="reticle" id="reticle" aria-hidden="true"></div>
+<div class="hud hud-tl"><a class="logo-swap" href="index.html" aria-label="Prime2Performance, home"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
+<div class="hud hud-tr">
+  <a class="hud-btn" href="index.html#loadout" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
+  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+</div>
+<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
+<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx"></span><span class="chap" id="hudChap"></span></div>
+<nav id="menu" aria-label="Site" aria-hidden="true">
+  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
+  <div>
+    <ol class="menu-list">
+      <li><a href="index.html"><span>01</span>Base camp</a></li>
+      <li><a href="index.html#system"><span>02</span>The 24-hour system</a></li>
+      <li><a href="training-pair.html" aria-current="page"><span>03</span>The Training Pair</a></li>
+      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
+      <li><a href="founders.html"><span>05</span>The 99 Founders</a></li>
+      <li><a href="faq.html"><span>06</span>Debrief</a></li>
+    </ol>
+    <div class="menu-sub">
+      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
+      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="menu-side">
+    <div><p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p><div class="menu-clock" data-clock>0000</div></div>
+    <div><p>Questions about a formula or an order? A real person answers within two business days.</p>
+    <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p></div>
+    <a class="btn btn-brass" href="index.html#loadout" style="align-self:flex-start">Shop the system</a>
+  </div>
+</nav>
+<main id="main">
+<section class="page-hero" data-chapter="The Training Pair" data-tone="brass" style="--c:var(--brass)">
+  <div>
+    <span class="tag mono">Start here</span>
+    <h1 class="ph-name">The Training<br>Pair</h1>
+    <p class="ph-head">One sachet before you train. One while you train.</p>
+    <p class="ph-sub">Aging is inevitable. Decline can be delayed. The pair covers the session end to end: Core for the work, Fuel for the distance.</p>
+    <ul class="chips"><li>2 bags &middot; 40 sachets</li><li>Free shipping</li><li>Every dose printed</li><li>Built for men 45+</li></ul>
+  </div>
+  <div>
+    <div class="ph-visual" style="--c:var(--brass)">
+      <span class="halo" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
+      <div class="imgs" style="display:flex;justify-content:center">
+        <img id="pairCoreImg" src="assets/img/core-plus.png" alt="P2 Core+ pouch" style="width:52%;filter:drop-shadow(0 40px 50px rgba(0,0,0,.6))">
+        <img src="assets/img/fuel.png" alt="P2 Fuel pouch" style="width:52%;margin-left:-14%;transform:translateY(9%) rotate(5deg);filter:drop-shadow(0 40px 50px rgba(0,0,0,.6))">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="One choice" data-tone="dim">
+  <span class="tag mono">One choice to make</span>
+  <h2 class="rv">Do you want caffeine?</h2>
+  <div class="plan rv" role="radiogroup" aria-label="Choose your Core" style="max-width:720px;grid-template-columns:1fr 1fr;display:grid">
+    <label class="plan-opt"><input type="radio" name="core" value="plus" checked>
+      <span class="row1"><span>Yes</span><b style="font-size:1.125rem;color:var(--cplus)">P2 Core+</b></span>
+      <span class="row2">200 mg caffeine, about two cups of coffee. Huckleberry.</span></label>
+    <label class="plan-opt"><input type="radio" name="core" value="minus">
+      <span class="row1"><span>No</span><b style="font-size:1.125rem;color:var(--cminus)">P2 Core−</b></span>
+      <span class="row2">The same full stack, stimulant-free. Strawberry Watermelon.</span></label>
+  </div>
+
+  <div class="sect-grid" style="margin-top:3rem">
+    <div class="buy rv" style="align-self:start">
+      <div class="flav"><span id="pairLine">P2 Core+ &middot; P2 Fuel</span><span>40 sachets</span></div>
+      <div class="plan" role="radiogroup" aria-label="Choose how to buy">
+        <label class="plan-opt"><input type="radio" name="pairplan" value="sub" checked>
+          <span class="row1"><span>Subscribe to the pair<span class="save">Save $10 a bag</span></span><b>$119.98</b></span>
+          <span class="row2">Ships every 30 days, free shipping. Pause, skip or cancel anytime.</span></label>
+        <label class="plan-opt"><input type="radio" name="pairplan" value="one">
+          <span class="row1"><span>Buy the pair once</span><b>$129.99</b></span>
+          <span class="row2">$65.00 a bag. Free shipping on the pair.</span></label>
+      </div>
+      <button class="btn btn-brass" id="pairAdd">Start my 2nd Prime <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="ship"><b>Free shipping on 2 bags or more.</b></p>
+      <p class="buy-msg" id="pairMsg" role="status" aria-live="polite"></p>
+    </div>
+    <div class="rv">
+      <h3 style="font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.75rem;margin-bottom:1rem">What you get</h3>
+      <ul class="doses" style="max-width:none">
+        <li><span>Before you train</span><b id="pairCoreName">P2 Core+ &middot; 20 sachets</b></li>
+        <li><span>Lead doses</span><b>L-citrulline 8 g &middot; creatine 5 g</b></li>
+        <li><span>While you train</span><b>P2 Fuel &middot; 20 sachets</b></li>
+        <li><span>Lead doses</span><b>HBCD 30 g &middot; sodium 600 mg</b></li>
+        <li><span>Coverage</span><b>A month at five days a week</b></li>
+      </ul>
+      <p style="color:var(--fog);max-width:44ch">Each formula is complete on its own. Together they cover the session end to end, already measured.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="The first two bags" data-tone="dim">
+  <span class="tag mono">Why the pair</span>
+  <h2 class="rv">The first two bags matter.</h2>
+  <p class="lead rv" style="margin-bottom:2.5rem">Some of what is in the pair works the first day. Some of it builds through daily use. That is chemistry, not marketing.</p>
+  <div class="rv" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px" id="twobags">
+    <div class="syscell" style="--c:var(--brass);cursor:default">
+      <span class="when mono">Day one</span><h3>The pump</h3>
+      <p style="color:var(--fog);font-size:1rem">Blood flow support from 8 g of L-citrulline starts with the first sachet, and Fuel carries the session.</p>
+    </div>
+    <div class="syscell" style="--c:var(--brass);cursor:default">
+      <span class="when mono">Weeks three to four</span><h3>The build</h3>
+      <p style="color:var(--fog);font-size:1rem">Creatine works through daily use, not one-off doses. Its support for strength and power builds as stores saturate.</p>
+    </div>
+    <div class="syscell" style="--c:var(--brass);cursor:default">
+      <span class="when mono">Week eight</span><h3>The habit</h3>
+      <p style="color:var(--fog);font-size:1rem">Two bags in, the routine is set and doing the work. That is why the pair, not a single bag, is the real start.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="Debrief" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">Debrief</span><h2>Questions, answered directly.</h2></div>
+    <div class="qa rv">
+      <details open><summary>Can I mix Core+ and Core−?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Yes. The base formula is identical, so many men run Core+ for morning sessions and Core− for evenings. Pick either one for the pair, or add the other from its own page.</p></div></details>
+      <details><summary>Is the discount the same as subscribing?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Subscribing is the better price: $59.99 a bag, $119.98 for the pair, with free shipping. Buying the pair once is $129.99. Discounts do not stack.</p></div></details>
+      <details><summary>What if I train fewer than five days a week?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>The bags last longer. Take Core and Fuel on training days only; a subscription can be paused or skipped from your account whenever you are ahead.</p></div></details>
+    </div>
+  </div>
+</section>
+</main>
+<script>
+(function(){
+  function cur(n){ var el = document.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : null; }
+  function refresh(){
+    var v = cur('core') || 'plus';
+    document.getElementById('pairCoreImg').src = 'assets/img/core-' + (v==='plus'?'plus':'minus') + '.png';
+    document.getElementById('pairCoreImg').alt = v==='plus' ? 'P2 Core+ pouch' : 'P2 Core− pouch';
+    var nm = v==='plus' ? 'P2 Core+' : 'P2 Core−';
+    document.getElementById('pairLine').textContent = nm + ' · P2 Fuel';
+    document.getElementById('pairCoreName').textContent = nm + ' · 20 sachets';
+  }
+  document.querySelectorAll('input[name="core"]').forEach(function(r){ r.addEventListener('change', refresh); });
+  document.getElementById('pairAdd').addEventListener('click', function(){
+    var v = cur('core') || 'plus', plan = cur('pairplan') || 'sub';
+    var c = window.P2PCART.get(); c.plan = plan;
+    if (c.items.indexOf(v) < 0) c.items.push(v);
+    if (c.items.indexOf('fuel') < 0) c.items.push('fuel');
+    window.P2PCART.set(c);
+    var t = window.P2PCART.totals();
+    document.getElementById('pairMsg').textContent = 'The pair is in your loadout · $' + t.total.toFixed(2) + (plan==='sub' ? ' every 30 days' : '') + ', free shipping.';
+  });
+  refresh();
+})();
+</script>
+<footer class="summit">
+  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
+  <div class="foot">
+    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="story.html">Tim&rsquo;s story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="index.html#ledger">Every dose</a></li><li><a href="index.html#giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>&copy; 2026 Prime2Performance &middot; PO Box 220, Stevensville, MT</p></div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

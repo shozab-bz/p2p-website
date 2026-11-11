@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2 Core+ — Pre-workout with caffeine | Prime2Performance</title>
+<meta name="description" content="The pre-workout built for men 45+. 200 mg caffeine, 8 g L-citrulline, 5 g creatine, every dose printed.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+
+</head><body data-stage="#EA5D50" data-stage-amp="0.75">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="topo" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="veil" aria-hidden="true"></div>
+<div class="reticle" id="reticle" aria-hidden="true"></div>
+<div class="hud hud-tl"><a class="logo-swap" href="index.html" aria-label="Prime2Performance, home"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
+<div class="hud hud-tr">
+  <a class="hud-btn" href="index.html#loadout" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
+  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+</div>
+<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
+<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx"></span><span class="chap" id="hudChap"></span></div>
+<nav id="menu" aria-label="Site" aria-hidden="true">
+  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
+  <div>
+    <ol class="menu-list">
+      <li><a href="index.html"><span>01</span>Base camp</a></li>
+      <li><a href="index.html#system"><span>02</span>The 24-hour system</a></li>
+      <li><a href="training-pair.html"><span>03</span>The Training Pair</a></li>
+      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
+      <li><a href="founders.html"><span>05</span>The 99 Founders</a></li>
+      <li><a href="faq.html"><span>06</span>Debrief</a></li>
+    </ol>
+    <div class="menu-sub">
+      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
+      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="menu-side">
+    <div><p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p><div class="menu-clock" data-clock>0000</div></div>
+    <div><p>Questions about a formula or an order? A real person answers within two business days.</p>
+    <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p></div>
+    <a class="btn btn-brass" href="index.html#loadout" style="align-self:flex-start">Shop the system</a>
+  </div>
+</nav>
+<main id="main">
+<section class="page-hero" data-chapter="P2 Core+" data-tone="dim" style="--c:var(--cplus)">
+  <div>
+    <span class="tag mono">Before training &middot; With caffeine</span>
+    <h1 class="ph-name" style="--c:var(--cplus)"><span class="pfx">P2</span>Core+</h1>
+    <p class="ph-head">The pre-workout built for men 45+.</p>
+    <p class="ph-sub">200 mg of caffeine for focus and drive, plus 5 g of creatine and a full-dose stack for strength, endurance and the pump you remember.</p>
+    <ul class="chips" style="--c:var(--cplus)"><li>Huckleberry</li><li>Every dose printed</li><li>No proprietary blends</li><li>Made in the USA</li></ul>
+    <div class="ph-buy"><div class="buy rv" id="buy">
+  <div class="flav"><span>Flavor <b>Huckleberry</b></span><span>Format <b>20 sachets</b></span></div>
+  <div class="plan" role="radiogroup" aria-label="Choose how to buy">
+    <label class="plan-opt"><input type="radio" name="plan" value="sub" checked>
+      <span class="row1"><span>Subscribe<span class="save">Save $10 a bag</span></span><b>$59.99</b></span>
+      <span class="row2">Ships every 30 days. Pause, skip or cancel anytime from your account.</span></label>
+    <label class="plan-opt"><input type="radio" name="plan" value="one">
+      <span class="row1"><span>Buy once</span><b>$69.99</b></span>
+      <span class="row2">One bag, 20 sachets. 2 bags $129.99 &middot; 3 bags $189.99.</span></label>
+  </div>
+  <button class="btn btn-brass" data-add="plus">Add to loadout <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  <p class="ship" id="shipNote"><b>Free shipping on 2 bags or more.</b> Pause, skip or cancel anytime.</p>
+  <p class="buy-msg" id="buyMsg" role="status" aria-live="polite"></p>
+</div></div>
+  </div>
+  <div class="ph-visual" style="--c:var(--cplus)">
+    <span class="halo" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
+    <img src="assets/img/core-plus.png" alt="P2 Core+ pouch, Huckleberry" fetchpriority="high">
+  </div>
+</section>
+
+<section class="sect" data-chapter="Why" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">Why it exists</span><h2>Most pre-workouts are built for 22-year-olds.</h2></div>
+    <div class="rv"><p style="margin-bottom:1rem">After 30, men lose 3 to 8 percent of their muscle every decade. Every session counts more now. You cannot afford to waste one.</p>
+<p style="margin-bottom:1rem">Most pre-workouts answer with sugar, mystery blends and enough stimulant to rattle your teeth. That is not what a man in his second prime needs.</p>
+<p>Core+ is built for how you train now: clean energy, real blood flow, and doses you can read on the label.</p></div>
+  </div>
+</section>
+
+<section class="sect wide label-center" id="label" data-chapter="Every dose" data-tone="dim" style="padding-left:var(--g);padding-right:var(--g)">
+  <div style="max-width:1280px;margin:0 auto">
+    <span class="tag mono" style="color:var(--brass)">Full disclosure</span>
+    <h2 class="rv">Full doses. Every amount printed.</h2>
+    <div class="label-card rv" style="max-width:860px;margin:2.5rem auto 0">
+      <h3>Supplement facts, in plain words</h3>
+      <p class="basis">Sixteen active ingredients per sachet. Source: manufacturer&rsquo;s Core+ Supplement Facts panel, October 2026.</p>
+      <table class="dose-table">
+        <thead><tr><th scope="col">Ingredient &middot; what it does</th><th scope="col">Per sachet</th></tr></thead>
+        <tbody><tr class="grp"><td colspan="2">Performance</td></tr>
+<tr><td>Creatine monohydrate<span class="what">Supports strength, power and lean muscle</span></td><td class="n">5 g</td></tr>
+<tr><td>Beta-alanine<span class="what">Supports muscular endurance; more reps before fatigue</span></td><td class="n">3.2 g</td></tr>
+<tr><td>Betaine anhydrous<span class="what">Supports strength and power output</span></td><td class="n">2.5 g</td></tr>
+<tr><td>Taurine<span class="what">Supports endurance and muscle function</span></td><td class="n">2 g</td></tr>
+<tr class="grp"><td colspan="2">Blood flow</td></tr>
+<tr><td>L-citrulline<span class="what">Supports nitric oxide production, blood flow and the pump</span></td><td class="n">8 g</td></tr>
+<tr><td>Nitrosigine&reg;<span class="what">A branded form of arginine; supports blood flow and focus</span></td><td class="n">1.5 g</td></tr>
+<tr><td>Glycerol<span class="what">Draws water into muscle; supports hydration and fullness</span></td><td class="n">3 g</td></tr>
+<tr class="grp"><td colspan="2">Hydration</td></tr>
+<tr><td>Sodium<span class="what">The mineral lost most through sweat</span></td><td class="n">750 mg</td></tr>
+<tr><td>Potassium<span class="what">Supports fluid balance and muscle function</span></td><td class="n">400 mg</td></tr>
+<tr><td>Magnesium<span class="what">Supports muscle function</span></td><td class="n">100 mg</td></tr>
+<tr class="grp"><td colspan="2">Focus</td></tr>
+<tr><td>Alpha-GPC<span class="what">A choline source; supports focus and the mind-muscle connection</span></td><td class="n">300 mg</td></tr>
+<tr><td>L-tyrosine<span class="what">Supports focus under hard training</span></td><td class="n">1.5 g</td></tr>
+<tr><td>Acetyl-L-carnitine<span class="what">A form of carnitine that reaches the brain</span></td><td class="n">1 g</td></tr>
+<tr class="grp"><td colspan="2">Stimulant &middot; Core+ only</td></tr>
+<tr class="plus"><td>Caffeine<span class="what">About two cups of coffee; a stated amount, never a hidden one</span></td><td class="n">200 mg</td></tr>
+<tr class="plus"><td>Theobromine<span class="what">A milder relative of caffeine, from cocoa</span></td><td class="n">150 mg</td></tr>
+<tr class="plus"><td>L-theanine<span class="what">An amino acid from tea; smooths the caffeine</span></td><td class="n">100 mg</td></tr></tbody>
+      </table>
+      <p class="other"><b>No proprietary blends. No dextrose.</b> Other ingredients: malic acid, citric acid, natural flavor, silicon dioxide, monk fruit extract, stevia extract. Each sachet contains 200 mg of caffeine, about two cups of coffee.</p>
+      <p class="other"><b>Directions.</b> Mix one sachet with 12 to 16 oz of cold water. Drink 20 to 30 minutes before training.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="How to use it" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">How to use it</span><h2>One sachet. 20 to 30 minutes before you train.</h2></div>
+    <div class="rv"><p style="margin-bottom:1rem">Take it on training days only. 20 sachets cover a month of five-day weeks.</p>
+<p>Need it without the caffeine? <a class="textlink" href="core-minus.html">Core−</a> carries the same full stack, stimulant-free. Use it for evening sessions or whenever you want the pump without the buzz.</p></div>
+  </div>
+</section>
+
+<section class="sect wide" data-chapter="The system" data-tone="brass" style="padding-left:var(--g);padding-right:var(--g)">
+  <div style="max-width:1280px">
+    <span class="tag mono">The 24-hour system</span>
+    <h2 class="rv">Four moments. One day.</h2>
+    <p class="lead rv">Reveille starts the day. Core powers the session. Fuel carries you through it. Repair closes the loop overnight.</p>
+    <div class="sysgrid rv"><a class="syscell" href="reveille.html" style="--c:var(--rev)"><img src="assets/img/reveille-sm.png" alt="" loading="lazy"><span class="when">Morning &middot; every day</span><h3>P2 Reveille</h3><span class="st">Q1 2027</span></a>
+<a class="syscell" href="core-minus.html" style="--c:var(--cminus)"><img src="assets/img/core-minus-sm.png" alt="" loading="lazy"><span class="when">30 min before training</span><h3>P2 Core−</h3><span class="st">Shop</span></a>
+<a class="syscell" href="fuel.html" style="--c:var(--fuel)"><img src="assets/img/fuel-sm.png" alt="" loading="lazy"><span class="when">During training</span><h3>P2 Fuel</h3><span class="st">Shop</span></a>
+<a class="syscell" href="repair.html" style="--c:var(--repair)"><img src="assets/img/repair-sm.png" alt="" loading="lazy"><span class="when">Night &middot; before bed</span><h3>P2 Repair</h3><span class="st">Q1 2027</span></a></div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="Straight talk" data-tone="dim">
+  <span class="tag mono">Straight talk</span>
+  <div class="talk rv">
+    <h3>Respect the caffeine.</h3>
+    <p>200 mg is about two cups of coffee. Enough to train hard, not enough to wreck your night, if you time it right.</p>
+    <ul><li>Count the rest of your day&rsquo;s caffeine, coffee included.</li><li>Skip it within 6 hours of bed. Training late? Use Core− instead.</li><li>If you have high blood pressure, a heart condition, or take prescription medication, talk to your doctor first.</li></ul>
+    <p class="close">We built Core+ to make you better. Using it right is part of that.</p>
+  </div>
+</section>
+
+<section class="sect" data-chapter="Debrief" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">Debrief</span><h2>Questions, answered directly.</h2></div>
+    <div class="qa rv"><details open><summary>Will it make me jittery?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>200 mg is a moderate dose, about two cups of coffee. If you are sensitive to caffeine, start with half a sachet or try Core−.</p></div></details><details><summary>Why glycerol?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Glycerol draws water into your muscles. That supports hydration and a fuller pump through long, hard sessions.</p></div></details><details><summary>How is Core+ different from Core−?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>The same full stack. Core+ adds 200 mg of caffeine, 150 mg of theobromine and 100 mg of L-theanine for calm, steady focus.</p></div></details><details><summary>What is the tingling?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Beta-alanine. It is harmless and fades within about 30 minutes.</p></div></details><details><summary>Is it third-party tested?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Certification details are being finalized with the manufacturer and will be published here before launch.</p></div></details></div>
+  </div>
+</section>
+
+<section class="pairband rv">
+  <div>
+    <span class="tag mono">Start here</span>
+    <h2>The Training Pair</h2>
+    <p>One sachet before you train. One while you train. Core and Fuel together, with free shipping on the pair.</p>
+    <p><span class="pricebig">$129.99</span><a class="btn btn-brass" href="training-pair.html">See the pair <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+  <div class="imgs" aria-hidden="true"><img src="assets/img/core-plus-sm.png" alt=""><img src="assets/img/fuel-sm.png" alt=""></div>
+</section>
+</main>
+<footer class="summit">
+  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
+  <div class="foot">
+    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="story.html">Tim&rsquo;s story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="index.html#ledger">Every dose</a></li><li><a href="index.html#giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>&copy; 2026 Prime2Performance &middot; PO Box 220, Stevensville, MT</p></div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 99 Founders | Prime2Performance</title>
+<meta name="description" content="99 Founders, capped for good. $49.99 a bag, locked for life. First to ship, first to speak.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+
+</head>
+<body data-stage="#C9A24B" data-stage-amp="1">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="topo" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="veil" aria-hidden="true"></div>
+<div class="reticle" id="reticle" aria-hidden="true"></div>
+<div class="hud hud-tl"><a class="logo-swap" href="index.html" aria-label="Prime2Performance, home"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
+<div class="hud hud-tr">
+  <a class="hud-btn" href="index.html#loadout" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
+  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+</div>
+<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
+<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx"></span><span class="chap" id="hudChap"></span></div>
+<nav id="menu" aria-label="Site" aria-hidden="true">
+  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
+  <div>
+    <ol class="menu-list">
+      <li><a href="index.html"><span>01</span>Base camp</a></li>
+      <li><a href="index.html#system"><span>02</span>The 24-hour system</a></li>
+      <li><a href="training-pair.html"><span>03</span>The Training Pair</a></li>
+      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
+      <li><a href="founders.html" aria-current="page"><span>05</span>The 99 Founders</a></li>
+      <li><a href="faq.html"><span>06</span>Debrief</a></li>
+    </ol>
+    <div class="menu-sub">
+      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
+      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="menu-side">
+    <div><p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p><div class="menu-clock" data-clock>0000</div></div>
+    <div><p>Questions about a formula or an order? A real person answers within two business days.</p>
+    <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p></div>
+    <a class="btn btn-brass" href="index.html#loadout" style="align-self:flex-start">Shop the system</a>
+  </div>
+</nav>
+<main id="main">
+<section class="page-hero" data-chapter="The 99" data-tone="brass" style="--c:var(--brass)">
+  <div>
+    <span class="tag mono">The unit</span>
+    <h1 class="ph-name" style="font-family:var(--stencil)">The 99</h1>
+    <p class="ph-head">Ninety-nine Founders. Capped for good.</p>
+    <p class="ph-sub">The first men to train with the system, and the first to speak for it. When the 99 spots are taken, the unit closes. It does not reopen.</p>
+    <ul class="chips"><li>$49.99 a bag, locked for life</li><li>Ships before the public</li><li>First access to new formulas</li></ul>
+  </div>
+  <div class="ph-visual">
+    <div>
+      <img src="assets/img/founders-kit.jpg" alt="The Founders kit" style="border-radius:6px;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+      <p class="mono" style="color:var(--fog);margin-top:.75rem;text-align:center">The Founders kit</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="The terms" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">The terms</span><h2>Plain, and locked.</h2>
+      <p class="lead">No fine print worth hiding. These are the Founder terms as they will ship.</p></div>
+    <div class="rv">
+      <ul class="doses" style="max-width:none">
+        <li><span>Price per bag, any formula</span><b>$49.99 &middot; locked for life</b></li>
+        <li><span>List price</span><b>$69.99</b></li>
+        <li><span>Cap</span><b>Two bags of each formula a month</b></li>
+        <li><span>Shipping</span><b>Founders ship 2 to 3 weeks before the public</b></li>
+        <li><span>New formulas</span><b>First access to Reveille and Repair</b></li>
+        <li><span>Stacking</span><b>None. The Founder price replaces every other discount</b></li>
+      </ul>
+      <p style="color:var(--fog);max-width:52ch">The price is a fixed dollar amount, not a percentage, so it survives any future list change. The cap exists so Founder bags cannot be resold.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="First to speak" data-tone="dim">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">First to speak</span><h2>Founders become the first ambassadors.</h2></div>
+    <div class="rv">
+      <p style="margin-bottom:1rem">When the store opens, every Founder gets a personal link. The first order through it earns a reward, and the man it brought in gets free shipping or a sample kit, never a discount that cheapens the thing.</p>
+      <p style="color:var(--fog)">Every ambassador discloses the arrangement. That is not small print; it is the standard.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect" data-chapter="Claim a spot" data-tone="brass">
+  <div class="sect-grid">
+    <div class="rv"><span class="tag mono">The last spots</span><h2>The unit is filling.</h2>
+      <p class="lead">Leave an email and we will reply personally with the remaining spots and the next step.</p>
+      <div data-founders-grid style="margin-top:2rem"></div></div>
+    <div class="buy rv" style="align-self:start">
+      <form class="wl-form" data-notify="Received. We&rsquo;ll reply to {email} personally about the remaining Founder spots.">
+        <label for="fEmail">Request a Founder spot</label>
+        <input id="fEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn btn-brass" type="submit">Request a spot</button>
+        <p class="wl-msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="ship">99 spots total. When they are gone, they are gone.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="summit">
+  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
+  <div class="foot">
+    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="story.html">Tim&rsquo;s story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="index.html#ledger">Every dose</a></li><li><a href="index.html#giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>&copy; 2026 Prime2Performance &middot; PO Box 220, Stevensville, MT</p></div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

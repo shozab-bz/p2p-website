@@ -1,80 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Debrief — questions, answered directly | Prime2Performance</title>
-<meta name="description" content="The system, buying, the formulas and the mission. Every answer direct.">
-<link rel="icon" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debrief — Questions, Answered Directly | Prime2Performance</title>
+<meta name="description" content="Who the system is for, how pricing works, and what is in every formula. Answered directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Stencil+One&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/v2.css">
 </head>
-<body data-stage="#C9A24B" data-stage-amp="0.7">
-<a class="skip" href="#main">Skip to content</a>
+<body>
 <canvas id="topo" aria-hidden="true"></canvas>
-<div class="grain" aria-hidden="true"></div>
-<div class="veil" aria-hidden="true"></div>
-<div class="reticle" id="reticle" aria-hidden="true"></div>
-<div class="hud hud-tl"><a class="logo-swap" href="index.html" aria-label="Prime2Performance, home"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
-<div class="hud hud-tr">
-  <a class="hud-btn" href="index.html#loadout" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
-  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+<header>
+  <div class="hd">
+    <button class="hd-menu" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
+    <a class="hd-logo" href="index.html" aria-label="Prime2Performance home"><img class="logo-img" src="assets/img/logo.svg" alt="Prime 2 Performance" style="height:52px"></a>
+    <a class="hd-cart" href="index.html#loadout" aria-label="Build your loadout" style="text-decoration:none">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:17px;height:17px"><path d="M6 7h12l-1.5 13h-9L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span>Loadout</span>
+    </a>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav aria-label="Site">
+    <a href="index.html#loadout">Build your loadout</a>
+    <a href="index.html#label">Read the label</a>
+    <a href="index.html#system">The 24-hour system</a>
+    <a href="story.html">Tim's story</a>
+    <a href="founders.html">The 99 Founders</a>
+    <a href="faq.html">Debrief (FAQ)</a>
+    <span class="m-small">LAUNCHING Q1 2027 · VETERAN-OWNED · MADE IN THE USA</span>
+  </nav>
 </div>
-<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
-<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx"></span><span class="chap" id="hudChap"></span></div>
-<nav id="menu" aria-label="Site" aria-hidden="true">
-  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
-  <div>
-    <ol class="menu-list">
-      <li><a href="index.html"><span>01</span>Base camp</a></li>
-      <li><a href="index.html#system"><span>02</span>The 24-hour system</a></li>
-      <li><a href="training-pair.html"><span>03</span>The Training Pair</a></li>
-      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
-      <li><a href="founders.html"><span>05</span>The 99 Founders</a></li>
-      <li><a href="faq.html" aria-current="page"><span>06</span>Debrief</a></li>
-    </ol>
-    <div class="menu-sub">
-      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
-      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+<main>
+
+<section class="phero veil" data-stage="#F2C230" data-amp="1" data-lift=".2">
+  <div class="wrap">
+    <span class="eyebrow rv">Debrief</span>
+    <h1 class="rv" style="font-size:clamp(44px,5.6vw,76px)">Questions, Answered Directly.</h1>
+    <p class="sub rv" style="margin-top:14px">Still unsure after this page? A real person answers every message within two business days. <a href="contact.html" style="color:var(--gold)">Contact us</a>.</p>
+  </div>
+</section>
+<section class="section-pad veil rule-top" data-stage="#F2C230" data-amp=".8" data-lift="0">
+  <div class="wrap" style="max-width:900px">
+    <div class="qa-group rv"><h3>The system</h3><details class="qa rv"><summary>Who is this built for?</summary><div class="qa-a">Men training seriously from about 45 on. Nothing in the formulas is age-specific. They are dosed for men who train hard and read labels.</div></details><details class="qa rv"><summary>What is the 2nd Prime?</summary><div class="qa-a">The years from about 45 on, when the base you built and the judgment you have now work together. We make the nutrition for training through it.</div></details><details class="qa rv"><summary>Do I need all five formulas?</summary><div class="qa-a">No. Each formula is complete on its own. Most men start with the Training Pair, Core and Fuel, and add from there.</div></details><details class="qa rv"><summary>Which formulas can I buy now?</summary><div class="qa-a">P2 Core−, P2 Core+ and P2 Fuel, launching Q1 2027 and open for pre-order. P2 Zero-Six and P2 Repair arrive Q2 2027, and you can ask to be notified when they ship.</div></details><details class="qa rv"><summary>Why sachets?</summary><div class="qa-a">Each sachet is one full, measured serving. Nothing to scoop or weigh, and it travels wherever you go.</div></details></div>
+    <div class="qa-group rv"><h3>Buying</h3><details class="qa rv"><summary>How is it priced?</summary><div class="qa-a">One bag is $69.99. Two bags are $129.99 and three are $189.99, mix and match. A subscription is $59.99 a bag. Shipping is free on orders of $98 or more.</div></details><details class="qa rv"><summary>How does a subscription work?</summary><div class="qa-a">It ships every 30 days at $59.99 a bag, $10 off list. You can pause, skip or cancel anytime from your account. Discounts do not stack.</div></details><details class="qa rv"><summary>Can I buy without subscribing?</summary><div class="qa-a">Yes, at list price. The $10 a bag is the subscriber price.</div></details><details class="qa rv"><summary>What is a Founder?</summary><div class="qa-a">One of 99 men, capped for good, who hold $49.99 a bag locked for life, ship before the public and get first access to new formulas. See <a href="founders.html" style="color:var(--gold)">The 99</a>.</div></details></div>
+    <div class="qa-group rv"><h3>The formulas</h3><details class="qa rv"><summary>Core− or Core+?</summary><div class="qa-a">The base formula is identical. Core+ adds 200 mg of caffeine, 150 mg of theobromine and 100 mg of L-theanine. Choose by the time of day and how you handle caffeine.</div></details><details class="qa rv"><summary>What is in each formula?</summary><div class="qa-a">Everything on the label, with its dose. We use no proprietary blends, which are mixes that hide individual amounts.</div></details><details class="qa rv"><summary>What is the tingling from Core?</summary><div class="qa-a">Beta-alanine. It commonly causes a brief tingling of the skin. It is harmless and fades within about 30 minutes.</div></details><details class="qa rv"><summary>Should I check with my doctor?</summary><div class="qa-a">If you have a medical condition or take medication, yes. Take the full ingredient list to your physician. We can tell you what is in each formula and how much, but we cannot advise on your own health.</div></details><details class="qa rv"><summary>Is it third-party tested?</summary><div class="qa-a">Certification details are being finalized with the manufacturer and will be published here before launch.</div></details></div>
+  </div>
+</section></main>
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-logo">
+        <img class="logo-img" src="assets/img/logo.svg" alt="Prime 2 Performance" style="width:230px">
+        <p class="ft-tag">Performance nutrition for your 2nd prime. Veteran-owned. Made in the USA.</p>
+      </div>
+      <div class="ft-col">
+        <h5>Shop</h5>
+        <a href="core-minus.html">P2 Core−</a>
+        <a href="core-plus.html">P2 Core+</a>
+        <a href="fuel.html">P2 Fuel</a>
+        <a href="training-pair.html">The Training Pair</a>
+        <a href="zero-six.html">P2 Zero-Six</a>
+        <a href="repair.html">P2 Repair</a>
+      </div>
+      <div class="ft-col">
+        <h5>Learn</h5>
+        <a href="story.html">Tim's story</a>
+        <a href="index.html#label">Every dose</a>
+        <a href="founders.html">The 99 Founders</a>
+        <a href="faq.html">Debrief (FAQ)</a>
+      </div>
+      <div class="ft-col">
+        <h5>Support</h5>
+        <a href="contact.html">Contact</a>
+        <a href="refunds.html">Shipping &amp; refunds</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="ft-legal">
+      <p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p>
+      <p>© 2026 Prime2Performance · PO Box 220, Stevensville, MT</p>
     </div>
   </div>
-  <div class="menu-side">
-    <div><p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p><div class="menu-clock" data-clock>0000</div></div>
-    <div><p>Questions about a formula or an order? A real person answers within two business days.</p>
-    <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p></div>
-    <a class="btn btn-brass" href="index.html#loadout" style="align-self:flex-start">Shop the system</a>
-  </div>
-</nav>
-<main id="main">
-<section class="page-hero narrow" data-chapter="Debrief" data-tone="dim">
-  <div>
-    <span class="tag mono">Debrief</span>
-    <h1 class="ph-name">Questions,<br>answered directly.</h1>
-    <p class="ph-sub">Still unsure after this page? A real person answers every message within two business days. <a class="textlink" href="contact.html">Contact us</a>.</p>
-  </div>
-</section>
-<section class="sect" data-chapter="The system" data-tone="dim"><div class="sect-grid"><div class="rv"><span class="tag mono">The system</span><h2 style="font-size:clamp(1.9rem,3.4vw,3rem)">The system</h2></div><div class="qa rv"><details><summary>Who is this built for?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Men training seriously from about 45 on. Nothing in the formulas is age-specific. They are dosed for men who train hard and read labels.</p></div></details><details><summary>What is the 2nd Prime?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>The years from about 45 on, when the base you built and the judgment you have now work together. We make the nutrition for training through it.</p></div></details><details><summary>Do I need all five formulas?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>No. Each formula is complete on its own. Most men start with the Training Pair, Core and Fuel, and add from there.</p></div></details><details><summary>Which formulas can I buy now?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>P2 Core−, P2 Core+ and P2 Fuel. Reveille and Repair arrive Q1 2027, and you can ask to be notified when they ship.</p></div></details><details><summary>Why sachets?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Each sachet is one full, measured serving. Nothing to scoop or weigh, and it travels wherever you go.</p></div></details></div></div></section><section class="sect" data-chapter="Buying" data-tone="dim"><div class="sect-grid"><div class="rv"><span class="tag mono">Buying</span><h2 style="font-size:clamp(1.9rem,3.4vw,3rem)">Buying</h2></div><div class="qa rv"><details><summary>How is it priced?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>One bag is $69.99 and the customer pays shipping. Two bags are $129.99 and three are $189.99, both with free shipping. A subscription is $59.99 a bag, with free shipping on 2 bags or more.</p></div></details><details><summary>How does a subscription work?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>It ships every 30 days at $59.99 a bag, $10 off list. You can pause, skip or cancel anytime from your account. Discounts do not stack.</p></div></details><details><summary>Can I buy without subscribing?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Yes, at list price. The $10 a bag is the subscriber price.</p></div></details><details><summary>What is a Founder?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>One of 99 men, capped for good, who hold $49.99 a bag locked for life, ship before the public and get first access to new formulas. See The 99.</p></div></details></div></div></section><section class="sect" data-chapter="The formulas" data-tone="dim"><div class="sect-grid"><div class="rv"><span class="tag mono">The formulas</span><h2 style="font-size:clamp(1.9rem,3.4vw,3rem)">The formulas</h2></div><div class="qa rv"><details><summary>Core− or Core+?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>The base formula is identical. Core+ adds 200 mg of caffeine, 150 mg of theobromine and 100 mg of L-theanine. Choose by the time of day and how you handle caffeine.</p></div></details><details><summary>What is in each formula?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Everything on the label, with its dose. We use no proprietary blends, which are mixes that hide individual amounts.</p></div></details><details><summary>What is the tingling from Core?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Beta-alanine. It commonly causes a brief tingling of the skin. It is harmless and fades within about 30 minutes.</p></div></details><details><summary>Should I check with my doctor?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>If you have a medical condition or take medication, yes. Take the full ingredient list to your physician. We can tell you what is in each formula and how much, but we cannot advise on your own health.</p></div></details><details><summary>Is it third-party tested?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Certification details are being finalized with the manufacturer and will be published here before launch.</p></div></details></div></div></section><section class="sect" data-chapter="The mission" data-tone="dim"><div class="sect-grid"><div class="rv"><span class="tag mono">The mission</span><h2 style="font-size:clamp(1.9rem,3.4vw,3rem)">The mission</h2></div><div class="qa rv"><details><summary>Where does the 10% go?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Prime2Performance was founded by a Recon Marine. Ten percent of net profit goes to the Force Recon Association, which supports Recon Marines and their families.</p></div></details></div></div></section>
-<section class="pairband rv">
-  <div>
-    <span class="tag mono">Start here</span>
-    <h2>The Training Pair</h2>
-    <p>One sachet before you train. One while you train. Core and Fuel together, with free shipping on the pair.</p>
-    <p><span class="pricebig">$129.99</span><a class="btn btn-brass" href="training-pair.html">See the pair <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-  </div>
-  <div class="imgs" aria-hidden="true"><img src="assets/img/core-plus-sm.png" alt=""><img src="assets/img/fuel-sm.png" alt=""></div>
-</section>
-</main>
-<footer class="summit">
-  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
-  <div class="foot">
-    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
-    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
-    <div><h4>Learn</h4><ul><li><a href="story.html">Tim&rsquo;s story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="index.html#ledger">Every dose</a></li><li><a href="index.html#giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
-    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
-    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>&copy; 2026 Prime2Performance &middot; PO Box 220, Stevensville, MT</p></div>
-  </div>
 </footer>
-<script src="assets/js/site.js"></script>
+
+
+<script src="assets/js/v2.js"></script>
 </body>
 </html>

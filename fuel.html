@@ -1,168 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>P2 Fuel — Intra-workout endurance drink | Prime2Performance</title>
-<meta name="description" content="30 g of steady carbohydrate and electrolytes to sip while you train. Every dose printed. Built for men 45+.">
-<link rel="icon" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Big+Shoulders+Stencil+Display:wght@700;900&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-
-</head><body data-stage="#F2A552" data-stage-amp="0.75">
-<a class="skip" href="#main">Skip to content</a>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2 Fuel — Carry the whole session. | Prime2Performance</title>
+<meta name="description" content="Carbs and electrolytes to keep going in long sessions, heat and altitude. Sip it while you work, on its own or paired with either Core.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Stencil+One&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/v2.css">
+</head>
+<body>
 <canvas id="topo" aria-hidden="true"></canvas>
-<div class="grain" aria-hidden="true"></div>
-<div class="veil" aria-hidden="true"></div>
-<div class="reticle" id="reticle" aria-hidden="true"></div>
-<div class="hud hud-tl"><a class="logo-swap" href="index.html" aria-label="Prime2Performance, home"><img class="l-w" src="assets/img/logo-white.png" alt="Prime 2 Performance" width="150" height="74"><img class="l-d" src="assets/img/logo-gold.png" alt="" width="150" height="74"></a></div>
-<div class="hud hud-tr">
-  <a class="hud-btn" href="index.html#loadout" aria-label="Your loadout"><span class="lbl">Loadout</span><span class="count" data-cart-count>0</span></a>
-  <button class="hud-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="lbl">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+<header>
+  <div class="hd">
+    <button class="hd-menu" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
+    <a class="hd-logo" href="index.html" aria-label="Prime2Performance home"><img class="logo-img" src="assets/img/logo.svg" alt="Prime 2 Performance" style="height:52px"></a>
+    <a class="hd-cart" href="index.html#loadout" aria-label="Build your loadout" style="text-decoration:none">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:17px;height:17px"><path d="M6 7h12l-1.5 13h-9L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span>Loadout</span>
+    </a>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <nav aria-label="Site">
+    <a href="index.html#loadout">Build your loadout</a>
+    <a href="index.html#label">Read the label</a>
+    <a href="index.html#system">The 24-hour system</a>
+    <a href="story.html">Tim's story</a>
+    <a href="founders.html">The 99 Founders</a>
+    <a href="faq.html">Debrief (FAQ)</a>
+    <span class="m-small">LAUNCHING Q1 2027 · VETERAN-OWNED · MADE IN THE USA</span>
+  </nav>
 </div>
-<div class="hud hud-bl mono" aria-hidden="true"><b data-clock>0000</b> hrs local<br>HQ 46°30′N 114°05′W</div>
-<div class="hud hud-br mono" aria-live="off"><span class="idx" id="hudIdx"></span><span class="chap" id="hudChap"></span></div>
-<nav id="menu" aria-label="Site" aria-hidden="true">
-  <button class="hud-btn menu-close" id="menuClose">Close <span aria-hidden="true">✕</span></button>
-  <div>
-    <ol class="menu-list">
-      <li><a href="index.html"><span>01</span>Base camp</a></li>
-      <li><a href="index.html#system"><span>02</span>The 24-hour system</a></li>
-      <li><a href="training-pair.html"><span>03</span>The Training Pair</a></li>
-      <li><a href="story.html"><span>04</span>Tim&rsquo;s story</a></li>
-      <li><a href="founders.html"><span>05</span>The 99 Founders</a></li>
-      <li><a href="faq.html"><span>06</span>Debrief</a></li>
-    </ol>
-    <div class="menu-sub">
-      <a href="core-minus.html">P2 Core−</a><a href="core-plus.html">P2 Core+</a><a href="fuel.html">P2 Fuel</a>
-      <a href="reveille.html">P2 Reveille</a><a href="repair.html">P2 Repair</a><a href="contact.html">Contact</a>
+<main>
+
+<section class="phero veil" style="--pc:#E8A458" data-stage="#E8A458" data-amp="1" data-lift=".2">
+  <div class="wrap phero-grid">
+    <div>
+      <span class="eyebrow rv">1230 / 1730 · During Training</span>
+      <h1 class="rv"><span class="p2chip">P2</span>Fuel</h1>
+      <p class="tagline rv">Carry the whole session.</p>
+      <p class="sub rv">Carbs and electrolytes to keep going in long sessions, heat and altitude. Sip it while you work, on its own or paired with either Core.</p>
+      <p class="ptrust rv"><span>Tropical Charge</span><span>20 sachets</span><span>Every dose printed</span><span>Caffeine-free</span><span>Made in the USA</span></p>
+      <div class="buy rv">
+        <div class="buy-grid">
+          <div class="buy-opt hot">
+            <span class="buy-save">Save $10 a bag</span>
+            <span class="bo-lab">Subscribe</span>
+            <div class="bo-price">$59.99</div>
+            <p>Ships every 30 days. Pause, skip or cancel anytime from your account.</p>
+          </div>
+          <div class="buy-opt">
+            <span class="bo-lab">Buy once</span>
+            <div class="bo-price">$69.99</div>
+            <p>One bag, 20 sachets. 2 bags $129.99 · 3 bags $189.99, mix and match.</p>
+          </div>
+        </div>
+        <a class="btn btn-gold" href="index.html#loadout">Add to loadout</a>
+        <p class="buy-note">Free shipping on $98+ · About $3 a workout on subscription</p>
+      </div>
     </div>
-  </div>
-  <div class="menu-side">
-    <div><p class="mono" style="color:var(--brass);margin-bottom:.75rem">Local time</p><div class="menu-clock" data-clock>0000</div></div>
-    <div><p>Questions about a formula or an order? A real person answers within two business days.</p>
-    <p class="mono" style="margin-top:.75rem;color:var(--bone)">team@prime2performance.com</p></div>
-    <a class="btn btn-brass" href="index.html#loadout" style="align-self:flex-start">Shop the system</a>
-  </div>
-</nav>
-<main id="main">
-<section class="page-hero" data-chapter="P2 Fuel" data-tone="dim" style="--c:var(--fuel)">
-  <div>
-    <span class="tag mono">During training &middot; Intra-workout</span>
-    <h1 class="ph-name" style="--c:var(--fuel)"><span class="pfx">P2</span>Fuel</h1>
-    <p class="ph-head">Finish as strong as you started.</p>
-    <p class="ph-sub">30 g of fast, steady carbs and electrolytes to sip while you train. Fuel keeps your energy up and your output high from the first set to the last.</p>
-    <ul class="chips" style="--c:var(--fuel)"><li>Tropical Charge</li><li>Caffeine-free</li><li>No dextrose</li><li>Made in the USA</li></ul>
-    <div class="ph-buy"><div class="buy rv" id="buy">
-  <div class="flav"><span>Flavor <b>Tropical Charge</b></span><span>Format <b>20 sachets</b></span></div>
-  <div class="plan" role="radiogroup" aria-label="Choose how to buy">
-    <label class="plan-opt"><input type="radio" name="plan" value="sub" checked>
-      <span class="row1"><span>Subscribe<span class="save">Save $10 a bag</span></span><b>$59.99</b></span>
-      <span class="row2">Ships every 30 days. Pause, skip or cancel anytime from your account.</span></label>
-    <label class="plan-opt"><input type="radio" name="plan" value="one">
-      <span class="row1"><span>Buy once</span><b>$69.99</b></span>
-      <span class="row2">One bag, 20 sachets. 2 bags $129.99 &middot; 3 bags $189.99.</span></label>
-  </div>
-  <button class="btn btn-brass" data-add="fuel">Add to loadout <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-  <p class="ship" id="shipNote"><b>Free shipping on 2 bags or more.</b> Pause, skip or cancel anytime.</p>
-  <p class="buy-msg" id="buyMsg" role="status" aria-live="polite"></p>
-</div></div>
-  </div>
-  <div class="ph-visual" style="--c:var(--fuel)">
-    <span class="halo" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
-    <img src="assets/img/fuel.png" alt="P2 Fuel pouch, Tropical Charge" fetchpriority="high">
+    <div class="pshot rv"><img src="assets/img/fuel-sm.png" alt="P2 Fuel bag, Tropical Charge, 20 sachets"></div>
   </div>
 </section>
 
-<section class="sect" data-chapter="Why" data-tone="dim">
-  <div class="sect-grid">
-    <div class="rv"><span class="tag mono">Why it exists</span><h2>The last 20 minutes are where the work gets done.</h2></div>
-    <div class="rv"><p style="margin-bottom:1rem">Most men fade halfway through the session, right when it matters most.</p>
-<p style="margin-bottom:1rem">Water alone will not fix that. Sugary sports drinks spike you, then drop you, and sit heavy in your gut.</p>
-<p>Fuel gives your muscles steady energy while you train, so your last set gets the same effort as your first.</p></div>
-  </div>
-</section>
-
-<section class="sect wide label-center" id="label" data-chapter="Every dose" data-tone="dim" style="padding-left:var(--g);padding-right:var(--g)">
-  <div style="max-width:1280px;margin:0 auto">
-    <span class="tag mono" style="color:var(--brass)">Full disclosure</span>
-    <h2 class="rv">Clean carbs. Real electrolytes.</h2>
-    <div class="label-card rv" style="max-width:860px;margin:2.5rem auto 0">
-      <h3>Supplement facts, in plain words</h3>
-      <p class="basis">Five active ingredients per sachet. Source: manufacturer&rsquo;s Fuel Supplement Facts panel, October 2026.</p>
-      <table class="dose-table">
-        <thead><tr><th scope="col">Ingredient &middot; what it does</th><th scope="col">Per sachet</th></tr></thead>
-        <tbody><tr class="grp"><td colspan="2">Energy</td></tr>
-<tr><td>Highly branched cyclic dextrin<span class="what">Steady carbohydrate that is easy on the stomach mid-session</span></td><td class="n">30 g</td></tr>
-<tr><td>Taurine<span class="what">Supports endurance and muscle function</span></td><td class="n">2 g</td></tr>
-<tr class="grp"><td colspan="2">Hydration</td></tr>
-<tr><td>Sodium<span class="what">Replaces the sodium lost in sweat</span></td><td class="n">600 mg</td></tr>
-<tr><td>Potassium<span class="what">Supports hydration and muscle function</span></td><td class="n">350 mg</td></tr>
-<tr><td>Magnesium<span class="what">Supports muscle function</span></td><td class="n">50 mg</td></tr></tbody>
-      </table>
-      <p class="other"><b>No dextrose. No proprietary blends. No sugar crash.</b> 30 g of carbohydrate is about 120 calories; that is what makes Fuel work.</p>
-      <p class="other"><b>Directions.</b> Mix one sachet with 16 to 24 oz of cold water. Start sipping at your first working set and finish it by the end of your session.</p>
+<section class="section-pad veil rule-top" data-stage="#E8A458" data-amp=".8" data-lift="0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow rv">Why It Exists</span>
+      <h2 class="rv">The Session Is Longer Than Your Tank.</h2>
+      <p class="sub rv">Past the first 45 minutes, output drops with fuel and fluids, not with willpower. 30 g of highly branched cyclic dextrin digests fast without sitting heavy, and 600 mg of sodium replaces what sweat takes.</p>
+    <p class="sub rv" style="margin-top:14px"><b style="color:var(--ink)">Built for long work.</b> Lifting days, rucks, hunts at altitude, yard-long cardio — one sachet in the bottle you are already carrying.</p>
     </div>
   </div>
 </section>
 
-<section class="sect" data-chapter="How to use it" data-tone="dim">
-  <div class="sect-grid">
-    <div class="rv"><span class="tag mono">How to use it</span><h2>One sachet. Sip it while you train.</h2></div>
-    <div class="rv"><p style="margin-bottom:1rem">Built for hard sessions of an hour or more. 20 sachets cover a month of five-day weeks.</p>
-<p>Not a pre-workout. Fuel has no stimulants. Pair it with <a class="textlink" href="core-plus.html">Core+</a> or <a class="textlink" href="core-minus.html">Core−</a> before you train.</p></div>
+<section class="paper-sec section-pad" data-stage="#E8A458" data-amp=".4" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">Full Disclosure</span>
+    <h2 class="rv">Every Dose. Printed.</h2>
+    <p class="sub rv">Source: manufacturer’s Fuel Supplement Facts panel, October 2026. 170 calories, 42 g carbohydrate per sachet. No caffeine. No proprietary blends.</p>
+    <table class="ing-table rv">
+      <thead><tr><th>Ingredient · what it does</th><th>Per sachet</th></tr></thead>
+      <tbody>
+<tr class="cat"><td colspan="2">Carry the session</td></tr>
+<tr><td><b>Highly branched cyclic dextrin</b><span>Fast, easy carbs that sit light on the stomach</span></td><td class="dose">30 g</td></tr>
+<tr><td><b>Taurine</b><span>Supports endurance and muscle function</span></td><td class="dose">2 g</td></tr>
+<tr class="cat"><td colspan="2">Hydration</td></tr>
+<tr><td><b>Sodium</b><span>The mineral lost most through sweat</span></td><td class="dose">600 mg</td></tr>
+<tr><td><b>Potassium</b><span>Supports fluid balance and muscle function</span></td><td class="dose">350 mg</td></tr>
+<tr><td><b>Magnesium</b><span>Supports muscle function</span></td><td class="dose">50 mg</td></tr></tbody>
+    </table>
+    <p class="sub rv" style="margin-top:18px"><b style="color:var(--navy-0)">Directions.</b> Mix one sachet with 16 to 24 oz of cold water. Sip through the session.</p>
+    <p class="rv" style="margin-top:22px"><button class="link-label" data-facts="fuel" style="color:var(--navy-0)">See the Supplement Facts panel +</button></p>
   </div>
 </section>
 
-<section class="sect wide" data-chapter="The system" data-tone="brass" style="padding-left:var(--g);padding-right:var(--g)">
-  <div style="max-width:1280px">
-    <span class="tag mono">The 24-hour system</span>
-    <h2 class="rv">Four moments. One day.</h2>
-    <p class="lead rv">Reveille starts the day. Core powers the session. Fuel carries you through it. Repair closes the loop overnight.</p>
-    <div class="sysgrid rv"><a class="syscell" href="reveille.html" style="--c:var(--rev)"><img src="assets/img/reveille-sm.png" alt="" loading="lazy"><span class="when">Morning &middot; every day</span><h3>P2 Reveille</h3><span class="st">Q1 2027</span></a>
-<a class="syscell" href="core-minus.html" style="--c:var(--cminus)"><img src="assets/img/core-minus-sm.png" alt="" loading="lazy"><span class="when">30 min before training</span><h3>P2 Core−</h3><span class="st">Shop</span></a>
-<a class="syscell" href="core-plus.html" style="--c:var(--cplus)"><img src="assets/img/core-plus-sm.png" alt="" loading="lazy"><span class="when">30 min before training</span><h3>P2 Core+</h3><span class="st">Shop</span></a>
-<a class="syscell" href="repair.html" style="--c:var(--repair)"><img src="assets/img/repair-sm.png" alt="" loading="lazy"><span class="when">Night &middot; before bed</span><h3>P2 Repair</h3><span class="st">Q1 2027</span></a></div>
+<section class="section-pad veil rule-top" data-stage="#F2C230" data-amp=".8" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">How To Use It</span>
+    <h2 class="rv">One Sachet. Already Measured.</h2>
+    <div class="steps"><div class="step rv"><span class="s-when">Session start</span><h4>Mix the bottle</h4><p>One sachet into 16 to 24 oz. More water for longer or hotter work.</p></div><div class="step rv"><span class="s-when">Through the work</span><h4>Sip steadily</h4><p>Carbs and electrolytes landing while you train, not after.</p></div><div class="step rv"><span class="s-when">With either Core</span><h4>Pair it</h4><p>Core before, Fuel during. That is the Training Pair.</p></div></div>
   </div>
 </section>
 
-<section class="sect" data-chapter="Straight talk" data-tone="dim">
-  <span class="tag mono">Straight talk</span>
-  <div class="talk rv">
-    <h3>Carbs are fuel. Use them like it.</h3>
-    <p>30 g of carbs is about 120 calories. That is what makes Fuel work, and it is why you should know this:</p>
-    <ul><li>Fuel is built for hard sessions of an hour or more. For a short, easy workout, water may be all you need.</li><li>Cutting weight? Count Fuel in your daily intake.</li><li>If you have diabetes or manage your blood sugar, talk to your doctor before using Fuel.</li></ul>
-    <p class="close">We built Fuel to make you better. Using it right is part of that.</p>
+<section class="section-pad veil rule-top" data-stage="#F2C230" data-amp=".7" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">Debrief</span>
+    <h2 class="rv">Questions, Answered Directly.</h2>
+    <div class="qa-group rv"><details class="qa rv"><summary>Do I need Fuel on easy days?</summary><div class="qa-a">No. Each formula works on its own. Fuel earns its place in long, hard or hot sessions, where fuel and fluids decide the back half.</div></details><details class="qa rv"><summary>Is there caffeine in Fuel?</summary><div class="qa-a">None. Energy in Fuel is food energy, 42 g of carbohydrate, not a stimulant.</div></details><details class="qa rv"><summary>Why cyclic dextrin?</summary><div class="qa-a">It empties from the stomach quickly, so it does not slosh or sit heavy mid-set.</div></details></div>
+    <div class="related"><a class="rel rv" href="core-minus.html"><span class="r-ctx">Before training, stimulant-free</span><div class="r-name">P2 Core−</div><div class="r-price">$59.99 on subscription</div></a><a class="rel rv" href="core-plus.html"><span class="r-ctx">Before training, with caffeine</span><div class="r-name">P2 Core+</div><div class="r-price">$59.99 on subscription</div></a><a class="rel rv" href="training-pair.html"><span class="r-ctx">Start here</span><div class="r-name">The Training Pair</div><div class="r-price">$119.98 on subscription</div></a></div>
   </div>
-</section>
-
-<section class="sect" data-chapter="Debrief" data-tone="dim">
-  <div class="sect-grid">
-    <div class="rv"><span class="tag mono">Debrief</span><h2>Questions, answered directly.</h2></div>
-    <div class="qa rv"><details open><summary>Why HBCD instead of regular sugar?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Highly branched cyclic dextrin is a carbohydrate built for training. It is easy on the stomach mid-workout and gives steady energy without the spike and crash of dextrose.</p></div></details><details><summary>Is Fuel a pre-workout?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>No. It is an endurance drink you sip during training. Take Core+ or Core− before, and Fuel during.</p></div></details><details><summary>Can I use it for hiking, hunting or long days outside?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Yes. Anytime you are working hard for an hour or more, Fuel helps keep your energy steady.</p></div></details><details><summary>Is it third-party tested?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Certification details are being finalized with the manufacturer and will be published here before launch.</p></div></details></div>
-  </div>
-</section>
-
-<section class="pairband rv">
-  <div>
-    <span class="tag mono">Start here</span>
-    <h2>The Training Pair</h2>
-    <p>One sachet before you train. One while you train. Core and Fuel together, with free shipping on the pair.</p>
-    <p><span class="pricebig">$129.99</span><a class="btn btn-brass" href="training-pair.html">See the pair <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-  </div>
-  <div class="imgs" aria-hidden="true"><img src="assets/img/core-plus-sm.png" alt=""><img src="assets/img/fuel-sm.png" alt=""></div>
 </section>
 </main>
-<footer class="summit">
-  <div class="marquee" aria-hidden="true"><div class="mq"><span>Life.</span><span>Longevity.</span><span>Legacy.</span><span>Life.</span><span>Longevity.</span><span>Legacy.</span></div></div>
-  <div class="foot">
-    <div><img src="assets/img/logo-white.png" alt="Prime 2 Performance" style="height:84px;width:auto;margin:-12px -18px -8px -19px" loading="lazy"><p style="color:var(--fog);margin-top:1.25rem;max-width:30ch">Performance nutrition for your second prime. Veteran-owned. Made in the USA.</p></div>
-    <div><h4>Shop</h4><ul><li><a href="core-minus.html">P2 Core−</a></li><li><a href="core-plus.html">P2 Core+</a></li><li><a href="fuel.html">P2 Fuel</a></li><li><a href="training-pair.html">The Training Pair</a></li><li><a href="reveille.html">P2 Reveille</a></li><li><a href="repair.html">P2 Repair</a></li></ul></div>
-    <div><h4>Learn</h4><ul><li><a href="story.html">Tim&rsquo;s story</a></li><li><a href="founders.html">The 99 Founders</a></li><li><a href="index.html#ledger">Every dose</a></li><li><a href="index.html#giving">Force Recon Association</a></li><li><a href="faq.html">Debrief</a></li></ul></div>
-    <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="refunds.html">Refunds &amp; subscriptions</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
-    <div class="disc"><p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p><p>&copy; 2026 Prime2Performance &middot; PO Box 220, Stevensville, MT</p></div>
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-logo">
+        <img class="logo-img" src="assets/img/logo.svg" alt="Prime 2 Performance" style="width:230px">
+        <p class="ft-tag">Performance nutrition for your 2nd prime. Veteran-owned. Made in the USA.</p>
+      </div>
+      <div class="ft-col">
+        <h5>Shop</h5>
+        <a href="core-minus.html">P2 Core−</a>
+        <a href="core-plus.html">P2 Core+</a>
+        <a href="fuel.html">P2 Fuel</a>
+        <a href="training-pair.html">The Training Pair</a>
+        <a href="zero-six.html">P2 Zero-Six</a>
+        <a href="repair.html">P2 Repair</a>
+      </div>
+      <div class="ft-col">
+        <h5>Learn</h5>
+        <a href="story.html">Tim's story</a>
+        <a href="index.html#label">Every dose</a>
+        <a href="founders.html">The 99 Founders</a>
+        <a href="faq.html">Debrief (FAQ)</a>
+      </div>
+      <div class="ft-col">
+        <h5>Support</h5>
+        <a href="contact.html">Contact</a>
+        <a href="refunds.html">Shipping &amp; refunds</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="ft-legal">
+      <p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p>
+      <p>© 2026 Prime2Performance · PO Box 220, Stevensville, MT</p>
+    </div>
   </div>
 </footer>
-<script src="assets/js/site.js"></script>
+
+<dialog class="facts" id="factsDlg">
+  <div class="facts-in">
+    <div class="facts-head"><h4 id="factsTitle"></h4><button class="facts-close" id="factsClose" aria-label="Close">✕</button></div>
+    <div class="sf">
+      <h5>Supplement Facts</h5>
+      <div class="srv" id="factsServing"></div>
+      <div class="srv" style="border-bottom:8px solid var(--navy-0)">20 servings per container</div>
+      <table id="factsTable"></table>
+      <p class="sf-notes"><b>Other ingredients:</b> L-Malic Acid, Natural Flavors, Citric Acid, Silicon Dioxide, Monk Fruit, Stevia Leaf Extract.</p>
+      <p class="sf-notes">* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.</p>
+    </div>
+  </div>
+</dialog>
+<script>window.FACTS = {
+  'core-minus': { name:'P2 Core−', serving:'Serving size: 1 sachet (40.9 g)', rows:[
+    ['Calories','75','rule'],['Total Carbohydrate','8 g (3%*)'],
+    ['Magnesium (as magnesium glycinate)','100 mg (24%)'],['Sodium (as sodium citrate)','750 mg (33%)'],
+    ['Potassium (as potassium citrate)','400 mg (9%)','rule'],
+    ['L-Citrulline','8,000 mg†'],['Creatine Monohydrate','5,000 mg†'],['Beta Alanine','3,200 mg†'],
+    ['Glycerol','3,000 mg†'],['Betaine Anhydrous','2,500 mg†'],['Taurine','2,000 mg†'],
+    ['L-Tyrosine','1,500 mg†'],['Nitrosigine® (Inositol-Stabilized Arginine Silicate)','1,500 mg†'],
+    ['Acetyl L-Carnitine HCl','1,000 mg†'],['Alpha GPC','300 mg†']]},
+  'core-plus': { name:'P2 Core+', serving:'Serving size: 1 sachet (42 g)', rows:[
+    ['Calories','75','rule'],['Total Carbohydrate','9 g (3%*)'],
+    ['Magnesium (as magnesium glycinate)','100 mg (24%)'],['Sodium (as sodium citrate)','750 mg (33%)'],
+    ['Potassium (as potassium citrate)','400 mg (9%)','rule'],
+    ['L-Citrulline','8,000 mg†'],['Creatine Monohydrate','5,000 mg†'],['Beta Alanine','3,200 mg†'],
+    ['Glycerol','3,000 mg†'],['Betaine Anhydrous','2,500 mg†'],['Taurine','2,000 mg†'],
+    ['L-Tyrosine','1,500 mg†'],['Nitrosigine® (Inositol-Stabilized Arginine Silicate)','1,500 mg†'],
+    ['Acetyl L-Carnitine HCl','1,000 mg†'],['Alpha GPC','300 mg†'],
+    ['Caffeine Anhydrous','200 mg†'],['Theobromine','150 mg†'],['L-Theanine','100 mg†']]},
+  'fuel': { name:'P2 Fuel', serving:'Serving size: 1 sachet (49.8 g)', rows:[
+    ['Calories','170','rule'],['Total Carbohydrate','42 g (15%*)'],
+    ['Magnesium (as magnesium glycinate)','50 mg (12%)'],['Sodium (as sodium citrate)','600 mg (26%)'],
+    ['Potassium (as potassium citrate)','350 mg (7%)','rule'],
+    ['Highly Branched Cyclic Dextrin','30 g†'],['Taurine','2,000 mg†']]}
+};</script>
+<script src="assets/js/v2.js"></script>
 </body>
 </html>

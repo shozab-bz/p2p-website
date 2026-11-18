@@ -490,7 +490,7 @@ footer a{color:inherit}
 
 <main>
 <!-- ============ HERO ============ -->
-<section class="hero" id="top" data-stage="#F2C230" data-amp="1" data-lift=".2">
+<section class="hero" id="top" data-stage="#12264F" data-amp="1" data-lift=".2">
   <div class="wrap hero-grid">
     <div>
       <div class="hero-eyebrow rv">
@@ -529,7 +529,7 @@ footer a{color:inherit}
 </section>
 
 <!-- ============ 24-HOUR SYSTEM ============ -->
-<section class="section-pad rule-top veil" id="system" data-stage="#F2C230" data-amp=".8" data-lift="0">
+<section class="section-pad rule-top veil" id="system" data-stage="#12264F" data-amp=".8" data-lift="0">
   <div class="wrap">
     <div class="tl-head">
       <span class="eyebrow rv">The 24-Hour System</span>
@@ -628,7 +628,7 @@ footer a{color:inherit}
 </section>
 
 <!-- ============ EVERY DOSE. PRINTED. ============ -->
-<section class="label-sec section-pad" id="label" data-stage="#F2C230" data-amp=".4" data-lift="0">
+<section class="label-sec section-pad" id="label" data-stage="#12264F" data-amp=".4" data-lift="0">
   <div class="wrap">
     <span class="eyebrow rv">What's In The Bag</span>
     <h2 class="rv">Every Dose. Printed.</h2>
@@ -669,7 +669,7 @@ footer a{color:inherit}
 </section>
 
 <!-- ============ STOP MIXING ============ -->
-<section class="section-pad veil" id="tubs" data-stage="#F2C230" data-amp=".7" data-lift="0">
+<section class="section-pad veil" id="tubs" data-stage="#12264F" data-amp=".7" data-lift="0">
   <div class="wrap">
     <span class="eyebrow rv">One Sachet Does The Job Of Four</span>
     <h2 class="rv">Stop Mixing Four Tubs.</h2>
@@ -758,7 +758,7 @@ footer a{color:inherit}
 </section>
 
 <!-- ============ FOUNDER STORY ============ -->
-<section class="section-pad rule-top veil" id="story" data-stage="#E6C77E" data-amp="1" data-lift=".3">
+<section class="section-pad rule-top veil" id="story" data-stage="#12264F" data-amp="1" data-lift=".3">
   <div class="wrap story-grid">
     <div>
       <div class="beat rv"><span class="eyebrow">The founder</span><h3>Tim Haught. Reconnaissance Marine. FBI Special Agent. Operations in twenty-six countries.</h3></div>
@@ -780,7 +780,7 @@ footer a{color:inherit}
 </section>
 
 <!-- ============ FRA ============ -->
-<section class="fra section-pad rule-top veil" data-stage="#F2C230" data-amp="1.1" data-lift=".2">
+<section class="fra section-pad rule-top veil" data-stage="#12264F" data-amp="1.1" data-lift=".2">
   <div class="wrap">
     <div class="fra-10" id="fraTen" aria-hidden="true">10%</div>
     <span class="eyebrow rv">Force Recon Association</span>
@@ -1015,7 +1015,7 @@ var TOPO = (function(){
     ' float inten=mix(0.10,0.34,idx)*uAmp*(0.6+0.9*lens);',
     ' float vig=smoothstep(1.3,0.15,length(uv*vec2(0.85,1.1)));',
     ' vec3 bg=vec3(0.955,0.943,0.908)+vec3(-0.010,-0.009,-0.006)*h;',
-    ' vec3 col=mix(bg, uColor*0.70, line*inten*vig*0.65);',
+    ' vec3 col=mix(bg, uColor*0.80, line*inten*vig*0.85);',
     ' gl_FragColor=vec4(col,1.0);',
     '}'
   ].join('\n');
@@ -1101,7 +1101,7 @@ document.querySelectorAll('.hero-switch button').forEach(function(b){
     b.setAttribute('aria-pressed','true');
     heroBag.classList.add('swap');
     TOPO.setColor(b.dataset.c, 1.1, .25);
-    clearTimeout(tintT); tintT = setTimeout(function(){ TOPO.setColor('#F2C230', 1, .2); }, 2400);
+    clearTimeout(tintT); tintT = setTimeout(function(){ TOPO.setColor('#12264F', 1, .2); }, 2400);
     setTimeout(function(){
       heroBag.src = b.dataset.img;
       heroBag.alt = b.textContent + ' bag';

@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steel Blue (lighter) | Prime2Performance color option</title>
+<meta name="description" content="Performance nutrition for men 45+. Every dose printed on the label. Veteran-owned. Launching Q1 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Stencil+One&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy-0:#182E57; --navy-1:#21396B; --navy-2:#264078; --navy-3:#2B4784;
+  --line-1:#32497F; --line-2:#3B548F; --line-3:#4C68A8;
+  --gold:#F2C230; --gold-h:#FFD95A;
+  --ink:#EDE9E1; --ink-2:#D2CDC2;
+  --paper:#E9E6DD; --paper-card:#F4F2EC;
+  --zerosix:#8FA6EC; --coreplus:#E0685A; --coreminus:#6FBF73; --fuel:#E8A458; --repair:#B79BEA;
+  --anton:'Anton',sans-serif; --stencil:'Saira Stencil One',sans-serif;
+  --body:'Public Sans',sans-serif; --mono:'JetBrains Mono',monospace;
+  --pad:clamp(20px,5vw,72px); --max:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);font-size:19px;line-height:1.65;color:var(--ink);background:var(--navy-0);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:var(--body);cursor:pointer}
+section{position:relative;overflow-x:clip}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);position:relative;z-index:1}
+
+/* ============ LIVE TOPO STAGE ============ */
+#topo{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,header,footer,.menu{position:relative;z-index:1}
+/* static contour fallback when WebGL is unavailable */
+html.no-gl body{background:var(--navy-0) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='560' viewBox='0 0 560 560'%3E%3Cg fill='none' stroke='%23F2C230' stroke-width='1' opacity='.12'%3E%3Cpath d='M60 480c-40-60-50-150 10-200s170-30 210 30 20 160-50 190-130 40-170-20z'/%3E%3Cpath d='M80 462c-30-50-38-124 12-166s142-26 174 24 16 134-42 158-112 34-144-16z'/%3E%3Cpath d='M102 444c-22-38-28-98 12-132s112-20 136 18 12 108-34 126-90 28-114-12z'/%3E%3Cpath d='M430 100c50-30 110-20 120 30s-30 110-90 110-90-40-80-80 20-45 50-60z'/%3E%3Cpath d='M444 122c38-22 82-14 90 24s-24 82-68 82-68-30-60-60 16-34 38-46z'/%3E%3Cpath d='M-40 120c60-40 160-30 190 30s-10 140-90 150S-60 250-60 190s-20-40 20-70z'/%3E%3Cpath d='M300 520c30-50 100-60 140-20s30 120-30 140-130-10-140-60 10-30 30-60z'/%3E%3C/g%3E%3C/svg%3E")}
+/* readability veil: a touch of navy over the stage behind text-heavy dark sections */
+.veil::before{content:"";position:absolute;inset:0;background:rgba(24,46,87,.38);pointer-events:none}
+.veil>*{position:relative}
+
+/* type */
+.eyebrow{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3,.anton{font-family:var(--anton);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.04}
+h2{font-size:clamp(36px,5vw,64px);margin:14px 0 20px}
+.sub{color:var(--ink-2);max-width:56ch}
+.stencil{font-family:var(--stencil)}
+.section-pad{padding:clamp(88px,11vw,150px) 0}
+.rule-top::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-3) 18%,var(--line-3) 82%,transparent)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 28px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid transparent;transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(170deg,var(--gold-h),var(--gold) 55%);color:var(--navy-0);border-color:var(--gold);box-shadow:0 10px 28px -12px rgba(242,194,48,.55)}
+.btn-gold:hover{background:var(--gold-h);border-color:var(--gold-h);box-shadow:0 14px 34px -12px rgba(255,217,90,.65);transform:translateY(-1px)}
+.btn-ghost{background:rgba(33,57,107,.4);color:var(--ink);border-color:var(--line-3)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* P2 mark chip */
+.p2chip{display:inline-block;font-family:var(--anton);font-size:.55em;line-height:1;padding:.18em .3em .14em;border:2px solid currentColor;border-radius:.22em;vertical-align:.18em;margin-right:.22em;letter-spacing:.02em}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* logo */
+.logo-svg{display:block;color:var(--ink)}
+
+/* ============ HEADER ============ */
+header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(24,46,87,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-1)}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:96px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.hd-menu{justify-self:start;width:48px;height:48px;border-radius:50%;border:1px solid var(--line-3);background:transparent;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.hd-menu span{display:block;width:18px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
+.hd-menu[aria-expanded="true"] span:nth-child(1){transform:translateY(3.5px) rotate(45deg)}
+.hd-menu[aria-expanded="true"] span:nth-child(2){transform:translateY(-3.5px) rotate(-45deg)}
+.hd-logo .logo-svg{height:74px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+.hd-cart{justify-self:end;display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy-0);border:none;border-radius:999px;padding:10px 18px;font-weight:700;font-size:16px;min-height:44px;transition:background .2s}
+.hd-cart:hover{background:var(--gold-h)}
+.hd-cart svg{width:17px;height:17px}
+/* menu overlay */
+.menu{position:fixed;inset:0;z-index:80;background:rgba(24,46,87,.97);display:flex;align-items:center;visibility:hidden;opacity:0;transition:opacity .3s ease,visibility .3s}
+.menu.open{visibility:visible;opacity:1}
+.menu nav{max-width:var(--max);margin:0 auto;padding:110px var(--pad) 60px;width:100%}
+.menu a{display:block;font-family:var(--anton);font-size:clamp(32px,5vw,52px);text-transform:uppercase;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--line-1);transition:color .2s,padding-left .2s}
+.menu a:hover{color:var(--gold);padding-left:12px}
+.menu .m-small{font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);border:none;margin-top:28px}
+
+/* ============ HERO ============ */
+.hero{padding-top:164px;padding-bottom:clamp(70px,8vw,110px)}
+.hero-brand{margin-bottom:30px}
+.hero-brand .logo-svg{width:clamp(280px,34vw,440px);height:auto;filter:drop-shadow(0 6px 24px rgba(0,0,0,.4))}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero-eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.hero-eyebrow .bar{width:3px;height:52px;background:linear-gradient(180deg,var(--gold-h),var(--gold));flex:none;transform-origin:top}
+.hero-eyebrow .big{font-family:var(--stencil);font-size:26px;line-height:1.1;color:var(--gold)}
+.hero-eyebrow .small{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--ink-2);display:block;margin-top:4px}
+.hero h1{font-size:clamp(46px,6.2vw,88px)}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:inline-block}
+.hero .sub{margin:24px 0 32px;font-size:20px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-launch{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--ink-2);margin-top:26px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:14px;font-size:15px;color:var(--ink-2)}
+.hero-trust span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-right:9px;vertical-align:2px}
+.hero-founder{display:inline-flex;align-items:center;gap:10px;margin-top:30px;border:1px solid var(--line-3);border-radius:999px;padding:11px 22px;text-decoration:none;font-size:15.5px;color:var(--ink-2);transition:border-color .2s,color .2s;background:rgba(33,57,107,.45)}
+.hero-founder b{color:var(--gold);font-weight:700}
+.hero-founder:hover{border-color:var(--gold);color:var(--ink)}
+/* hero visual */
+.hero-visual{position:relative}
+.hero-45{position:absolute;top:-64px;left:-18px;font-family:var(--stencil);font-size:clamp(110px,12vw,170px);line-height:1;color:transparent;-webkit-text-stroke:2px var(--gold);opacity:.45;z-index:2;pointer-events:none}
+.hero-photo{position:relative;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--navy-1);z-index:1;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.hero-photo .ph-main{width:100%;height:clamp(380px,46vw,560px);object-fit:cover;filter:saturate(.92) contrast(1.04)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,46,87,0) 40%,rgba(24,46,87,.72) 100%)}
+.hero-bagbox{position:absolute;right:18px;bottom:14px;width:clamp(150px,16vw,220px);z-index:2;transform-style:preserve-3d;perspective:700px}
+.hero-bag{width:100%;filter:drop-shadow(0 24px 34px rgba(0,0,0,.5));transition:opacity .35s ease,transform .35s ease}
+.hero-bag.swap{opacity:0;transform:translateY(10px)}
+.hero-glare{position:absolute;inset:0;pointer-events:none;background:radial-gradient(130px 130px at var(--gx,70%) var(--gy,20%),rgba(255,235,170,.55),rgba(255,235,170,0) 60%);mix-blend-mode:screen;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center}
+.hero-switch{display:flex;gap:10px;margin-top:16px}
+.hero-switch button{flex:1;min-height:48px;border-radius:999px;border:1px solid var(--line-3);background:rgba(33,57,107,.45);color:var(--ink-2);font-weight:700;font-size:16px;transition:all .2s}
+.hero-switch button[aria-pressed="true"]{color:var(--navy-0)}
+.hero-switch button[data-p="core-minus"][aria-pressed="true"]{background:var(--coreminus);border-color:var(--coreminus)}
+.hero-switch button[data-p="core-plus"][aria-pressed="true"]{background:var(--coreplus);border-color:var(--coreplus)}
+.hero-switch button[data-p="fuel"][aria-pressed="true"]{background:var(--fuel);border-color:var(--fuel)}
+
+/* ============ TIMELINE ============ */
+.tl-head{max-width:720px}
+.tl{position:relative;margin-top:clamp(44px,6vw,70px);padding-left:clamp(26px,4vw,40px)}
+.tl-rail{position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.tl-rail i{position:absolute;left:-1px;top:0;width:4px;height:100%;background:linear-gradient(180deg,var(--gold),var(--gold-h));transform-origin:top;transform:scaleY(var(--draw,0));border-radius:2px;box-shadow:0 0 14px rgba(242,194,48,.5)}
+.tl-row{position:relative;padding:clamp(22px,3vw,32px) 0;border-bottom:1px solid var(--line-1)}
+.tl-row:last-child{border-bottom:none}
+.tl-node{position:absolute;left:calc(-1 * clamp(26px,4vw,40px) + 2px);top:clamp(32px,4vw,46px);width:14px;height:14px;border-radius:50%;background:var(--navy-0);border:3px solid var(--pc,var(--gold));transition:box-shadow .3s}
+.tl-row.lit .tl-node{box-shadow:0 0 0 5px color-mix(in srgb,var(--pc) 25%,transparent),0 0 18px var(--pc)}
+.tl-main{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px}
+.tl-time{font-family:var(--stencil);font-size:clamp(30px,4vw,44px);color:var(--gold);line-height:1}
+.tl-name{font-family:var(--anton);font-size:clamp(30px,4vw,44px);color:var(--pc);line-height:1}
+.tl-when{color:var(--ink-2);font-size:17px}
+.tl-toggle{margin-top:12px;background:none;border:none;color:var(--gold);font-family:var(--mono);font-size:13px;letter-spacing:.14em;padding:10px 0;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.tl-toggle:hover{color:var(--gold-h)}
+.tl-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.tl-panel.open{grid-template-rows:1fr}
+.tl-panel>div{overflow:hidden}
+.tl-card{margin-top:16px;background:rgba(33,57,107,.85);border:1px solid var(--line-2);border-radius:14px;padding:24px 26px}
+.tl-card p{color:var(--ink-2);font-size:17px;max-width:60ch}
+.tl-doses{display:flex;flex-wrap:wrap;gap:10px 34px;margin:16px 0 6px}
+.tl-doses .d b{font-family:var(--stencil);font-weight:400;font-size:26px;color:var(--ink);display:block;line-height:1.1}
+.tl-doses .d span{font-size:14px;color:var(--ink-2)}
+.tl-status{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--gold);margin-top:10px;display:inline-block}
+
+/* ============ LABEL (light) ============ */
+.label-sec{background:var(--paper);color:var(--navy-0)}
+.label-sec::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 31px,rgba(24,46,87,.035) 31px 32px);pointer-events:none}
+.label-sec .eyebrow{color:#7a6c1e}
+.label-sec .sub{color:#3d4660}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:clamp(36px,5vw,56px) 0 18px;align-items:stretch}
+.lab-card{border-radius:16px;padding:28px;border:1px solid #d6d2c4;background:var(--paper-card)}
+.lab-card .eyebrow{display:block;margin-bottom:18px}
+.lab-row{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid #d9d5c8;font-size:18px}
+.lab-row b{font-weight:700;white-space:nowrap}
+.lab-note{font-style:italic;color:#6b7183;font-size:15.5px;padding-top:14px}
+.lab-card.navy{background:linear-gradient(165deg,var(--navy-2),var(--navy-0) 70%);color:var(--ink);border-color:var(--navy-0);box-shadow:0 24px 50px -22px rgba(24,46,87,.45)}
+.lab-card.navy .eyebrow{color:var(--gold)}
+.lab-card.navy .lab-row{border-color:var(--line-2)}
+.compare-line{font-weight:700;font-size:20px;margin:10px 0 6px}
+.trans-line{color:#3d4660;max-width:62ch}
+.trans-line b{color:var(--navy-0)}
+.ing-head{margin-top:clamp(60px,8vw,90px)}
+.ing-head h3{font-size:clamp(26px,3.4vw,40px)}
+.ing-head p{color:#3d4660;margin-top:10px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 30px}
+.filters .f-lab{width:100%;font-weight:700;font-size:16px;color:var(--navy-0)}
+.chip{border:1px solid #c9c4b4;background:transparent;color:var(--navy-0);border-radius:999px;padding:10px 18px;font-size:15.5px;font-weight:600;min-height:44px;transition:all .2s}
+.chip[aria-pressed="true"]{background:var(--navy-0);color:var(--ink);border-color:var(--navy-0)}
+.ing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ing{background:var(--paper-card);border:1px solid #ddd9cb;border-radius:14px;padding:20px;transition:transform .25s ease,box-shadow .25s ease}
+.ing:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(24,46,87,.35)}
+.ing.hide{display:none}
+.ing-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a8468;margin-bottom:14px}
+.ing-top .cat{color:var(--navy-0)}
+.ing .dose{font-family:var(--stencil);font-size:30px;line-height:1;color:var(--navy-0)}
+.ing .dose.energy{color:var(--coreplus)}
+.ing h4{font-family:var(--anton);font-size:17px;margin:8px 0 8px;letter-spacing:.02em}
+.ing p{font-size:14.5px;color:#5a6076;line-height:1.5}
+.ing-cta{margin-top:34px;font-size:18px;color:#3d4660}
+.ing-cta a{color:#8a6d00;font-weight:700}
+
+/* ============ FOUR TUBS ============ */
+.tubs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:clamp(36px,5vw,56px)}
+.tub-card{border-radius:16px;padding:30px;border:1px solid var(--line-2);background:rgba(33,57,107,.85)}
+.tub-card .eyebrow{display:block;margin-bottom:20px;color:var(--ink-2)}
+.tub-row{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line-1)}
+.tub-row:last-of-type{border-bottom:none}
+.tub-num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy-3);display:flex;align-items:center;justify-content:center;font-family:var(--stencil);font-size:16px;color:var(--ink-2)}
+.tub-row h4{font-family:var(--anton);font-size:18px;letter-spacing:.03em}
+.tub-row p{font-size:15.5px;color:var(--ink-2)}
+.tub-sum{margin-top:18px;font-weight:700;font-size:18px}
+.tub-card.p2{background:linear-gradient(160deg,var(--navy-2),var(--navy-0));border-color:var(--line-3);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px;box-shadow:inset 0 1px 0 rgba(242,194,48,.18),0 30px 60px -30px rgba(0,0,0,.6)}
+.tub-card.p2 .eyebrow{color:var(--gold)}
+.tub-card.p2 .one{font-family:var(--anton);font-size:clamp(40px,5vw,58px);line-height:1}
+.tub-card.p2 p{color:var(--ink-2);max-width:40ch}
+
+/* ============ PRODUCT BANDS ============ */
+.band{background:rgba(24,46,87,.3)}
+.band::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-2) 20%,var(--line-2) 80%,transparent)}
+.band .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center;padding-top:clamp(70px,8vw,100px);padding-bottom:clamp(70px,8vw,100px)}
+.band-shot{position:relative;display:flex;justify-content:center}
+.band-shot::before{content:"";position:absolute;width:74%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--pc) 0%,transparent 68%);opacity:.26;top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(6px)}
+.band-shot img{width:clamp(240px,26vw,330px);position:relative;filter:drop-shadow(0 34px 44px rgba(0,0,0,.55));transition:transform .4s ease}
+.band:hover .band-shot img{transform:translateY(-8px) rotate(-1.2deg)}
+.band-info .eyebrow{color:var(--ink-2)}
+.band-name{font-family:var(--anton);font-size:clamp(56px,7vw,92px);line-height:1;color:var(--pc);margin:10px 0 16px;text-shadow:0 18px 50px color-mix(in srgb,var(--pc) 35%,transparent)}
+.band-info>p{color:var(--ink-2);max-width:46ch}
+.band-stats{display:flex;flex-wrap:wrap;gap:14px 44px;margin:26px 0}
+.band-stats .d b{font-family:var(--stencil);font-weight:400;font-size:34px;color:var(--gold);display:block;line-height:1.1}
+.band-stats .d span{font-size:15px;color:var(--ink-2)}
+.band-price b{font-family:var(--stencil);font-weight:400;font-size:34px;margin-right:10px}
+.band-price .onsub{color:var(--gold);font-weight:700;font-size:15px}
+.band-price p{font-size:15px;color:var(--ink-2);margin-top:4px}
+.band-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:22px}
+.link-label{background:none;border:none;color:var(--ink);font-size:16.5px;font-weight:600;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.link-label:hover{color:var(--gold)}
+
+/* ============ STORY ============ */
+.story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,80px)}
+.beat{margin-bottom:clamp(30px,4vw,44px)}
+.beat .eyebrow{color:var(--gold);display:block;margin-bottom:10px}
+.beat h3{font-size:clamp(24px,2.9vw,36px);line-height:1.12;max-width:24ch}
+.story-quote{margin-top:clamp(36px,5vw,54px);border-top:1px solid var(--line-2);padding-top:clamp(30px,4vw,44px)}
+.story-quote h3{font-size:clamp(32px,4vw,52px);color:var(--gold);max-width:18ch;line-height:1.08}
+.story-quote .by{font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);margin:18px 0 26px}
+.story-photos{display:flex;flex-direction:column;gap:22px;position:sticky;top:120px;align-self:start}
+.ph{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line-2);box-shadow:0 30px 60px -34px rgba(0,0,0,.7)}
+.ph img{width:100%;height:300px;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+.ph.cross::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(var(--gold) 0 0) center/100% 1px no-repeat,
+  linear-gradient(var(--gold) 0 0) center/1px 100% no-repeat;opacity:.55}
+.ph .cap{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:linear-gradient(180deg,transparent,rgba(24,46,87,.88))}
+
+/* ============ FRA ============ */
+.fra{text-align:center}
+.fra-10{font-family:var(--stencil);font-size:clamp(110px,16vw,210px);line-height:.95;color:transparent;-webkit-text-stroke:2.5px var(--gold);filter:drop-shadow(0 0 28px rgba(242,194,48,.25))}
+.fra h2{max-width:21ch;margin-left:auto;margin-right:auto}
+.fra p{color:var(--ink-2);max-width:54ch;margin:0 auto}
+.fra-logo{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:40px;flex-wrap:wrap}
+.fra-logo img{height:88px;width:auto}
+.fra-logo span{font-size:15px;color:var(--ink-2);max-width:34ch;text-align:left}
+
+/* ============ FOUNDERS ============ */
+.founders{text-align:center}
+.founders .sub{margin:0 auto;max-width:58ch}
+.f-kit{max-width:760px;margin:clamp(34px,5vw,50px) auto 0;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);box-shadow:0 30px 60px -34px rgba(0,0,0,.7)}
+.f-kit img{width:100%;height:clamp(220px,30vw,340px);object-fit:cover}
+.f-grid{display:grid;grid-template-columns:repeat(11,1fr);gap:7px;max-width:640px;margin:clamp(34px,5vw,50px) auto 0}
+.f-grid button{aspect-ratio:1;border-radius:7px;border:1px solid var(--line-3);background:transparent;transition:all .15s;min-width:0}
+.f-grid button:hover{border-color:var(--gold);transform:scale(1.12)}
+.f-grid button.claimed{background:linear-gradient(160deg,var(--gold-h),var(--gold));border-color:var(--gold);cursor:default;box-shadow:0 2px 8px -2px rgba(242,194,48,.5)}
+.f-grid button.sel{background:var(--gold-h);border-color:var(--gold-h);box-shadow:0 0 0 3px rgba(242,194,48,.35)}
+.f-grid.cascade button{animation:fpop .5s cubic-bezier(.34,1.56,.64,1) backwards}
+@keyframes fpop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.f-grid.cascade button{animation:none}}
+.f-count{font-family:var(--mono);font-size:14px;letter-spacing:.14em;color:var(--ink-2);margin-top:22px}
+.f-count b{color:var(--gold);font-weight:500}
+.f-claim{max-width:520px;margin:26px auto 0;display:none;gap:10px}
+.f-claim.open{display:flex}
+.f-claim input{flex:1;min-height:52px;border-radius:999px;border:1px solid var(--line-3);background:var(--navy-1);color:var(--ink);padding:0 22px;font-size:16px;font-family:var(--body)}
+.f-claim input::placeholder{color:#7c88ab}
+.f-cta{margin-top:26px}
+.f-done{color:var(--gold);font-weight:600;margin-top:18px;display:none}
+
+/* ============ LOADOUT ============ */
+.loadout{background:linear-gradient(180deg,rgba(24,46,87,.86),rgba(9,18,38,.94))}
+/* commerce cards: cream, echoing the bags — navy ink, dark-gold accents */
+:root{--gold-ink:#8a6d00; --save-ink:#3E8C4B; --cream-line:#DDD8C9; --cream-line-2:#CFC9B6; --ink-soft:#5a6076; --ink-body:#3d4660}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(30px,4vw,44px)}
+.tile{background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:14px;padding:22px;transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 14px 34px -22px rgba(0,0,0,.55)}
+.tile:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(0,0,0,.6)}
+.tile .t-lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;color:var(--ink-soft);text-transform:uppercase}
+.tile .t-price{font-family:var(--stencil);font-size:34px;margin:8px 0 4px}
+.tile p{font-size:14.5px;color:var(--ink-soft)}
+.tile.hot{border-color:var(--gold);background:linear-gradient(170deg,var(--navy-2),var(--navy-1));color:var(--ink);box-shadow:inset 0 1px 0 rgba(242,194,48,.25),0 14px 34px -22px rgba(0,0,0,.55)}
+.tile.hot .t-lab,.tile.hot .t-price{color:var(--gold)}
+.tile.hot p{color:var(--ink-2)}
+.tiles-note{font-size:15.5px;color:var(--ink-2);margin-top:16px}
+.pair{margin-top:clamp(34px,5vw,50px);background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:16px;padding:clamp(24px,3.5vw,38px);display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center;position:relative;box-shadow:0 20px 44px -24px rgba(0,0,0,.6)}
+.pair-badge{position:absolute;top:-13px;left:clamp(24px,3.5vw,38px);background:var(--gold);color:var(--navy-0);font-family:var(--mono);font-size:11px;letter-spacing:.14em;font-weight:500;padding:5px 14px;border-radius:999px;text-transform:uppercase}
+.pair h3{font-size:clamp(22px,2.6vw,30px)}
+.pair p{color:var(--ink-body);font-size:17px;margin-top:8px}
+.pair .pair-price{font-weight:700;margin-top:12px;font-size:17px}
+.pair-btns{display:flex;flex-direction:column;gap:10px}
+.pair-btns button{min-height:50px;border-radius:999px;font-weight:700;font-size:15.5px;border:1.5px solid var(--navy-0);background:transparent;color:var(--navy-0);transition:all .2s}
+.pair-btns button:hover{background:var(--navy-0);color:var(--ink)}
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(30px,4vw,44px)}
+.prod{background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:16px;padding:22px;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 16px 38px -24px rgba(0,0,0,.55)}
+.prod:hover{transform:translateY(-5px);box-shadow:0 28px 54px -26px rgba(0,0,0,.6)}
+.prod-img{height:230px;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:16px}
+.prod-img::before{content:"";position:absolute;width:64%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--pc) 0%,transparent 66%);opacity:.22;top:50%;left:50%;transform:translate(-50%,-50%)}
+.prod-img img{height:100%;width:auto;position:relative;filter:drop-shadow(0 20px 26px rgba(24,46,87,.35));transition:transform .35s ease}
+.prod:hover .prod-img img{transform:translateY(-6px) scale(1.03)}
+.prod-ctx{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-soft)}
+.prod-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;border:1px solid var(--cream-line-2);border-radius:999px;padding:4px 10px;white-space:nowrap}
+.prod-name{font-family:var(--anton);font-size:34px;margin:8px 0 4px;color:var(--pci,var(--pc))}
+.prod[data-prod="core-minus"]{--pci:#3E8C4B}
+.prod[data-prod="core-plus"]{--pci:#C8503F}
+.prod[data-prod="fuel"]{--pci:#BC7320}
+.prod-price b{font-family:var(--stencil);font-weight:400;font-size:25px;margin-right:8px}
+.prod-price .onsub{color:var(--gold-ink);font-weight:700;font-size:13.5px}
+.prod-price p{font-size:13.5px;color:var(--ink-soft);margin-top:2px}
+.qty{display:flex;align-items:center;gap:14px;margin:16px 0 12px}
+.qty button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--cream-line-2);background:transparent;color:var(--navy-0);font-size:21px;font-weight:700;transition:all .15s}
+.qty button:hover{border-color:var(--navy-0);background:var(--navy-0);color:var(--ink)}
+.qty .q{font-family:var(--stencil);font-size:24px;min-width:30px;text-align:center}
+.prod .link-label{align-self:flex-start;padding:0;font-size:15.5px;color:var(--navy-0)}
+.prod .link-label:hover{color:var(--gold-ink)}
+.sub-toggle{display:flex;align-items:center;gap:14px;margin-top:clamp(30px,4vw,42px);background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:14px;padding:18px 22px;box-shadow:0 14px 34px -24px rgba(0,0,0,.5)}
+.switch{position:relative;width:56px;height:32px;border-radius:999px;background:var(--cream-line);border:1px solid var(--cream-line-2);transition:background .2s;flex:none}
+.switch::after{content:"";position:absolute;top:3px;left:4px;width:24px;height:24px;border-radius:50%;background:var(--ink-soft);transition:transform .2s,background .2s}
+.switch[aria-pressed="true"]{background:var(--gold)}
+.switch[aria-pressed="true"]::after{transform:translateX(23px);background:var(--navy-0)}
+.sub-toggle .st-txt b{display:block;font-size:17px}
+.sub-toggle .st-txt span{font-size:14.5px;color:var(--ink-soft)}
+.summary{margin-top:18px;background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:16px;padding:clamp(22px,3vw,32px);box-shadow:0 24px 50px -26px rgba(0,0,0,.6)}
+.sum-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:7px 0}
+.sum-row.total b{font-family:var(--stencil);font-weight:400;font-size:38px}
+.sum-row .sv{color:var(--save-ink);font-weight:600;font-size:15.5px}
+.sum-note{font-size:14.5px;color:var(--ink-soft)}
+.ship{margin:14px 0 20px}
+.ship-bar{height:7px;border-radius:999px;background:var(--cream-line);overflow:hidden}
+.ship-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-h));transition:width .4s ease}
+.ship p{font-size:13.5px;color:var(--ink-soft);margin-top:8px;font-family:var(--mono);letter-spacing:.06em}
+.ship p.unlocked{color:var(--gold-ink)}
+.summary .btn{width:100%}
+.coming{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:clamp(34px,5vw,50px)}
+.cs{background:var(--paper-card);color:var(--navy-0);border:1px solid var(--cream-line);border-radius:16px;padding:26px;position:relative;overflow:hidden;box-shadow:0 16px 38px -24px rgba(0,0,0,.5)}
+.cs::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,var(--pc),transparent 70%);opacity:.22;top:-60px;right:-60px}
+.cs .prod-ctx{position:relative}
+.cs .prod-name{font-size:40px}
+.cs .link-label{margin-top:12px;color:var(--navy-0)}
+.cs .link-label:hover{color:var(--gold-ink)}
+
+/* ============ SUMMIT ============ */
+.summit{position:relative;text-align:center;overflow:hidden}
+.summit-bg{position:absolute;inset:0}
+.summit-bg img{width:100%;height:112%;object-fit:cover;filter:saturate(.7) brightness(.42)}
+.summit-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--navy-0) 0%,rgba(24,46,87,.35) 40%,var(--navy-0) 100%)}
+.summit .wrap{position:relative;z-index:1}
+.summit-ft{font-family:var(--stencil);font-size:clamp(76px,12vw,170px);line-height:1;background:linear-gradient(180deg,var(--gold-h),var(--gold) 70%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 30px rgba(242,194,48,.3))}
+.summit p{color:var(--ink-2);max-width:44ch;margin:18px auto 0}
+.notify{display:flex;gap:10px;max-width:520px;margin:34px auto 0}
+.notify input{flex:1;min-height:54px;border-radius:999px;border:1px solid var(--line-3);background:rgba(33,57,107,.8);color:var(--ink);padding:0 22px;font-size:16px;font-family:var(--body)}
+.notify input::placeholder{color:#7c88ab}
+.notify-done{color:var(--gold);font-weight:600;margin-top:16px;display:none}
+.notify-lab{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;color:var(--ink-2);margin-top:30px;text-transform:uppercase}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line-1);border-bottom:1px solid var(--line-1);overflow:hidden;padding:26px 0;background:rgba(24,46,87,.6)}
+.marquee-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:mq 36s linear infinite}
+.marquee span{font-family:var(--anton);font-size:clamp(34px,4.5vw,56px);color:transparent;-webkit-text-stroke:1.5px var(--line-3);padding-right:28px}
+.marquee span b{color:var(--gold);-webkit-text-stroke:0;font-weight:400}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ============ FOOTER ============ */
+footer{padding:clamp(60px,8vw,90px) 0 44px;background:rgba(24,46,87,.55)}
+.ft-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr .7fr;gap:clamp(28px,4vw,56px)}
+.ft-logo .logo-svg{width:230px;height:auto}
+.ft-tag{color:var(--ink-2);font-size:16.5px;margin-top:20px;max-width:34ch}
+.ft-col h5{font-family:var(--mono);font-weight:500;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.ft-col a{display:block;color:var(--ink-2);text-decoration:none;padding:6px 0;font-size:16.5px;transition:color .2s}
+.ft-col a:hover{color:var(--ink)}
+.ft-legal{border-top:1px solid var(--line-1);margin-top:clamp(40px,5vw,60px);padding-top:30px;color:#8e97b3;font-size:14px;max-width:72ch}
+.ft-legal p+p{margin-top:12px}
+
+/* ============ LABEL MODAL ============ */
+dialog.facts{border:none;border-radius:16px;padding:0;max-width:480px;width:calc(100% - 32px);background:var(--paper-card);color:var(--navy-0);max-height:88vh}
+dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
+.facts-in{padding:26px 26px 30px;overflow:auto;max-height:88vh}
+.facts-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.facts-head h4{font-family:var(--anton);font-size:24px}
+.facts-close{width:44px;height:44px;border-radius:50%;border:1px solid #c9c4b4;background:none;font-size:19px;color:var(--navy-0)}
+.sf{border:2.5px solid var(--navy-0);border-radius:8px;padding:14px 16px;margin-top:14px;background:#fff}
+.sf h5{font-family:var(--anton);font-size:27px;border-bottom:8px solid var(--navy-0);padding-bottom:6px;letter-spacing:.01em}
+.sf .srv{font-size:14.5px;padding:7px 0;border-bottom:1px solid var(--navy-0)}
+.sf table{width:100%;border-collapse:collapse;font-size:14.5px}
+.sf td{padding:6px 0;border-bottom:1px solid #d8d4c6}
+.sf td:last-child{text-align:right;white-space:nowrap;font-weight:600}
+.sf tr.rule td{border-bottom:4px solid var(--navy-0)}
+.sf-notes{font-size:12.5px;color:#5a6076;margin-top:12px;line-height:1.5}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1020px){
+  .ing-grid{grid-template-columns:repeat(3,1fr)}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .shop-grid{grid-template-columns:1fr 1fr}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .ft-logo{grid-column:1/-1}
+}
+@media(max-width:820px){
+  body{font-size:18px}
+  .hero{padding-top:116px}
+  .hero-brand{margin-bottom:24px}
+  .hero-brand .logo-svg{width:min(78vw,340px)}
+  .hero-grid,.story-grid,.band .wrap{grid-template-columns:1fr}
+  .hero-45{top:-30px;right:0;left:auto;font-size:110px}
+  .story-photos{position:static}
+  .compare,.tubs,.pair,.coming{grid-template-columns:1fr}
+  .ing-grid{grid-template-columns:1fr 1fr}
+  .shop-grid{grid-template-columns:1fr}
+  .band-shot{order:-1}
+  .hd{height:80px}.hd-logo .logo-svg{height:58px}
+  .f-grid{gap:5px}
+  .notify{flex-direction:column}
+  .f-claim{flex-direction:column}
+  .tl-main{gap:4px 14px}
+}
+@media(max-width:480px){
+  .ing-grid{grid-template-columns:1fr}
+  .tiles{grid-template-columns:1fr 1fr}
+  .tile{padding:16px}
+  .tile .t-price{font-size:26px}
+  .ph img{height:230px}
+  .hero-45{top:-46px;font-size:96px}
+}
+</style>
+<style>/* variant mock: content always visible */
+.rv{opacity:1 !important;transform:none !important}
+</style>
+</head>
+<body>
+<canvas id="topo" aria-hidden="true"></canvas>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="p2logo" viewBox="0 0 1504 688"><path d="M1297.5 616.6C1300.1 616.2 1303.4 614.7 1305.6 612.9C1307.6 611.3 1311.0 609.5 1313.2 608.8C1319.3 607.0 1335.8 590.1 1336.7 584.8C1337.0 582.6 1338.3 579.6 1339.5 578.2C1344.8 571.7 1344.5 585.5 1344.8 374.5C1344.9 259.8 1344.6 175.8 1344.1 171.9C1343.5 167.6 1342.3 163.9 1340.6 161.4C1339.2 159.2 1337.4 155.3 1336.6 152.7C1333.9 143.7 1311.6 121.1 1303.8 119.5C1302.0 119.1 1297.3 117.4 1293.5 115.8C1284.2 111.8 1273.3 111.3 1216.0 112.2C1192.1 112.6 1146.4 112.7 1114.5 112.4L1056.5 111.8L1053.0 114.2C1046.6 118.5 1045.7 128.7 1051.1 133.6C1053.1 135.4 1056.9 135.5 1172.4 136.0L1291.7 136.5L1296.1 139.8C1298.5 141.5 1302.5 144.5 1304.9 146.3C1307.3 148.0 1311.5 152.7 1314.1 156.5C1321.6 167.2 1321.4 163.5 1321.6 282.2C1321.8 380.7 1322.6 425.3 1325.1 477.5C1325.7 490.1 1326.0 512.6 1325.8 527.5C1325.5 553.3 1325.4 554.7 1323.2 558.8C1322.0 561.1 1320.5 565.4 1320.0 568.2C1318.2 577.3 1308.1 588.5 1298.8 591.5C1295.9 592.5 1291.5 594.2 1289.0 595.4C1284.6 597.4 1283.4 597.5 1250.5 597.2C1231.8 597.1 1210.0 596.5 1202.0 596.0C1158.7 593.1 1134.6 592.9 788.0 592.4C426.3 591.9 400.2 592.0 324.5 595.5C306.9 596.3 280.7 597.0 266.3 597.0C240.8 597.0 239.9 596.9 233.8 594.5C230.3 593.2 225.7 591.8 223.5 591.5C217.3 590.6 201.3 573.6 200.5 567.1C200.2 564.6 199.2 559.6 198.4 556.0C197.1 550.7 196.7 540.3 196.4 499.5C196.2 472.0 195.5 402.9 194.9 346.0C194.3 289.1 193.9 229.0 194.2 212.5C194.6 182.5 194.6 182.5 197.3 176.3C198.8 172.9 200.0 169.3 200.0 168.3C200.0 161.2 208.7 149.1 217.4 144.0C220.2 142.3 223.7 140.0 225.1 138.9C229.4 135.5 244.2 134.9 330.5 135.0C386.0 135.0 421.2 134.6 445.5 133.5C464.8 132.7 485.9 132.0 492.5 132.0C505.6 132.0 511.2 130.4 514.4 125.9C519.2 119.0 512.6 109.6 503.0 109.7C500.5 109.8 441.8 110.1 372.5 110.4C242.4 111.1 233.0 111.4 225.8 115.1C223.5 116.3 219.2 118.1 216.2 119.1C206.4 122.5 186.0 142.0 183.5 150.6C182.6 153.4 180.8 157.2 179.5 159.1C174.3 166.1 174.5 157.0 174.7 365.9C174.9 571.9 174.8 568.5 179.6 574.7C180.9 576.5 182.8 579.9 183.6 582.2C184.4 584.5 185.9 587.4 186.9 588.5C187.9 589.6 189.8 592.1 191.1 594.1C194.3 598.9 204.2 606.8 209.1 608.5C211.3 609.3 214.5 611.0 216.3 612.3C220.3 615.3 222.8 616.2 230.5 616.9C238.7 617.7 1292.1 617.4 1297.5 616.6ZM270.0 562.2C272.0 560.2 273.0 557.9 273.5 554.3C274.7 545.6 274.7 545.6 301.1 545.0L323.9 544.5L328.4 540.1C334.5 534.1 336.0 530.6 336.0 522.3C336.0 513.8 333.8 508.9 327.8 503.3C321.2 497.3 319.1 497.0 287.3 497.0L259.1 497.0L257.1 499.6C255.1 502.2 255.0 503.5 255.0 529.7C255.0 552.5 255.3 557.6 256.6 560.1C259.3 565.5 265.7 566.5 270.0 562.2ZM412.0 563.5C418.0 560.4 417.8 547.9 411.8 546.6C410.5 546.3 400.9 545.9 390.4 545.8C370.5 545.5 368.0 545.0 368.0 541.0C368.0 537.1 370.6 536.5 386.9 536.4C406.3 536.3 405.6 536.4 408.0 534.0C410.9 531.1 410.6 526.6 407.4 524.1C404.9 522.2 403.4 522.0 388.1 522.0C370.2 522.0 367.0 521.2 367.0 516.8C367.0 512.5 369.3 512.1 391.0 512.0C414.7 512.0 416.0 511.6 416.0 504.9C416.0 496.9 416.3 497.0 380.6 497.0C352.2 497.0 349.0 497.2 347.1 498.8C343.1 502.0 343.2 560.4 347.2 563.2C347.4 563.3 360.1 563.7 375.5 564.0C390.9 564.3 404.8 564.7 406.3 564.8C407.8 564.9 410.4 564.3 412.0 563.5ZM446.1 560.6C447.1 558.9 448.0 555.9 448.0 553.9C448.0 551.7 448.8 549.2 450.1 547.6C452.1 545.0 452.2 545.0 466.3 545.0C484.8 545.0 486.0 545.7 488.5 557.3C489.5 562.2 492.3 564.0 498.9 564.0C510.2 564.0 514.0 556.4 508.4 544.8L505.6 538.9L507.4 534.2C513.0 519.4 511.8 510.6 503.1 502.7C497.2 497.4 494.6 497.0 463.3 497.0C433.4 497.0 431.1 497.3 429.1 501.7C427.3 505.7 427.6 555.4 429.5 559.0C430.4 560.7 431.2 562.0 431.3 562.0C431.4 562.0 433.2 562.6 435.3 563.4C440.5 565.2 443.8 564.3 446.1 560.6ZM536.3 563.5C541.4 562.7 543.3 559.4 544.1 550.1C545.0 539.2 545.3 539.0 564.5 539.0C581.2 539.0 584.0 538.4 586.6 534.5C588.1 532.2 588.1 531.8 586.6 529.5C584.1 525.8 578.4 524.7 563.5 525.2C556.3 525.5 549.5 525.4 548.2 524.9C543.6 523.2 543.3 514.3 547.8 512.5C548.8 512.2 557.4 511.9 567.0 512.0C589.3 512.2 587.6 512.4 590.0 509.8C592.5 507.1 592.6 502.0 590.2 499.0C588.2 496.5 590.9 496.6 546.2 496.9C525.4 497.0 523.9 497.1 522.0 499.0C520.1 500.9 520.0 502.3 520.0 529.2C520.0 560.1 520.6 563.2 526.2 564.3C528.5 564.7 529.4 564.6 536.3 563.5ZM669.5 562.8C677.2 560.4 684.0 554.7 686.6 548.5C688.6 543.6 688.6 518.3 686.5 513.4C684.0 507.4 679.2 502.2 673.5 499.5C668.2 496.9 667.9 496.8 643.8 496.7C617.0 496.5 615.0 496.9 607.1 503.6C601.0 508.7 600.0 512.4 600.0 530.8C600.0 548.9 600.6 551.4 606.1 556.7C612.9 563.2 618.7 564.3 648.0 564.7C660.5 564.9 663.5 564.7 669.5 562.8ZM714.4 563.6C717.9 562.1 720.0 558.2 720.0 552.8C720.0 551.0 721.0 548.9 722.6 547.4C725.1 544.8 725.3 544.8 738.5 545.2C754.4 545.6 756.3 546.5 759.2 554.9C762.0 563.4 764.9 565.5 772.2 564.4C781.6 562.8 784.5 555.1 779.1 545.7C775.3 539.0 775.3 539.0 779.0 531.2C784.6 519.4 781.2 507.1 770.5 500.5L765.7 497.5L735.1 497.2C711.7 497.0 703.9 497.3 702.0 498.3C697.5 500.6 696.9 505.0 697.2 533.1C697.5 562.1 697.5 562.1 705.4 563.9C711.1 565.1 710.7 565.2 714.4 563.6ZM808.2 562.4C813.3 559.8 814.0 557.6 814.0 544.3C814.0 525.3 817.7 524.2 827.1 540.6C834.3 553.2 842.5 563.8 845.6 564.6C852.5 566.4 860.6 557.9 871.0 538.1C874.4 531.5 875.9 530.0 878.6 530.0C882.2 530.0 883.0 532.9 883.0 545.4C883.0 556.7 883.1 557.1 885.8 560.1C889.9 564.7 897.4 565.4 901.0 561.5L903.5 558.8L903.5 529.5C903.5 493.7 904.7 496.4 889.2 496.8C876.1 497.1 876.0 497.2 867.7 509.7C864.2 515.1 860.3 520.3 859.2 521.4C858.0 522.4 856.4 525.4 855.5 528.1C853.1 535.4 845.7 536.3 842.2 529.8C841.3 528.1 839.1 524.9 837.3 522.6C835.5 520.4 833.1 516.7 831.9 514.6C829.0 509.2 822.3 499.5 820.5 498.0C819.5 497.2 815.7 496.7 809.7 496.8C796.2 496.8 796.2 496.8 794.0 499.0C792.1 500.9 792.0 502.3 792.0 528.5C792.0 558.3 792.6 562.1 797.2 563.9C799.9 564.9 804.3 564.3 808.2 562.4ZM1103.0 562.1C1107.7 558.7 1108.0 557.2 1108.0 529.4C1108.0 504.5 1107.9 503.1 1105.9 500.7C1101.9 495.5 1092.5 495.2 1088.8 500.1C1087.3 502.1 1087.0 504.6 1086.9 516.8C1086.9 524.7 1086.6 531.8 1086.3 532.6C1084.9 536.4 1081.2 533.7 1064.5 516.4C1045.8 496.9 1044.4 496.0 1033.8 496.1C1024.9 496.1 1020.0 497.7 1018.3 501.0C1016.4 504.8 1016.5 553.8 1018.5 558.5C1021.1 564.8 1031.0 566.2 1036.1 561.1L1039.0 558.2L1039.0 543.3C1039.0 532.4 1039.4 527.9 1040.3 526.5C1042.7 523.4 1046.1 525.3 1051.5 532.7C1056.1 539.1 1073.3 557.8 1077.4 560.9C1082.9 565.0 1097.8 565.7 1103.0 562.1ZM1269.7 563.2C1274.1 560.8 1275.2 551.1 1271.3 547.9C1270.1 546.9 1264.7 546.4 1251.5 546.0C1232.5 545.5 1230.0 544.9 1230.0 540.9C1230.0 537.4 1233.6 536.7 1250.2 536.9C1269.8 537.1 1272.0 536.3 1272.0 528.8C1272.0 522.3 1269.4 521.4 1251.3 521.8C1234.8 522.2 1229.5 521.3 1228.4 517.8C1227.0 513.2 1229.6 512.5 1250.4 512.0C1264.7 511.6 1270.1 511.1 1271.3 510.1C1273.9 508.0 1273.5 501.8 1270.6 499.1C1267.1 495.8 1213.3 495.3 1210.0 498.6C1208.0 500.6 1207.9 501.6 1207.9 529.4C1207.9 560.1 1208.2 562.0 1213.0 563.8C1216.2 565.0 1267.4 564.4 1269.7 563.2ZM932.7 562.5C933.9 561.7 935.8 559.4 937.0 557.5C940.0 552.6 944.0 551.8 963.7 552.2L980.2 552.5L983.8 556.7C990.4 564.3 1001.8 566.6 1006.0 561.3C1008.5 558.0 1008.1 555.4 1003.9 549.1C1002.3 546.6 1001.0 543.8 1001.0 542.9C1001.0 541.9 999.0 538.8 996.5 536.0C994.0 533.2 992.0 530.0 992.0 528.9C992.0 526.4 989.7 521.8 987.5 520.0C986.5 519.2 984.8 516.3 983.6 513.5C979.8 505.2 974.0 498.1 970.0 497.1C965.2 495.8 952.9 497.2 949.7 499.3C948.2 500.2 946.1 502.9 944.9 505.3C943.7 507.6 941.5 511.1 940.0 513.0C938.4 514.9 936.7 518.4 936.1 520.6C935.5 522.8 933.8 525.7 932.4 527.1C930.9 528.4 928.6 531.8 927.3 534.5C926.0 537.2 923.4 541.9 921.5 544.9C916.3 553.1 914.5 558.5 915.8 561.5C916.9 563.8 917.5 564.0 923.8 564.0C928.2 564.0 931.3 563.5 932.7 562.5ZM1186.0 561.2C1195.2 556.6 1201.3 543.2 1196.2 538.8C1191.3 534.4 1181.5 535.5 1176.0 541.1L1172.2 545.0L1159.3 544.9C1139.4 544.9 1137.0 543.3 1137.0 530.4C1137.0 524.1 1137.3 522.8 1140.0 519.2C1144.4 513.1 1147.3 512.0 1158.4 512.0C1169.7 512.0 1171.8 512.7 1176.9 518.0C1180.4 521.7 1181.1 522.0 1185.9 522.0C1198.9 522.0 1200.7 516.3 1191.5 503.8C1186.2 496.6 1182.1 495.7 1156.2 496.2C1133.4 496.6 1129.6 497.6 1122.5 505.0C1117.3 510.4 1116.4 543.6 1121.2 552.2C1126.6 561.9 1133.2 563.9 1160.1 564.0C1180.6 564.0 1180.7 564.0 1186.0 561.2ZM624.9 542.2C618.5 536.4 620.1 519.3 627.6 514.4C629.6 513.0 632.8 512.7 644.7 512.6C662.6 512.6 663.4 513.1 664.5 525.3C666.2 543.4 664.5 545.0 643.4 545.0L628.0 545.0L624.9 542.2ZM954.2 535.4C948.6 531.5 954.8 519.5 962.1 520.2C965.9 520.6 971.7 529.3 970.5 532.9C969.4 536.6 958.3 538.3 954.2 535.4ZM277.3 527.0C272.0 524.9 271.9 517.1 277.2 514.4C280.7 512.6 296.4 511.4 303.4 512.4C309.0 513.3 312.0 516.1 312.0 520.7C312.0 527.2 309.9 528.0 293.8 527.9C285.9 527.9 278.5 527.5 277.3 527.0ZM450.0 526.0C447.2 523.2 447.3 517.0 450.1 514.4C451.8 512.9 454.1 512.4 462.2 512.2C481.3 511.5 488.0 513.8 488.0 521.0C488.0 527.3 485.9 528.0 468.0 528.0C453.3 528.0 451.8 527.8 450.0 526.0ZM721.6 526.1C719.0 523.3 719.8 517.2 723.0 514.9C726.3 512.4 750.0 511.7 754.0 513.9C759.3 516.9 760.6 522.4 757.0 526.0C754.0 529.0 724.3 529.1 721.6 526.1ZM293.6 479.6C297.0 478.6 298.0 474.7 298.0 463.1C298.0 453.0 298.2 452.1 300.9 447.8C305.7 440.3 304.1 440.6 346.5 440.0L384.5 439.5L391.4 436.0C399.9 431.7 405.4 426.6 411.3 417.7C416.7 409.8 417.5 405.5 416.8 388.6C416.4 377.3 416.4 377.2 412.0 369.9C405.5 358.8 400.3 354.0 389.7 348.9L380.5 344.5L319.6 344.5L258.7 344.5L256.7 347.2C255.0 349.5 254.8 350.7 255.5 356.4C256.4 365.4 262.0 372.2 273.0 377.7L280.5 381.5L322.5 382.0C364.0 382.5 364.5 382.5 368.2 384.8C374.1 388.5 374.9 393.6 370.6 401.7C367.3 408.2 368.6 408.0 324.5 408.0C301.6 408.0 282.7 408.5 280.2 409.0C271.7 411.0 257.7 424.1 255.9 431.8C254.6 437.2 254.8 474.7 256.1 477.1C256.7 478.2 258.0 479.4 259.1 479.8C261.5 480.7 290.7 480.6 293.6 479.6ZM476.6 479.6C480.1 478.7 481.0 475.4 481.0 462.6C481.0 452.7 481.3 450.9 483.1 448.6L485.1 446.0L516.2 446.0C556.9 446.0 556.9 446.0 557.8 465.5C558.4 480.3 558.0 480.0 579.2 480.0C588.7 480.0 597.0 479.6 598.0 479.0C601.0 477.4 601.6 472.6 601.0 456.3C600.4 439.1 600.0 438.1 591.9 432.4C585.7 428.0 585.8 426.8 593.3 419.5C598.9 414.1 599.9 412.5 600.9 407.9C601.6 404.9 602.7 400.6 603.5 398.2C605.9 391.3 605.3 385.6 600.0 366.0C598.7 361.1 590.0 353.0 581.1 348.4L573.6 344.5L508.9 344.2C438.0 343.9 439.2 343.8 437.0 349.6C435.6 353.2 435.7 470.8 437.0 474.7C438.2 478.0 440.9 479.8 445.5 480.2C450.7 480.7 473.9 480.2 476.6 479.6ZM667.2 480.0C673.2 478.3 673.1 478.7 672.8 409.7L672.5 347.8L670.1 345.9C666.2 342.7 631.1 343.4 627.9 346.7L625.7 348.8L625.8 411.0C625.9 445.2 626.2 474.0 626.5 475.1C627.7 478.7 631.0 479.5 647.0 480.0C655.5 480.4 662.7 480.7 663.0 480.8C663.3 480.9 665.2 480.5 667.2 480.0ZM1271.3 477.9C1272.9 475.9 1273.1 474.3 1272.8 466.8C1272.5 458.4 1272.4 458.0 1269.0 454.5C1262.6 447.8 1264.1 448.0 1221.3 448.0C1179.2 448.0 1178.0 447.9 1178.0 442.6C1178.0 439.8 1184.7 433.4 1188.6 432.4C1190.1 432.0 1199.2 432.0 1208.9 432.3C1234.5 433.0 1242.5 432.1 1252.8 426.8C1260.2 423.0 1261.7 421.8 1265.7 416.0C1272.6 406.2 1273.0 404.7 1273.0 390.3C1272.9 373.8 1272.4 371.6 1265.8 363.4C1258.6 354.4 1258.0 354.0 1248.0 349.4L1239.5 345.5L1194.1 345.2C1162.0 345.0 1147.8 345.3 1145.9 346.0C1140.7 348.2 1140.1 353.0 1143.7 364.5C1145.8 371.3 1149.0 374.4 1157.2 377.4C1164.0 380.0 1164.4 380.0 1193.1 380.0C1224.6 380.0 1226.7 380.3 1230.8 385.5C1233.5 388.9 1233.6 394.0 1231.1 397.1L1229.2 399.5L1199.3 400.0L1169.3 400.5L1165.4 403.2C1163.3 404.6 1159.5 406.8 1156.9 407.9C1150.8 410.7 1145.0 417.9 1143.5 424.4C1142.8 427.2 1141.5 432.2 1140.5 435.4C1139.0 440.6 1138.9 442.8 1139.9 454.6C1140.5 462.0 1140.7 468.6 1140.4 469.4C1139.5 471.8 1141.9 477.6 1144.3 478.8C1147.7 480.5 1147.7 480.5 1210.4 480.4L1269.4 480.3L1271.3 477.9ZM741.5 477.5L744.0 475.1L744.0 441.8C744.0 423.5 744.4 407.9 744.9 407.2C747.1 403.6 750.4 406.4 757.0 417.6C767.3 435.3 769.2 438.3 772.2 442.0C773.7 443.9 775.0 446.0 775.0 446.6C775.0 447.2 776.9 450.7 779.2 454.4C781.6 458.0 785.3 464.0 787.5 467.7C794.5 479.3 795.5 480.0 805.0 480.0C815.8 480.0 819.9 477.7 825.4 468.6C826.6 466.7 830.1 460.9 833.2 455.8C836.3 450.7 839.2 445.6 839.6 444.5C840.0 443.4 841.7 440.5 843.5 438.0C845.2 435.5 847.4 431.6 848.5 429.2C849.5 426.9 851.0 424.5 851.7 423.8C852.5 423.2 854.4 420.1 856.0 417.1C858.8 411.5 866.0 404.5 868.2 405.2C869.0 405.5 869.2 414.5 869.1 437.2C868.8 470.7 869.4 475.7 873.3 478.5C876.9 481.0 906.9 480.7 910.1 478.1L912.5 476.2L912.6 443.8C912.9 380.0 912.0 348.0 909.9 345.9C908.1 344.1 906.1 344.0 883.8 344.0L859.7 344.0L856.1 347.9C854.1 350.1 851.4 353.7 850.0 356.0C848.6 358.3 846.0 362.4 844.1 365.2C842.3 368.0 840.0 371.9 839.1 373.9C837.7 377.1 828.9 391.0 821.0 402.5C819.5 404.7 817.5 408.3 816.6 410.5C814.2 416.1 809.2 421.0 805.9 421.0C802.8 421.0 801.7 419.8 800.1 414.9C799.5 412.9 798.0 410.4 796.9 409.4C794.3 407.1 784.0 391.7 784.0 390.2C784.0 389.5 782.5 387.3 780.6 385.3C778.8 383.2 776.5 380.0 775.6 378.2C774.6 376.3 771.5 371.4 768.7 367.3C765.8 363.1 761.6 356.9 759.4 353.5C753.0 344.0 752.4 343.8 725.0 344.2C703.6 344.5 701.9 344.6 700.1 346.5C698.2 348.4 698.1 350.3 697.9 411.0C697.7 477.2 697.7 477.1 702.3 479.0C703.5 479.5 712.3 479.9 721.8 479.9C738.9 480.0 739.1 480.0 741.5 477.5ZM1085.5 477.5C1087.9 475.2 1088.0 474.5 1088.0 463.0C1088.0 445.2 1093.7 447.0 1036.2 447.0C980.4 447.0 984.0 447.7 984.0 436.9C984.0 431.9 984.4 430.5 986.5 428.5L988.9 426.0L1028.5 426.0C1077.8 426.0 1075.4 426.8 1074.8 411.1C1074.3 399.2 1077.2 399.9 1028.8 400.0C979.8 400.0 983.0 401.1 983.8 385.2C984.2 376.6 981.9 377.0 1032.5 377.0C1088.2 377.0 1084.6 378.2 1084.1 359.5C1083.8 348.1 1083.3 346.6 1078.9 345.1C1074.9 343.7 944.3 343.5 940.7 344.9C939.3 345.5 937.8 347.2 937.1 349.1C935.6 353.4 935.5 470.6 937.0 474.7C939.1 480.2 935.9 480.0 1012.2 480.0L1083.1 480.0L1085.5 477.5ZM483.5 406.9C480.9 404.7 480.8 404.6 481.2 394.3C481.7 379.0 479.1 380.0 516.8 380.0C545.9 380.0 547.6 380.1 551.7 382.1C558.1 385.2 559.3 387.6 558.8 395.9C558.1 408.6 556.7 409.0 516.2 409.0C487.1 409.0 486.2 408.9 483.5 406.9ZM604.2 288.0C606.3 287.4 608.4 286.1 609.0 285.0C609.6 283.9 610.0 271.1 610.0 252.1L610.0 221.1L614.1 216.3C620.7 208.7 616.1 209.2 684.5 208.8C749.9 208.5 748.3 208.6 753.5 204.0C754.6 203.0 757.4 201.7 759.7 201.1C766.9 199.1 781.8 184.8 784.5 177.0C785.3 174.8 787.3 171.0 789.0 168.6L792.1 164.4L791.8 128.4L791.5 92.3L788.7 88.7C787.2 86.6 785.3 82.9 784.5 80.2C782.6 73.9 768.9 59.0 761.7 55.3C758.9 53.9 755.5 51.9 754.0 50.9C750.7 48.4 739.7 45.3 728.0 43.5C720.2 42.3 703.0 42.0 633.3 42.0L548.1 42.0L546.0 44.8C544.0 47.3 543.8 48.4 544.2 58.0C544.6 68.0 544.8 68.8 548.6 75.5C554.3 85.7 562.9 93.6 573.7 98.5L582.5 102.5L645.2 103.0L707.8 103.5L712.1 106.5C717.8 110.5 719.9 115.0 720.6 124.6C721.4 133.8 719.8 142.7 716.9 146.5C712.0 152.7 714.3 152.5 648.0 153.0L587.5 153.5L583.0 156.2C580.5 157.7 576.9 159.5 575.0 160.1C566.1 163.1 557.3 172.3 548.9 187.5L544.5 195.5L544.2 240.0C543.9 282.5 544.0 284.7 545.7 286.3C547.4 287.7 550.7 288.0 572.1 288.3C585.5 288.4 597.4 288.6 598.5 288.8C599.6 288.9 602.2 288.5 604.2 288.0ZM1016.9 286.5C1021.8 284.0 1022.0 278.4 1017.7 264.7C1016.5 260.6 1014.2 256.3 1012.2 253.9C1007.6 248.6 996.6 241.4 991.0 240.1C988.1 239.4 958.3 239.0 908.2 239.0C817.7 239.0 826.0 240.0 826.0 228.6C826.0 222.8 826.3 221.8 829.8 217.1C836.1 208.5 832.2 209.0 897.7 208.9C964.2 208.9 968.8 208.6 974.8 204.3C977.1 202.6 981.1 200.7 983.7 200.1C995.6 197.0 1006.9 181.3 1014.7 156.5C1016.8 150.2 1017.0 109.2 1015.1 102.0C1008.8 78.6 996.7 60.7 983.4 55.0C980.9 53.9 977.4 52.0 975.8 50.9C964.5 42.8 927.6 40.3 817.9 40.1C788.7 40.0 787.2 40.1 785.5 42.0C783.4 44.3 784.0 47.7 787.4 51.7C788.7 53.2 790.5 56.3 791.4 58.5C792.4 60.7 794.5 63.9 796.1 65.6C798.5 68.1 799.3 70.1 800.1 75.4C800.6 79.1 801.5 83.1 802.2 84.3C802.8 85.5 804.5 89.6 806.0 93.5C807.8 98.4 809.3 100.8 811.0 101.7C812.9 102.7 826.7 103.0 869.0 103.0C899.5 103.0 926.2 103.5 928.4 103.9C932.5 104.9 940.1 111.4 942.6 116.2C944.3 119.6 944.4 135.4 942.7 139.1C940.5 143.8 934.2 150.2 930.3 151.5C927.3 152.6 915.0 152.9 869.4 153.0C825.4 153.0 812.0 153.3 810.7 154.3C809.8 154.9 808.1 158.8 807.0 162.8C805.9 166.8 804.3 171.1 803.5 172.4C802.7 173.6 801.2 177.1 800.1 180.2C796.8 189.8 782.2 208.0 777.8 208.0C775.7 208.0 761.4 217.6 760.6 219.5C760.3 220.4 760.0 235.2 760.0 252.4C760.0 286.0 760.2 287.5 765.3 288.2C766.5 288.4 823.0 288.4 890.8 288.3C998.1 288.1 1014.4 287.8 1016.9 286.5Z" fill="currentColor" fill-rule="evenodd"/></symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="hd">
+    <button class="hd-menu" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+    <a class="hd-logo" href="#top" aria-label="Prime2Performance home">
+      <svg class="logo-svg" viewBox="0 0 1504 688" role="img" aria-label="Prime 2 Performance"><use href="#p2logo"/></svg>
+    </a>
+    <button class="hd-cart" id="cartBtn" aria-label="Loadout, 0 items">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 7h12l-1.5 13h-9L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu">
+  <nav aria-label="Site">
+    <a href="#loadout" data-close>Build your loadout</a>
+    <a href="#label" data-close>Read the label</a>
+    <a href="#system" data-close>The 24-hour system</a>
+    <a href="#story" data-close>Tim's story</a>
+    <a href="#founders" data-close>The 99 Founders</a>
+    <span class="m-small">LAUNCHING Q1 2027 · VETERAN-OWNED · MADE IN THE USA</span>
+  </nav>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-stage="#F2C230" data-amp="1" data-lift=".2">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-brand rv">
+        <svg class="logo-svg" viewBox="0 0 1504 688" role="img" aria-label="Prime 2 Performance"><use href="#p2logo"/></svg>
+      </div>
+      <div class="hero-eyebrow rv">
+        <span class="bar" id="heroBar"></span>
+        <span>
+          <span class="big">BUILT FOR<br>MEN 45+</span>
+          <span class="small">VETERAN-OWNED</span>
+        </span>
+      </div>
+      <h1 id="heroH1"><span class="ln"><span>Your 2nd</span></span><span class="ln"><span>Prime Starts</span></span><span class="ln"><span>Here.</span></span></h1>
+      <p class="sub rv">Performance for men who won't accept decline. Every dose printed on the label.</p>
+      <div class="hero-ctas rv">
+        <a class="btn btn-gold" href="#loadout">Build your loadout</a>
+        <a class="btn btn-ghost" href="#label">Read the label</a>
+      </div>
+      <p class="hero-trust rv"><span>Every dose printed</span><span>Veteran-owned</span><span>Made in the USA</span></p>
+      <p class="hero-launch rv">LAUNCHING Q1 2027</p>
+      <a class="hero-founder rv" href="#founders" id="heroFounder"><b>Founder spots are capped at 99</b> · Become a founder →</a>
+    </div>
+    <div class="hero-visual rv">
+      <div class="hero-45" aria-hidden="true">45+</div>
+      <div class="hero-photo">
+        <img class="ph-main" src="assets/img/ig-tim-gym-hero.jpg" alt="Tim in his home gym" style="object-position:50% 22%">
+        <div class="hero-bagbox" id="bagBox">
+          <img class="hero-bag" id="heroBag" src="assets/img/bag-core-minus.webp" alt="P2 Core minus bag">
+          <div class="hero-glare" id="heroGlare" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-switch" role="group" aria-label="Preview a formula">
+        <button data-p="core-minus" data-img="assets/img/bag-core-minus.webp" data-c="#6FBF73" aria-pressed="true">P2 Core−</button>
+        <button data-p="core-plus" data-img="assets/img/bag-core-plus.webp" data-c="#E0685A" aria-pressed="false">P2 Core+</button>
+        <button data-p="fuel" data-img="assets/img/bag-fuel.webp" data-c="#E8A458" aria-pressed="false">P2 Fuel</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 24-HOUR SYSTEM ============ -->
+<section class="section-pad rule-top veil" id="system" data-stage="#F2C230" data-amp=".8" data-lift="0">
+  <div class="wrap">
+    <div class="tl-head">
+      <span class="eyebrow rv">The 24-Hour System</span>
+      <h2 class="rv">Four Moments. Five Formulas.</h2>
+      <p class="sub rv">Fitness is more than the hour you train. P2 covers all 24. Each formula works on its own, so start with the one you need.</p>
+    </div>
+    <div class="tl" id="tl">
+      <div class="tl-rail" aria-hidden="true"><i id="tlDraw"></i></div>
+
+      <div class="tl-row" style="--pc:var(--zerosix)">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-main">
+          <span class="tl-time">0600</span>
+          <span class="tl-name"><span class="p2chip">P2</span>Zero-Six</span>
+          <span class="tl-when">On waking, every day</span>
+        </div>
+        <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-zs">Show doses +</button>
+        <div class="tl-panel" id="tlp-zs"><div><div class="tl-card">
+          <p>The AM daily formula. Lemon Lime, 30 sachets.</p>
+          <span class="tl-status">FORMULA BEING FINALIZED · LAUNCHING Q2 2027</span>
+        </div></div></div>
+      </div>
+
+      <div class="tl-row" style="--pc:var(--coreplus)">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-main">
+          <span class="tl-time">1200</span>
+          <span class="tl-name"><span class="p2chip">P2</span>Core+</span>
+          <span class="tl-when">30 minutes before training</span>
+        </div>
+        <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-cp">Show doses +</button>
+        <div class="tl-panel" id="tlp-cp"><div><div class="tl-card">
+          <p>The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.</p>
+          <div class="tl-doses">
+            <span class="d"><b>8 g</b><span>L-citrulline</span></span>
+            <span class="d"><b>5 g</b><span>Creatine</span></span>
+            <span class="d"><b>200 mg</b><span>Caffeine</span></span>
+          </div>
+          <span class="tl-status">LAUNCHING Q1 2027 · PRE-ORDER</span>
+        </div></div></div>
+      </div>
+
+      <div class="tl-row" style="--pc:var(--coreminus)">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-main">
+          <span class="tl-time">1700</span>
+          <span class="tl-name"><span class="p2chip">P2</span>Core−</span>
+          <span class="tl-when">30 minutes before training</span>
+        </div>
+        <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-cm">Show doses +</button>
+        <div class="tl-panel" id="tlp-cm"><div><div class="tl-card">
+          <p>Everything in the Core stack, no stimulants. Train late and still sleep.</p>
+          <div class="tl-doses">
+            <span class="d"><b>8 g</b><span>L-citrulline</span></span>
+            <span class="d"><b>5 g</b><span>Creatine</span></span>
+            <span class="d"><b>3.2 g</b><span>Beta-alanine</span></span>
+          </div>
+          <span class="tl-status">LAUNCHING Q1 2027 · PRE-ORDER</span>
+        </div></div></div>
+      </div>
+
+      <div class="tl-row" style="--pc:var(--fuel)">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-main">
+          <span class="tl-time">1230 / 1730</span>
+          <span class="tl-name"><span class="p2chip">P2</span>Fuel</span>
+          <span class="tl-when">During training, paired with P2 Core+ or P2 Core−</span>
+        </div>
+        <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-f">Show doses +</button>
+        <div class="tl-panel" id="tlp-f"><div><div class="tl-card">
+          <p>Carbs and electrolytes to keep going in long sessions, heat and altitude.</p>
+          <div class="tl-doses">
+            <span class="d"><b>30 g</b><span>Cyclic dextrin</span></span>
+            <span class="d"><b>600 mg</b><span>Sodium</span></span>
+            <span class="d"><b>2 g</b><span>Taurine</span></span>
+          </div>
+          <span class="tl-status">LAUNCHING Q1 2027 · PRE-ORDER</span>
+        </div></div></div>
+      </div>
+
+      <div class="tl-row" style="--pc:var(--repair)">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-main">
+          <span class="tl-time">2200</span>
+          <span class="tl-name"><span class="p2chip">P2</span>Repair</span>
+          <span class="tl-when">30 to 60 minutes before bed</span>
+        </div>
+        <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-r">Show doses +</button>
+        <div class="tl-panel" id="tlp-r"><div><div class="tl-card">
+          <p>The PM recovery formula. Dark Cherry Berry, 30 sachets.</p>
+          <span class="tl-status">FORMULA BEING FINALIZED · LAUNCHING Q2 2027</span>
+        </div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVERY DOSE. PRINTED. ============ -->
+<section class="label-sec section-pad" id="label" data-stage="#F2C230" data-amp=".4" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">What's In The Bag</span>
+    <h2 class="rv">Every Dose. Printed.</h2>
+    <p class="sub rv">Every supplement has a label. Not every label tells you how much. Some brands group ingredients into a &ldquo;blend&rdquo; and list only the total, so you can't tell how much of each one you're getting. We print every amount.</p>
+
+    <div class="compare">
+      <div class="lab-card rv">
+        <span class="eyebrow" style="color:#8a8468">A Blend Label</span>
+        <div class="lab-row"><span>Pump Blend</span><b>12.5 g</b></div>
+        <p class="lab-note">L-citrulline, Nitrosigine, glycerol (no individual amounts)</p>
+      </div>
+      <div class="lab-card navy rv">
+        <span class="eyebrow">P2 Core</span>
+        <div class="lab-row"><span>L-citrulline</span><b>8 g</b></div>
+        <div class="lab-row"><span>Nitrosigine</span><b>1.5 g</b></div>
+        <div class="lab-row"><span>Glycerol</span><b>3 g</b></div>
+      </div>
+    </div>
+    <p class="compare-line rv">Same three ingredients, same total. Only one tells you what you're getting.</p>
+    <p class="trans-line rv"><b>Transparency.</b> Read the label, ours and everyone else's. Know what you're putting in your body.</p>
+
+    <div class="ing-head">
+      <h3 class="rv">Here's Every Ingredient In P2 Core.</h3>
+      <p class="rv">P2 Core− has 13. P2 Core+ adds 3 for energy: caffeine, theobromine and L-theanine.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Filter ingredients by what they do">
+      <span class="f-lab">Filter by what it does</span>
+      <button class="chip" data-f="all" aria-pressed="true">All · 16</button>
+      <button class="chip" data-f="strength" aria-pressed="false">Strength · 3</button>
+      <button class="chip" data-f="blood" aria-pressed="false">Blood flow · 2</button>
+      <button class="chip" data-f="hydration" aria-pressed="false">Hydration · 5</button>
+      <button class="chip" data-f="focus" aria-pressed="false">Focus · 3</button>
+      <button class="chip" data-f="energy" aria-pressed="false">Energy (P2 Core+) · 3</button>
+    </div>
+    <div class="ing-grid" id="ingGrid"></div>
+    <p class="ing-cta rv">Every P2 formula's full label is one tap away. <a href="#loadout">See them in Build Your Loadout.</a></p>
+  </div>
+</section>
+
+<!-- ============ STOP MIXING ============ -->
+<section class="section-pad veil" id="tubs" data-stage="#F2C230" data-amp=".7" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">One Sachet Does The Job Of Four</span>
+    <h2 class="rv">Stop Mixing Four Tubs.</h2>
+    <p class="sub rv">To get what's in one sachet of P2 Core, most men buy and stack four separate products.</p>
+    <div class="tubs">
+      <div class="tub-card rv">
+        <span class="eyebrow">The Usual Way</span>
+        <div class="tub-row"><span class="tub-num">1</span><div><h4>Strength</h4><p>A creatine or strength product</p></div></div>
+        <div class="tub-row"><span class="tub-num">2</span><div><h4>Blood flow</h4><p>A citrulline or pump product</p></div></div>
+        <div class="tub-row"><span class="tub-num">3</span><div><h4>Hydration</h4><p>An electrolyte mix</p></div></div>
+        <div class="tub-row"><span class="tub-num">4</span><div><h4>Focus</h4><p>Focus capsules</p></div></div>
+        <p class="tub-sum">4 products. 4 scoops. 4 bills.</p>
+      </div>
+      <div class="tub-card p2 rv">
+        <span class="eyebrow">The P2 Way</span>
+        <p class="one">1 Sachet.</p>
+        <p>Strength, blood flow, hydration and focus. Every dose printed. Tear, pour, train.</p>
+        <a class="btn btn-gold" href="#loadout">Shop P2 Core− and P2 Core+</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT BANDS ============ -->
+<section class="band" style="--pc:var(--coreplus)" data-stage="#E0685A" data-amp=".9" data-lift=".1">
+  <div class="wrap">
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag, Huckleberry, 20 sachets"></div>
+    <div class="band-info">
+      <span class="eyebrow rv">1200 · Before Training, With Caffeine</span>
+      <div class="band-name rv"><span class="p2chip">P2</span>Core+</div>
+      <p class="rv">The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.</p>
+      <div class="band-stats rv">
+        <span class="d"><b data-count="8" data-unit=" g">8 g</b><span>L-citrulline</span></span>
+        <span class="d"><b data-count="5" data-unit=" g">5 g</b><span>Creatine</span></span>
+        <span class="d"><b data-count="200" data-unit=" mg">200 mg</b><span>Caffeine</span></span>
+      </div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-ctas rv">
+        <button class="btn btn-gold" data-add="core-plus">Add to loadout</button>
+        <button class="link-label" data-facts="core-plus">See full label</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="--pc:var(--coreminus)" data-stage="#6FBF73" data-amp=".9" data-lift=".1">
+  <div class="wrap">
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag, Strawberry Watermelon, 20 sachets"></div>
+    <div class="band-info">
+      <span class="eyebrow rv">1700 · Before Training, Stimulant-Free</span>
+      <div class="band-name rv"><span class="p2chip">P2</span>Core−</div>
+      <p class="rv">Everything in the Core stack, no stimulants. Train late and still sleep.</p>
+      <div class="band-stats rv">
+        <span class="d"><b data-count="8" data-unit=" g">8 g</b><span>L-citrulline</span></span>
+        <span class="d"><b data-count="5" data-unit=" g">5 g</b><span>Creatine</span></span>
+        <span class="d"><b data-count="3.2" data-unit=" g">3.2 g</b><span>Beta-alanine</span></span>
+      </div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-ctas rv">
+        <button class="btn btn-gold" data-add="core-minus">Add to loadout</button>
+        <button class="link-label" data-facts="core-minus">See full label</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="--pc:var(--fuel)" data-stage="#E8A458" data-amp=".9" data-lift=".1">
+  <div class="wrap">
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag, Tropical Charge, 20 sachets"></div>
+    <div class="band-info">
+      <span class="eyebrow rv">1230 / 1730 · During Training</span>
+      <div class="band-name rv"><span class="p2chip">P2</span>Fuel</div>
+      <p class="rv">Carbs and electrolytes to keep going in long sessions, heat and altitude.</p>
+      <div class="band-stats rv">
+        <span class="d"><b data-count="30" data-unit=" g">30 g</b><span>Cyclic dextrin</span></span>
+        <span class="d"><b data-count="600" data-unit=" mg">600 mg</b><span>Sodium</span></span>
+        <span class="d"><b data-count="2" data-unit=" g">2 g</b><span>Taurine</span></span>
+      </div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-ctas rv">
+        <button class="btn btn-gold" data-add="fuel">Add to loadout</button>
+        <button class="link-label" data-facts="fuel">See full label</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER STORY ============ -->
+<section class="section-pad rule-top veil" id="story" data-stage="#E6C77E" data-amp="1" data-lift=".3">
+  <div class="wrap story-grid">
+    <div>
+      <div class="beat rv"><span class="eyebrow">The founder</span><h3>Tim Haught. Reconnaissance Marine. FBI Special Agent. Operations in twenty-six countries.</h3></div>
+      <div class="beat rv"><span class="eyebrow">The injuries</span><h3>Shoulder and rotator cuffs completely torn. Then both hamstrings, completely torn.</h3></div>
+      <div class="beat rv"><span class="eyebrow">The low point</span><h3>He could barely walk. Both legs wrapped, he wobbled into the gym anyway, just to hold on to what he could. It was agonizing.</h3></div>
+      <div class="beat rv"><span class="eyebrow">The work</span><h3>Standard recovery wasn't enough. He spent three years formulating what he needed to rebuild.</h3></div>
+      <div class="beat rv"><span class="eyebrow">Eleven months later</span><h3>Hunting in the mountains of Mongolia at 11,000 feet.</h3></div>
+      <div class="story-quote rv">
+        <h3>Your first prime does not have to be your last.</h3>
+        <p class="by">TIM, FOUNDER</p>
+        <a class="btn btn-ghost" href="story.html">Read Tim's story</a>
+      </div>
+    </div>
+    <div class="story-photos">
+      <figure class="ph cross rv"><img src="assets/img/ig-tim-gym-4.jpg" alt="Tim on the preacher bench in his home gym" style="object-position:50% 30%"><figcaption class="cap">Tim — Recon Marine, ret. · The home gym</figcaption></figure>
+      <figure class="ph rv"><img src="assets/img/ig-tim-antelope.jpg" alt="Tim in the mountains during hunting season"><figcaption class="cap">Back in the mountains · hunting season</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRA ============ -->
+<section class="fra section-pad rule-top veil" data-stage="#F2C230" data-amp="1.1" data-lift=".2">
+  <div class="wrap">
+    <div class="fra-10" id="fraTen" aria-hidden="true">10%</div>
+    <span class="eyebrow rv">Force Recon Association</span>
+    <h2 class="rv">Ten Percent Of Net Profit Goes To Recon Marines And Their Families.</h2>
+    <p class="rv">Prime2Performance was founded by a Recon Marine. Ten percent of net profit goes to the Force Recon Association.</p>
+    <div class="fra-logo rv">
+      <img src="assets/img/fra-logo.png" alt="Force Recon Association logo">
+      <span>Proud supporter of the Force Recon Association, supporting Recon Marines and their families.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 99 FOUNDERS ============ -->
+<section class="founders section-pad rule-top veil" id="founders" data-stage="#FFD95A" data-amp="1.1" data-lift=".3">
+  <div class="wrap">
+    <span class="eyebrow rv" id="fStatus">Still Open</span>
+    <h2 class="rv">The 99 Founders.</h2>
+    <p class="sub rv">$49.99 a bag on P2 Core−, P2 Core+ and P2 Fuel, locked for life with a subscription. Every founder gets the founders box: towel, shirt, hat and shaker. Tap an open spot to claim it.</p>
+    <div class="f-kit rv"><img src="assets/img/founders-kit.jpg" alt="The founders box: towel, shirt, hat, shaker and bags"></div>
+    <div class="f-grid rv" id="fGrid" role="group" aria-label="Founder spots"></div>
+    <p class="f-count" id="fCount"></p>
+    <div class="f-claim" id="fClaim">
+      <input type="email" id="fEmail" placeholder="you@example.com" aria-label="Email to claim your founder spot">
+      <button class="btn btn-gold" id="fClaimBtn">Claim it</button>
+    </div>
+    <p class="f-done" id="fDone">You're in. We'll email you to lock in your spot.</p>
+    <div class="f-cta rv"><button class="btn btn-gold" id="fBecome">Become a founder</button></div>
+  </div>
+</section>
+
+<!-- ============ LOADOUT ============ -->
+<section class="loadout section-pad rule-top" id="loadout" data-stage="#C9A24B" data-amp=".5" data-lift="0">
+  <div class="wrap">
+    <span class="eyebrow rv">Launching Q1 2027 · Pre-Order</span>
+    <h2 class="rv">Build Your Loadout.</h2>
+    <p class="sub rv">Start with one bag, or the Training Pair.</p>
+
+    <div class="tiles">
+      <div class="tile rv"><span class="t-lab">1 Bag</span><div class="t-price">$69.99</div><p>Retail price</p></div>
+      <div class="tile rv"><span class="t-lab">2 Bags</span><div class="t-price">$129.99</div><p>Save $9.99 · $119.98 on subscription</p></div>
+      <div class="tile rv"><span class="t-lab">3 Bags</span><div class="t-price">$189.99</div><p>Save $19.98</p></div>
+      <div class="tile hot rv"><span class="t-lab">Subscribe</span><div class="t-price">$59.99</div><p>Per bag · about $3 a workout</p></div>
+    </div>
+    <p class="tiles-note rv">Mix and match any P2 Core−, P2 Core+ and P2 Fuel. Bundle prices apply automatically at checkout. Free shipping on $98+.</p>
+
+    <div class="pair rv">
+      <span class="pair-badge">Start here</span>
+      <div>
+        <h3>The Training Pair</h3>
+        <p>One sachet before you train, one while you train. Pick P2 Core− or P2 Core+.</p>
+        <p class="pair-price">$119.98 on subscription · $129.99 one-time · Free shipping</p>
+      </div>
+      <div class="pair-btns">
+        <button data-pair="core-minus">P2 Core− + P2 Fuel</button>
+        <button data-pair="core-plus">P2 Core+ + P2 Fuel</button>
+      </div>
+    </div>
+
+    <div class="shop-grid">
+      <div class="prod rv" style="--pc:var(--coreminus)" data-prod="core-minus">
+        <div class="prod-img"><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag"></div>
+        <div class="prod-ctx"><span>Before training, stimulant-free</span><span class="prod-tag">Works on its own</span></div>
+        <div class="prod-name"><span class="p2chip">P2</span>Core−</div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="qty"><button data-q="-1" aria-label="Remove one P2 Core−">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Core−">+</button></div>
+        <button class="link-label" data-facts="core-minus">See full label +</button>
+      </div>
+      <div class="prod rv" style="--pc:var(--coreplus)" data-prod="core-plus">
+        <div class="prod-img"><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag"></div>
+        <div class="prod-ctx"><span>Before training, with caffeine</span><span class="prod-tag">Works on its own</span></div>
+        <div class="prod-name"><span class="p2chip">P2</span>Core+</div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="qty"><button data-q="-1" aria-label="Remove one P2 Core+">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Core+">+</button></div>
+        <button class="link-label" data-facts="core-plus">See full label +</button>
+      </div>
+      <div class="prod rv" style="--pc:var(--fuel)" data-prod="fuel">
+        <div class="prod-img"><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag"></div>
+        <div class="prod-ctx"><span>During training</span><span class="prod-tag">Works on its own</span></div>
+        <div class="prod-name"><span class="p2chip">P2</span>Fuel</div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="qty"><button data-q="-1" aria-label="Remove one P2 Fuel">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Fuel">+</button></div>
+        <button class="link-label" data-facts="fuel">See full label +</button>
+      </div>
+    </div>
+
+    <div class="sub-toggle rv">
+      <button class="switch" id="subToggle" aria-pressed="true" aria-label="Subscribe and save"></button>
+      <span class="st-txt"><b>Subscribe · $59.99 a bag</b><span>Every 30 days. Pause, skip or cancel from your account.</span></span>
+    </div>
+
+    <div class="summary rv" aria-live="polite">
+      <div class="sum-row total"><span>Your loadout</span><b id="sumTotal">$0.00</b></div>
+      <div class="sum-row"><span class="sum-note" id="sumNote">Add a bag to start</span><span class="sv" id="sumSave"></span></div>
+      <div class="ship"><div class="ship-bar"><i id="shipBar"></i></div><p id="shipNote">FREE SHIPPING ON $98+</p></div>
+      <button class="btn btn-gold" id="preorder">Pre-order</button>
+    </div>
+
+    <div class="coming">
+      <div class="cs rv" style="--pc:var(--zerosix)">
+        <div class="prod-ctx"><span>Morning · launching Q2 2027</span></div>
+        <div class="prod-name" style="color:#4A66C4"><span class="p2chip">P2</span>Zero-Six</div>
+        <button class="link-label" data-notify>Get notified</button>
+      </div>
+      <div class="cs rv" style="--pc:var(--repair)">
+        <div class="prod-ctx"><span>Night · launching Q2 2027</span></div>
+        <div class="prod-name" style="color:#7D55BD"><span class="p2chip">P2</span>Repair</div>
+        <button class="link-label" data-notify>Get notified</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUMMIT ============ -->
+<section class="summit section-pad veil" data-stage="#FFD95A" data-amp="1.3" data-lift=".6">
+  <div class="wrap">
+    <span class="eyebrow rv">Summit Reached</span>
+    <div class="summit-ft rv" id="summitFt">11,000 ft</div>
+    <p class="rv">You've made the whole climb. The next one is yours to train for.</p>
+    <p class="notify-lab rv">Get launch day and new-formula updates</p>
+    <form class="notify rv" id="notifyForm">
+      <input type="email" required placeholder="you@example.com" aria-label="Email for launch updates">
+      <button class="btn btn-gold" type="submit">Notify me</button>
+    </form>
+    <p class="notify-done" id="notifyDone">You're on the list. We'll see you at launch.</p>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <span><b>Strength.</b> Longevity. Legacy. </span><span>Strength. <b>Longevity.</b> Legacy. </span><span>Strength. Longevity. <b>Legacy.</b> </span><span><b>Strength.</b> Longevity. Legacy. </span><span>Strength. <b>Longevity.</b> Legacy. </span><span>Strength. Longevity. <b>Legacy.</b> </span>
+  </div>
+</div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-logo">
+        <svg class="logo-svg" viewBox="0 0 1504 688" role="img" aria-label="Prime 2 Performance"><use href="#p2logo"/></svg>
+        <p class="ft-tag">Performance nutrition for your 2nd prime. Veteran-owned. Made in the USA.</p>
+      </div>
+      <div class="ft-col">
+        <h5>Shop</h5>
+        <a href="core-minus.html">P2 Core−</a>
+        <a href="core-plus.html">P2 Core+</a>
+        <a href="fuel.html">P2 Fuel</a>
+        <a href="training-pair.html">The Training Pair</a>
+        <a href="zero-six.html">P2 Zero-Six</a>
+        <a href="repair.html">P2 Repair</a>
+      </div>
+      <div class="ft-col">
+        <h5>Learn</h5>
+        <a href="story.html">Tim's story</a>
+        <a href="#label">Every dose</a>
+        <a href="#founders">The 99 Founders</a>
+        <a href="faq.html">Debrief (FAQ)</a>
+      </div>
+      <div class="ft-col">
+        <h5>Support</h5>
+        <a href="contact.html">Contact</a>
+        <a href="refunds.html">Shipping &amp; refunds</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="ft-legal">
+      <p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Packaging shown is a pre-production rendering.</p>
+      <p>© 2026 Prime2Performance · PO Box 220, Stevensville, MT</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SUPPLEMENT FACTS MODAL ============ -->
+<dialog class="facts" id="factsDlg">
+  <div class="facts-in">
+    <div class="facts-head"><h4 id="factsTitle">P2 Core−</h4><button class="facts-close" id="factsClose" aria-label="Close">✕</button></div>
+    <div class="sf">
+      <h5>Supplement Facts</h5>
+      <div class="srv" id="factsServing"></div>
+      <div class="srv" style="border-bottom:8px solid var(--navy-0)">20 servings per container</div>
+      <table id="factsTable"></table>
+      <p class="sf-notes"><b>Other ingredients:</b> L-Malic Acid, Natural Flavors, Citric Acid, Silicon Dioxide, Monk Fruit, Stevia Leaf Extract.</p>
+      <p class="sf-notes">* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+"use strict";
+var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine = matchMedia('(pointer: fine)').matches;
+var hasG = !!(window.gsap && window.ScrollTrigger) && !reduced;
+if (hasG) gsap.registerPlugin(ScrollTrigger);
+
+/* ---------- CONFIG (wire at Shopify port) ---------- */
+/* claimed ← Shopify count of customers tagged "founder". 89 per Tim's Nov 13 spec; update as claims land. */
+var P2PFOUNDERS = { claimed: 89, total: 99 };
+var PRICE = { retail: 69.99, sub: 59.99 };
+var BUNDLE = { 2: 129.99, 3: 189.99 };
+
+/* ================= TOPO: WebGL contour terrain (ported from v1, tuned down) ================= */
+var TOPO = (function(){
+  var cv = document.getElementById('topo'), gl = null;
+  var stub = {setColor:function(){}, scroll:function(){}};
+  if (!cv) return stub;
+  try { gl = cv.getContext('webgl', {antialias:false, alpha:false, powerPreference:'high-performance'}); } catch(e){}
+  if (!gl || !gl.getExtension('OES_standard_derivatives')) { document.documentElement.classList.add('no-gl'); cv.style.display='none'; return stub; }
+  var vs = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+  var fs = [
+    '#extension GL_OES_standard_derivatives : enable',
+    'precision highp float;',
+    'uniform vec2 uRes;uniform float uTime;uniform vec2 uMouse;uniform float uScroll;uniform vec3 uColor;uniform float uAmp;uniform float uLift;',
+    'vec2 hash(vec2 p){p=vec2(dot(p,vec2(127.1,311.7)),dot(p,vec2(269.5,183.3)));return -1.0+2.0*fract(sin(p)*43758.5453123);}',
+    'float noise(vec2 p){const float K1=0.366025404;const float K2=0.211324865;vec2 i=floor(p+(p.x+p.y)*K1);vec2 a=p-i+(i.x+i.y)*K2;float m=step(a.y,a.x);vec2 o=vec2(m,1.0-m);vec2 b=a-o+K2;vec2 c=a-1.0+2.0*K2;vec3 h=max(0.5-vec3(dot(a,a),dot(b,b),dot(c,c)),0.0);vec3 n=h*h*h*h*vec3(dot(a,hash(i)),dot(b,hash(i+o)),dot(c,hash(i+1.0)));return dot(n,vec3(70.0));}',
+    'float fbm(vec2 p){float f=0.0;float a=0.5;mat2 m=mat2(1.6,1.2,-1.2,1.6);for(int i=0;i<5;i++){f+=a*noise(p);p=m*p;a*=0.5;}return f;}',
+    'void main(){',
+    ' vec2 uv=(gl_FragCoord.xy-0.5*uRes)/uRes.y;',
+    ' vec2 p=uv*1.55+vec2(0.0,-uScroll);',
+    ' float h=fbm(p+vec2(uTime*0.011,uTime*0.007));',
+    ' h+=0.4*fbm(p*0.42-3.1);',
+    ' float d=length(uv-uMouse);',
+    ' h+=(0.16+0.3*uLift)*exp(-d*d*9.0);',
+    ' float lv=h*(8.0+uLift*8.0);',
+    ' float f=fract(lv);float w=fwidth(lv);',
+    ' float line=1.0-smoothstep(0.0,w*1.4,min(f,1.0-f));',
+    ' float idx=1.0-step(0.5,mod(floor(lv+0.5),5.0));',
+    ' float lens=exp(-d*d*5.0);',
+    ' float inten=mix(0.10,0.34,idx)*uAmp*(0.6+0.9*lens);',
+    ' float vig=smoothstep(1.3,0.15,length(uv*vec2(0.85,1.1)));',
+    ' vec3 bg=vec3(0.094,0.180,0.341)+vec3(0.010,0.014,0.022)*h;',
+    ' vec3 col=bg+uColor*line*inten*vig;',
+    ' gl_FragColor=vec4(col,1.0);',
+    '}'
+  ].join('\n');
+  function sh(t, s){ var o = gl.createShader(t); gl.shaderSource(o, s); gl.compileShader(o); if (!gl.getShaderParameter(o, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(o)); return o; }
+  var pr;
+  try { pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); }
+  catch(e){ document.documentElement.classList.add('no-gl'); cv.style.display='none'; return stub; }
+  gl.useProgram(pr);
+  var buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  var loc = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  var U = {}; ['uRes','uTime','uMouse','uScroll','uColor','uAmp','uLift'].forEach(function(n){ U[n] = gl.getUniformLocation(pr, n); });
+  var dpr = Math.min(window.devicePixelRatio || 1, innerWidth < 900 ? 1 : 1.5);
+  function size(){ cv.width = Math.round(innerWidth*dpr); cv.height = Math.round(innerHeight*dpr); gl.viewport(0,0,cv.width,cv.height); gl.uniform2f(U.uRes, cv.width, cv.height); }
+  var cur = {r:.95,g:.76,b:.19,amp:.8,lift:0}, tgt = {r:.95,g:.76,b:.19,amp:.8,lift:0};
+  var mouse = {x:.35,y:.1}, mt = {x:.35,y:.1}, scrollV = 0, t0 = performance.now(), running = true;
+  addEventListener('pointermove', function(e){ mt.x = (e.clientX - innerWidth/2)/innerHeight; mt.y = (innerHeight/2 - e.clientY)/innerHeight; }, {passive:true});
+  addEventListener('resize', size);
+  document.addEventListener('visibilitychange', function(){ running = !document.hidden; if (running) loop(); });
+  size();
+  function frame(now){
+    var k = .06;
+    cur.r += (tgt.r-cur.r)*k; cur.g += (tgt.g-cur.g)*k; cur.b += (tgt.b-cur.b)*k; cur.amp += (tgt.amp-cur.amp)*k; cur.lift += (tgt.lift-cur.lift)*k;
+    mouse.x += (mt.x-mouse.x)*.08; mouse.y += (mt.y-mouse.y)*.08;
+    gl.uniform1f(U.uTime, reduced ? 0 : (now - t0)/1000);
+    gl.uniform2f(U.uMouse, mouse.x, mouse.y);
+    gl.uniform1f(U.uScroll, scrollV);
+    gl.uniform3f(U.uColor, cur.r, cur.g, cur.b);
+    gl.uniform1f(U.uAmp, cur.amp); gl.uniform1f(U.uLift, cur.lift);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  function loop(){ if (!running) return; frame(performance.now()); if (!reduced) requestAnimationFrame(loop); }
+  if (reduced){ addEventListener('scroll', function(){ requestAnimationFrame(function(){ frame(performance.now()); }); }, {passive:true}); }
+  loop();
+  function hex(h){ return [parseInt(h.substr(1,2),16)/255, parseInt(h.substr(3,2),16)/255, parseInt(h.substr(5,2),16)/255]; }
+  return {
+    setColor:function(h, amp, lift){ var c = hex(h); tgt.r = c[0]; tgt.g = c[1]; tgt.b = c[2]; if (amp != null) tgt.amp = amp; if (lift != null) tgt.lift = lift; if (reduced) setTimeout(function(){ for (var k2 in tgt) cur[k2] = tgt[k2]; frame(performance.now()); }, 0); },
+    scroll:function(v){ scrollV = v; }
+  };
+})();
+addEventListener('scroll', function(){ TOPO.scroll(scrollY / innerHeight * .22); }, {passive:true});
+
+/* stage color follows the active section */
+(function(){
+  var secs = [].slice.call(document.querySelectorAll('[data-stage]'));
+  if (!('IntersectionObserver' in window) || !secs.length) return;
+  var io2 = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if (!en.isIntersecting) return;
+      TOPO.setColor(en.target.dataset.stage, parseFloat(en.target.dataset.amp || '0.8'), parseFloat(en.target.dataset.lift || '0'));
+    });
+  }, {rootMargin:'-45% 0px -45% 0px'});
+  secs.forEach(function(s){ io2.observe(s); });
+})();
+
+/* ---------- menu ---------- */
+var menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+menuBtn.addEventListener('click', function(){
+  var open = menu.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+});
+menu.querySelectorAll('[data-close]').forEach(function(a){
+  a.addEventListener('click', function(){ menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); });
+});
+
+/* ---------- reveals (vanilla fallback; GSAP takes over below when present) ---------- */
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+},{threshold:.12, rootMargin:'0px 0px -5% 0px'});
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+/* ---------- hero bag swap + stage tint flash ---------- */
+var heroBag = document.getElementById('heroBag'), heroGlare = document.getElementById('heroGlare');
+function setGlareMask(url){
+  heroGlare.style.webkitMaskImage = 'url("' + url + '")';
+  heroGlare.style.maskImage = 'url("' + url + '")';
+}
+setGlareMask(heroBag.src);
+var tintT = null;
+document.querySelectorAll('.hero-switch button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.hero-switch button').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    b.setAttribute('aria-pressed','true');
+    heroBag.classList.add('swap');
+    TOPO.setColor(b.dataset.c, 1.1, .25);
+    clearTimeout(tintT); tintT = setTimeout(function(){ TOPO.setColor('#F2C230', 1, .2); }, 2400);
+    setTimeout(function(){
+      heroBag.src = b.dataset.img;
+      heroBag.alt = b.textContent + ' bag';
+      setGlareMask(b.dataset.img);
+      heroBag.classList.remove('swap');
+      if (hasG) gsap.fromTo('#bagBox', {rotationY:-22}, {rotationY:0, duration:1, ease:'power3.out'});
+    }, reduced ? 0 : 200);
+  });
+});
+/* bag tilt + glare follows pointer (desktop) */
+if (hasG && fine){
+  var bagBox = document.getElementById('bagBox');
+  var rY = gsap.quickTo(bagBox, 'rotationY', {duration:.8, ease:'power3.out'});
+  var rX = gsap.quickTo(bagBox, 'rotationX', {duration:.8, ease:'power3.out'});
+  document.querySelector('.hero-photo').addEventListener('pointermove', function(e){
+    var r = bagBox.getBoundingClientRect();
+    rY(((e.clientX - (r.left + r.width/2)) / r.width) * 16);
+    rX(-((e.clientY - (r.top + r.height/2)) / r.height) * 10);
+    heroGlare.style.setProperty('--gx', ((e.clientX - r.left) / r.width * 100) + '%');
+    heroGlare.style.setProperty('--gy', ((e.clientY - r.top) / r.height * 100) + '%');
+  });
+  gsap.to(bagBox, {y:-7, duration:3, ease:'sine.inOut', yoyo:true, repeat:-1});
+}
+
+/* ---------- timeline: rail draw + node glow + toggles ---------- */
+var tl = document.getElementById('tl'), tlDraw = document.getElementById('tlDraw');
+var tlRows = [].slice.call(tl.querySelectorAll('.tl-row'));
+function drawRail(){
+  var r = tl.getBoundingClientRect();
+  var p = Math.max(0, Math.min(1, (innerHeight * .75 - r.top) / r.height));
+  tlDraw.style.transform = 'scaleY(' + p + ')';
+  tlRows.forEach(function(row){
+    var rr = row.getBoundingClientRect();
+    row.classList.toggle('lit', rr.top < innerHeight * .75);
+  });
+}
+if (reduced) { tlDraw.style.transform = 'scaleY(1)'; tlRows.forEach(function(r){ r.classList.add('lit'); }); }
+else {
+  var tick = false;
+  addEventListener('scroll', function(){
+    if (!tick){ tick = true; requestAnimationFrame(function(){ drawRail(); tick = false; }); }
+  }, {passive:true});
+  drawRail();
+}
+document.querySelectorAll('.tl-toggle').forEach(function(t){
+  t.addEventListener('click', function(){
+    var panel = document.getElementById(t.getAttribute('aria-controls'));
+    var open = panel.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+    t.textContent = open ? 'Hide doses −' : 'Show doses +';
+  });
+});
+
+/* ---------- ingredients ---------- */
+var ING = [
+  ['strength','Strength','5 g','Creatine Monohydrate','Strength and power across a training block'],
+  ['strength','Strength','3.2 g','Beta-Alanine','Buffers the acid built up by hard sets'],
+  ['strength','Strength','2.5 g','Betaine Anhydrous','Strength and power support'],
+  ['blood','Blood flow','8 g','L-Citrulline','Converted to arginine, supports nitric oxide'],
+  ['blood','Blood flow','1.5 g','Nitrosigine','Blood flow support'],
+  ['hydration','Hydration','3 g','Glycerol','Draws and holds water in blood and muscle'],
+  ['hydration','Hydration','750 mg','Sodium','The mineral lost most through sweat'],
+  ['hydration','Hydration','400 mg','Potassium','Fluid balance and muscle contraction'],
+  ['hydration','Hydration','100 mg','Magnesium','Muscle function'],
+  ['hydration','Hydration','2 g','Taurine','Fluid balance and muscle function'],
+  ['focus','Focus','1.5 g','L-Tyrosine','Used to make dopamine and noradrenaline'],
+  ['focus','Focus','1 g','Acetyl-L-Carnitine','A form of carnitine that reaches the brain'],
+  ['focus','Focus','300 mg','Alpha-GPC','A choline source for focus and output'],
+  ['energy','Energy (P2 Core+)','200 mg','Caffeine Anhydrous','About two cups of coffee, stated plainly'],
+  ['energy','Energy (P2 Core+)','150 mg','Theobromine','A milder relative of caffeine, from cocoa'],
+  ['energy','Energy (P2 Core+)','100 mg','L-Theanine','Smooths out the caffeine']
+];
+var grid = document.getElementById('ingGrid');
+grid.innerHTML = ING.map(function(x, i){
+  return '<div class="ing rv" data-cat="' + x[0] + '">' +
+    '<div class="ing-top"><span class="cat">' + x[1] + '</span><span>' + String(i+1).padStart(2,'0') + '/16</span></div>' +
+    '<div class="dose' + (x[0]==='energy' ? ' energy' : '') + '">' + x[2] + '</div>' +
+    '<h4>' + x[3] + '</h4><p>' + x[4] + '</p></div>';
+}).join('');
+grid.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click', function(){
+    document.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    c.setAttribute('aria-pressed','true');
+    var f = c.dataset.f;
+    grid.querySelectorAll('.ing').forEach(function(card){
+      card.classList.toggle('hide', f !== 'all' && card.dataset.cat !== f);
+    });
+  });
+});
+
+/* ---------- founders grid (count is REAL — wire to Shopify founder-tag count at port) ---------- */
+var fGrid = document.getElementById('fGrid'), fCount = document.getElementById('fCount'),
+    fStatus = document.getElementById('fStatus'), fClaim = document.getElementById('fClaim'),
+    fDone = document.getElementById('fDone'), selSpot = null;
+var claimed = Math.max(0, Math.min(99, P2PFOUNDERS.claimed));
+for (var i = 1; i <= 99; i++){
+  var b = document.createElement('button');
+  b.dataset.spot = i;
+  if (i <= claimed){ b.className = 'claimed'; b.disabled = true; b.setAttribute('aria-label','Spot ' + i + ', claimed'); }
+  else { b.setAttribute('aria-label','Claim founder spot ' + i); }
+  fGrid.appendChild(b);
+}
+var openSpots = 99 - claimed;
+fCount.innerHTML = claimed === 0
+  ? '<b>99</b> founder spots · <b>all open</b>'
+  : '<b>' + claimed + '</b> of 99 claimed · <b>' + openSpots + '</b> open';
+fStatus.textContent = claimed >= 99 ? 'Standby List' : (claimed === 0 ? 'Now Open' : 'Still Open');
+var heroFounder = document.getElementById('heroFounder');
+if (openSpots > 0 && openSpots <= 15) heroFounder.innerHTML = '<b>Only ' + openSpots + ' founder spots left</b> · Become a founder →';
+function selectSpot(n){
+  selSpot = n;
+  fGrid.querySelectorAll('button').forEach(function(x){ x.classList.remove('sel'); });
+  fGrid.querySelector('[data-spot="' + n + '"]').classList.add('sel');
+  fClaim.classList.add('open');
+  document.getElementById('fBecome').textContent = 'Become a founder · claim spot #' + n;
+  document.getElementById('fEmail').focus();
+}
+fGrid.addEventListener('click', function(e){
+  var b2 = e.target.closest('button');
+  if (b2 && !b2.disabled) selectSpot(+b2.dataset.spot);
+});
+document.getElementById('fBecome').addEventListener('click', function(){
+  if (!selSpot){ var first = fGrid.querySelector('button:not(.claimed)'); if (first) selectSpot(+first.dataset.spot); }
+  else document.getElementById('fEmail').focus();
+});
+document.getElementById('fClaimBtn').addEventListener('click', function(){
+  var em = document.getElementById('fEmail');
+  if (!em.value || em.value.indexOf('@') < 0){ em.focus(); return; }
+  fClaim.classList.remove('open');
+  fDone.style.display = 'block'; /* wire to email platform + founder list at port */
+});
+
+/* ---------- loadout cart ---------- */
+var qty = { 'core-minus': 0, 'core-plus': 0, 'fuel': 0 };
+var subOn = true;
+var cartCount = document.getElementById('cartCount'), cartBtn = document.getElementById('cartBtn');
+function bags(){ return qty['core-minus'] + qty['core-plus'] + qty['fuel']; }
+function money(n){ return '$' + n.toFixed(2); }
+function totals(){
+  var n = bags(), total = 0, save = 0, note = '';
+  if (n > 0){
+    if (subOn){ total = n * PRICE.sub; save = n * (PRICE.retail - PRICE.sub); note = n + ' bag' + (n>1?'s':'') + ' · subscription'; }
+    else {
+      var rem = n;
+      while (rem >= 3){ total += BUNDLE[3]; rem -= 3; }
+      if (rem === 2){ total += BUNDLE[2]; rem = 0; }
+      if (rem === 1){ total += PRICE.retail; rem = 0; }
+      save = n * PRICE.retail - total;
+      note = n + ' bag' + (n>1?'s':'') + ' · one-time, bundle price applied';
+    }
+  }
+  document.getElementById('sumTotal').textContent = money(total);
+  document.getElementById('sumNote').textContent = n ? note : 'Add a bag to start';
+  document.getElementById('sumSave').textContent = save > 0.004 ? 'You save ' + money(save) : '';
+  var ship = document.getElementById('shipBar'), shipNote = document.getElementById('shipNote');
+  ship.style.width = (Math.min(1, total / 98) * 100) + '%';
+  shipNote.textContent = total >= 98 ? 'FREE SHIPPING UNLOCKED' : (total > 0 ? money(98 - total) + ' TO FREE SHIPPING' : 'FREE SHIPPING ON $98+');
+  shipNote.classList.toggle('unlocked', total >= 98);
+  cartCount.textContent = n;
+  cartBtn.setAttribute('aria-label','Loadout, ' + n + ' items');
+  document.querySelectorAll('.prod').forEach(function(card){
+    card.querySelector('[data-qty]').textContent = qty[card.dataset.prod];
+  });
+}
+document.querySelectorAll('.prod .qty button').forEach(function(b3){
+  b3.addEventListener('click', function(){
+    var p = b3.closest('.prod').dataset.prod;
+    qty[p] = Math.max(0, qty[p] + (+b3.dataset.q));
+    totals();
+  });
+});
+document.querySelectorAll('[data-add]').forEach(function(b4){
+  b4.addEventListener('click', function(){
+    qty[b4.dataset.add]++; totals();
+    document.getElementById('loadout').scrollIntoView({behavior: reduced ? 'auto' : 'smooth'});
+  });
+});
+document.querySelectorAll('[data-pair]').forEach(function(b5){
+  b5.addEventListener('click', function(){ qty[b5.dataset.pair]++; qty['fuel']++; totals(); });
+});
+document.getElementById('subToggle').addEventListener('click', function(){
+  subOn = !subOn;
+  this.setAttribute('aria-pressed', subOn);
+  totals();
+});
+document.getElementById('preorder').addEventListener('click', function(){
+  if (bags() === 0){ this.textContent = 'Add a bag first'; var s1=this; setTimeout(function(){ s1.textContent='Pre-order'; },1600); return; }
+  this.textContent = 'Checkout wired at launch'; var s2=this;
+  setTimeout(function(){ s2.textContent='Pre-order'; }, 2000);
+});
+totals();
+
+/* ---------- supplement facts ---------- */
+var FACTS = {
+  'core-minus': { name:'P2 Core−', serving:'Serving size: 1 sachet (40.9 g)', rows:[
+    ['Calories','75','rule'],['Total Carbohydrate','8 g (3%*)'],
+    ['Magnesium (as magnesium glycinate)','100 mg (24%)'],['Sodium (as sodium citrate)','750 mg (33%)'],
+    ['Potassium (as potassium citrate)','400 mg (9%)','rule'],
+    ['L-Citrulline','8,000 mg†'],['Creatine Monohydrate','5,000 mg†'],['Beta Alanine','3,200 mg†'],
+    ['Glycerol','3,000 mg†'],['Betaine Anhydrous','2,500 mg†'],['Taurine','2,000 mg†'],
+    ['L-Tyrosine','1,500 mg†'],['Nitrosigine® (Inositol-Stabilized Arginine Silicate)','1,500 mg†'],
+    ['Acetyl L-Carnitine HCl','1,000 mg†'],['Alpha GPC','300 mg†']]},
+  'core-plus': { name:'P2 Core+', serving:'Serving size: 1 sachet (42 g)', rows:[
+    ['Calories','75','rule'],['Total Carbohydrate','9 g (3%*)'],
+    ['Magnesium (as magnesium glycinate)','100 mg (24%)'],['Sodium (as sodium citrate)','750 mg (33%)'],
+    ['Potassium (as potassium citrate)','400 mg (9%)','rule'],
+    ['L-Citrulline','8,000 mg†'],['Creatine Monohydrate','5,000 mg†'],['Beta Alanine','3,200 mg†'],
+    ['Glycerol','3,000 mg†'],['Betaine Anhydrous','2,500 mg†'],['Taurine','2,000 mg†'],
+    ['L-Tyrosine','1,500 mg†'],['Nitrosigine® (Inositol-Stabilized Arginine Silicate)','1,500 mg†'],
+    ['Acetyl L-Carnitine HCl','1,000 mg†'],['Alpha GPC','300 mg†'],
+    ['Caffeine Anhydrous','200 mg†'],['Theobromine','150 mg†'],['L-Theanine','100 mg†']]},
+  'fuel': { name:'P2 Fuel', serving:'Serving size: 1 sachet (49.8 g)', rows:[
+    ['Calories','170','rule'],['Total Carbohydrate','42 g (15%*)'],
+    ['Magnesium (as magnesium glycinate)','50 mg (12%)'],['Sodium (as sodium citrate)','600 mg (26%)'],
+    ['Potassium (as potassium citrate)','350 mg (7%)','rule'],
+    ['Highly Branched Cyclic Dextrin','30 g†'],['Taurine','2,000 mg†']]}
+};
+var dlg = document.getElementById('factsDlg');
+document.querySelectorAll('[data-facts]').forEach(function(b6){
+  b6.addEventListener('click', function(){
+    var f = FACTS[b6.dataset.facts];
+    document.getElementById('factsTitle').textContent = f.name;
+    document.getElementById('factsServing').textContent = f.serving;
+    document.getElementById('factsTable').innerHTML = f.rows.map(function(r){
+      return '<tr' + (r[2] ? ' class="rule"' : '') + '><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>';
+    }).join('');
+    dlg.showModal();
+  });
+});
+document.getElementById('factsClose').addEventListener('click', function(){ dlg.close(); });
+dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+
+/* ---------- notify forms ---------- */
+document.getElementById('notifyForm').addEventListener('submit', function(e){
+  e.preventDefault(); /* wire to email platform at port */
+  this.style.display = 'none';
+  document.getElementById('notifyDone').style.display = 'block';
+});
+document.querySelectorAll('[data-notify]').forEach(function(b7){
+  b7.addEventListener('click', function(){
+    b7.textContent = "You'll be notified"; b7.disabled = true;
+  });
+});
+
+/* ================= GSAP ENHANCEMENT LAYER =================
+   Native scroll only (no smooth-scroll library — it added lag and overshoot).
+   RULE: any element GSAP owns gets its .rv class removed first, so the CSS
+   reveal/transition system never fights or hides a GSAP-managed element. */
+if (hasG){
+  var own = function(sel){ document.querySelectorAll(sel).forEach(function(el){ el.classList.remove('rv'); el.classList.add('on'); }); };
+  /* hero entrance */
+  own('.hero-visual');
+  gsap.timeline({defaults:{ease:'power4.out'}})
+    .from('#heroBar', {scaleY:0, duration:.7}, .1)
+    .from('#heroH1 .ln > span', {yPercent:112, duration:1.1, stagger:.09}, .2)
+    .fromTo('.hero-visual', {opacity:0, y:40}, {opacity:1, y:0, duration:1.1, clearProps:'all'}, .5);
+  /* packshot parallax in bands (kill the CSS hover transition so scrub is 1:1) */
+  document.querySelectorAll('[data-parallax] img').forEach(function(im){
+    im.style.transition = 'none';
+    gsap.to(im, {yPercent:-9, ease:'none', scrollTrigger:{trigger:im.closest('.band'), start:'top bottom', end:'bottom top', scrub:true}});
+  });
+  /* dose count-ups */
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var end = parseFloat(el.dataset.count), unit = el.dataset.unit || '', dec = (String(end).split('.')[1] || '').length;
+    var o = {v:0};
+    ScrollTrigger.create({trigger:el, start:'top 88%', once:true, onEnter:function(){
+      gsap.to(o, {v:end, duration:1.3, ease:'power2.out', onUpdate:function(){ el.textContent = o.v.toFixed(dec) + unit; }});
+    }});
+  });
+  /* FRA 10% rise */
+  gsap.fromTo('#fraTen', {yPercent:34, opacity:0}, {yPercent:0, opacity:1, ease:'power3.out', scrollTrigger:{trigger:'.fra', start:'top 80%', end:'top 32%', scrub:true}});
+  /* summit number scale-in */
+  own('#summitFt');
+  gsap.fromTo('#summitFt', {scale:.82, opacity:0}, {scale:1, opacity:1, ease:'power3.out', scrollTrigger:{trigger:'.summit', start:'top 70%', end:'top 30%', scrub:true}});
+  addEventListener('load', function(){ ScrollTrigger.refresh(); });
+  if (document.fonts) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+}
+
+/* founders grid cascade — CSS keyframes (works with or without GSAP, no transition conflicts) */
+if (!reduced && 'IntersectionObserver' in window){
+  fGrid.querySelectorAll('button').forEach(function(btn, idx){ btn.style.animationDelay = (idx * 10) + 'ms'; });
+  var fio = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if (en.isIntersecting){ fGrid.classList.add('cascade'); fio.disconnect(); } });
+  }, {rootMargin:'0px 0px -14% 0px'});
+  fio.observe(fGrid);
+}
+})();
+</script>
+
+<a href="color-options.html" style="position:fixed;left:18px;bottom:18px;z-index:999;display:inline-flex;align-items:center;gap:10px;background:rgba(10,14,24,.88);backdrop-filter:blur(8px);color:#EDE9E1;border:1px solid #F2C230;border-radius:999px;padding:10px 18px;font:600 13.5px 'Public Sans',sans-serif;text-decoration:none;letter-spacing:.04em">
+  <span style="width:12px;height:12px;border-radius:50%;background:#F2C230;display:inline-block"></span>
+  Option B · Steel Blue &nbsp;·&nbsp; back to color options
+</a>
+</body>
+</html>

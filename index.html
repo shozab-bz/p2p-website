@@ -71,12 +71,12 @@ h2{font-size:clamp(36px,5vw,64px);margin:14px 0 20px}
 
 /* ============ HEADER ============ */
 header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(11,22,48,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-1)}
-.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:96px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .hd-menu{justify-self:start;width:48px;height:48px;border-radius:50%;border:1px solid var(--line-3);background:transparent;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px}
 .hd-menu span{display:block;width:18px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
 .hd-menu[aria-expanded="true"] span:nth-child(1){transform:translateY(3.5px) rotate(45deg)}
 .hd-menu[aria-expanded="true"] span:nth-child(2){transform:translateY(-3.5px) rotate(-45deg)}
-.hd-logo .logo-svg{height:52px;width:auto}
+.hd-logo .logo-svg{height:74px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
 .hd-cart{justify-self:end;display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy-0);border:none;border-radius:999px;padding:10px 18px;font-weight:700;font-size:16px;min-height:44px;transition:background .2s}
 .hd-cart:hover{background:var(--gold-h)}
 .hd-cart svg{width:17px;height:17px}
@@ -89,13 +89,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(11,22,48,.
 .menu .m-small{font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);border:none;margin-top:28px}
 
 /* ============ HERO ============ */
-.hero{padding-top:150px;padding-bottom:clamp(70px,8vw,110px)}
+.hero{padding-top:164px;padding-bottom:clamp(70px,8vw,110px)}
+.hero-brand{margin-bottom:30px}
+.hero-brand .logo-svg{width:clamp(280px,34vw,440px);height:auto;filter:drop-shadow(0 6px 24px rgba(0,0,0,.4))}
 .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,72px);align-items:center}
 .hero-eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:26px}
 .hero-eyebrow .bar{width:3px;height:52px;background:linear-gradient(180deg,var(--gold-h),var(--gold));flex:none;transform-origin:top}
 .hero-eyebrow .big{font-family:var(--stencil);font-size:26px;line-height:1.1;color:var(--gold)}
 .hero-eyebrow .small{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--ink-2);display:block;margin-top:4px}
-.hero h1{font-size:clamp(52px,7.2vw,104px)}
+.hero h1{font-size:clamp(46px,6.2vw,88px)}
 .hero h1 .ln{display:block;overflow:hidden}
 .hero h1 .ln>span{display:inline-block}
 .hero .sub{margin:24px 0 32px;font-size:20px}
@@ -397,7 +399,9 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 }
 @media(max-width:820px){
   body{font-size:18px}
-  .hero{padding-top:124px}
+  .hero{padding-top:116px}
+  .hero-brand{margin-bottom:24px}
+  .hero-brand .logo-svg{width:min(78vw,340px)}
   .hero-grid,.story-grid,.band .wrap{grid-template-columns:1fr}
   .hero-45{top:-30px;right:0;left:auto;font-size:110px}
   .story-photos{position:static}
@@ -405,7 +409,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
   .ing-grid{grid-template-columns:1fr 1fr}
   .shop-grid{grid-template-columns:1fr}
   .band-shot{order:-1}
-  .hd{height:72px}.hd-logo .logo-svg{height:44px}
+  .hd{height:80px}.hd-logo .logo-svg{height:58px}
   .f-grid{gap:5px}
   .notify{flex-direction:column}
   .f-claim{flex-direction:column}
@@ -460,6 +464,9 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 <section class="hero" id="top" data-stage="#F2C230" data-amp="1" data-lift=".2">
   <div class="wrap hero-grid">
     <div>
+      <div class="hero-brand rv">
+        <svg class="logo-svg" viewBox="0 0 1504 688" role="img" aria-label="Prime 2 Performance"><use href="#p2logo"/></svg>
+      </div>
       <div class="hero-eyebrow rv">
         <span class="bar" id="heroBar"></span>
         <span>
@@ -482,14 +489,14 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
       <div class="hero-photo">
         <img class="ph-main" src="assets/img/ig-tim-gym-hero.jpg" alt="Tim in his home gym" style="object-position:50% 22%">
         <div class="hero-bagbox" id="bagBox">
-          <img class="hero-bag" id="heroBag" src="assets/img/core-minus-sm.png" alt="P2 Core minus bag">
+          <img class="hero-bag" id="heroBag" src="assets/img/bag-core-minus.webp" alt="P2 Core minus bag">
           <div class="hero-glare" id="heroGlare" aria-hidden="true"></div>
         </div>
       </div>
       <div class="hero-switch" role="group" aria-label="Preview a formula">
-        <button data-p="core-minus" data-img="assets/img/core-minus-sm.png" data-c="#6FBF73" aria-pressed="true">P2 Core−</button>
-        <button data-p="core-plus" data-img="assets/img/core-plus-sm.png" data-c="#E0685A" aria-pressed="false">P2 Core+</button>
-        <button data-p="fuel" data-img="assets/img/fuel-sm.png" data-c="#E8A458" aria-pressed="false">P2 Fuel</button>
+        <button data-p="core-minus" data-img="assets/img/bag-core-minus.webp" data-c="#6FBF73" aria-pressed="true">P2 Core−</button>
+        <button data-p="core-plus" data-img="assets/img/bag-core-plus.webp" data-c="#E0685A" aria-pressed="false">P2 Core+</button>
+        <button data-p="fuel" data-img="assets/img/bag-fuel.webp" data-c="#E8A458" aria-pressed="false">P2 Fuel</button>
       </div>
     </div>
   </div>
@@ -663,7 +670,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 <!-- ============ PRODUCT BANDS ============ -->
 <section class="band" style="--pc:var(--coreplus)" data-stage="#E0685A" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/core-plus-sm.png" alt="P2 Core+ bag, Huckleberry, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag, Huckleberry, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1200 · Before Training, With Caffeine</span>
       <div class="band-name rv"><span class="p2chip">P2</span>Core+</div>
@@ -684,7 +691,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
 <section class="band" style="--pc:var(--coreminus)" data-stage="#6FBF73" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/core-minus-sm.png" alt="P2 Core− bag, Strawberry Watermelon, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag, Strawberry Watermelon, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1700 · Before Training, Stimulant-Free</span>
       <div class="band-name rv"><span class="p2chip">P2</span>Core−</div>
@@ -705,7 +712,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
 <section class="band" style="--pc:var(--fuel)" data-stage="#E8A458" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/fuel-sm.png" alt="P2 Fuel bag, Tropical Charge, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag, Tropical Charge, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1230 / 1730 · During Training</span>
       <div class="band-name rv"><span class="p2chip">P2</span>Fuel</div>
@@ -728,7 +735,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 <section class="section-pad rule-top veil" id="story" data-stage="#E6C77E" data-amp="1" data-lift=".3">
   <div class="wrap story-grid">
     <div>
-      <div class="beat rv"><span class="eyebrow">The founder</span><h3>Reconnaissance Marine. FBI Special Agent. Operations in twenty-six countries.</h3></div>
+      <div class="beat rv"><span class="eyebrow">The founder</span><h3>Tim Haught. Reconnaissance Marine. FBI Special Agent. Operations in twenty-six countries.</h3></div>
       <div class="beat rv"><span class="eyebrow">The injuries</span><h3>Shoulder and rotator cuffs completely torn. Then both hamstrings, completely torn.</h3></div>
       <div class="beat rv"><span class="eyebrow">The low point</span><h3>He could barely walk. Both legs wrapped, he wobbled into the gym anyway, just to hold on to what he could. It was agonizing.</h3></div>
       <div class="beat rv"><span class="eyebrow">The work</span><h3>Standard recovery wasn't enough. He spent three years formulating what he needed to rebuild.</h3></div>
@@ -808,7 +815,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
     <div class="shop-grid">
       <div class="prod rv" style="--pc:var(--coreminus)" data-prod="core-minus">
-        <div class="prod-img"><img src="assets/img/core-minus-sm.png" alt="P2 Core− bag"></div>
+        <div class="prod-img"><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag"></div>
         <div class="prod-ctx"><span>Before training, stimulant-free</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip">P2</span>Core−</div>
         <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
@@ -816,7 +823,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <button class="link-label" data-facts="core-minus">See full label +</button>
       </div>
       <div class="prod rv" style="--pc:var(--coreplus)" data-prod="core-plus">
-        <div class="prod-img"><img src="assets/img/core-plus-sm.png" alt="P2 Core+ bag"></div>
+        <div class="prod-img"><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag"></div>
         <div class="prod-ctx"><span>Before training, with caffeine</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip">P2</span>Core+</div>
         <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
@@ -824,7 +831,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <button class="link-label" data-facts="core-plus">See full label +</button>
       </div>
       <div class="prod rv" style="--pc:var(--fuel)" data-prod="fuel">
-        <div class="prod-img"><img src="assets/img/fuel-sm.png" alt="P2 Fuel bag"></div>
+        <div class="prod-img"><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag"></div>
         <div class="prod-ctx"><span>During training</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip">P2</span>Fuel</div>
         <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>

@@ -66,7 +66,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(11,22,48,.
 .hd-menu span{display:block;width:18px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
 .hd-menu[aria-expanded="true"] span:nth-child(1){transform:translateY(3.5px) rotate(45deg)}
 .hd-menu[aria-expanded="true"] span:nth-child(2){transform:translateY(-3.5px) rotate(-45deg)}
-.hd-logo .logo-svg{height:74px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+.hd-logo .logo-svg{height:72px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
 .hd-cart{justify-self:end;display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy-0);border:none;border-radius:999px;padding:10px 18px;font-weight:700;font-size:16px;min-height:44px;transition:background .2s}
 .hd-cart:hover{background:var(--gold-h)}
 .hd-cart svg{width:17px;height:17px}
@@ -395,7 +395,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
   .ing-grid{grid-template-columns:1fr 1fr}
   .shop-grid{grid-template-columns:1fr}
   .band-shot{order:-1}
-  .hd{height:80px}.hd-logo .logo-svg{height:58px}
+  .hd{height:80px}.hd-logo .logo-svg{height:54px}
   .f-grid{gap:5px}
   .notify{flex-direction:column}
   .f-claim{flex-direction:column}
@@ -412,7 +412,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
 /* ============ SUBPAGE PATTERNS ============ */
 .logo-img{display:block}
-.hd-logo .logo-img{height:74px;width:auto}
+.hd-logo .logo-img{height:72px;width:auto}
 .ft-logo .logo-img{width:230px;height:auto}
 .phero{padding-top:164px;padding-bottom:clamp(50px,6vw,80px)}
 .phero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
@@ -493,6 +493,6 @@ details.qa .qa-a{padding:0 0 24px;color:var(--ink-2);max-width:68ch}
   .phero-grid,.buy-grid,.chapter,.contact-grid{grid-template-columns:1fr}
   .steps,.related{grid-template-columns:1fr}
   .pshot{order:-1}
-  .hd-logo .logo-img{height:58px}
+  .hd-logo .logo-img{height:54px}
   .notify-inline{flex-direction:column}
 }

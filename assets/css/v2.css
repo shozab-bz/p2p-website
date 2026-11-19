@@ -499,3 +499,7 @@ details.qa .qa-a{padding:0 0 24px;color:var(--ink-2);max-width:68ch}
 
 /* R2: darker cobalt behind long text sections (client feedback 19 Nov) */
 .veil.deep::before{background:rgba(8,21,54,.78)}
+
+/* FDA disclaimer near benefit claims */
+.fda-note{font-family:var(--mono);font-size:11.5px;line-height:1.7;letter-spacing:.04em;max-width:68ch;margin:30px auto 0;text-align:center;color:var(--ink-2);opacity:.8}
+.fda-note.paper{color:#4a5370;opacity:1}

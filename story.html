@@ -4,18 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tim Haught — The Founder | Prime2Performance</title>
-<meta name="description" content="Recon Marine. FBI Special Agent. Both hamstrings torn — and eleven months later, hunting at 11,000 feet. The story the formulas came from.">
+<meta name="description" content="Recon Marine. FBI Special Agent, retired. Twelve years in Iraq and Afghanistan. Then both hamstrings tore. The story the P2 formulas came from.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Stencil+One&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/v2.css">
+<style>
+/* ---- Tim Haught story page ---- */
+.st-hero h1{font-size:clamp(56px,8.5vw,120px);line-height:.96;letter-spacing:.01em}
+.st-hero .role{font-family:var(--mono);font-size:clamp(12px,1.3vw,14.5px);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:18px 0 14px;display:block}
+/* service record */
+.record{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(30px,4vw,46px)}
+.rec{border:1px solid var(--line-2);border-radius:14px;padding:clamp(20px,2.6vw,30px) clamp(18px,2.2vw,26px);background:rgba(10,24,64,.55);position:relative;overflow:hidden}
+.rec::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),transparent 85%)}
+.rec .num{font-family:var(--stencil);font-size:clamp(44px,5.4vw,72px);line-height:1;color:var(--gold)}
+.rec .lab{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-top:10px;display:block;line-height:1.6}
+/* chapter spine */
+.spine-wrap{position:relative}
+.spine{position:absolute;left:-1px;top:0;bottom:0;width:2px;background:var(--line-1)}
+.spine i{position:absolute;left:0;top:0;width:2px;height:0;background:linear-gradient(180deg,var(--gold),var(--gold-h));box-shadow:0 0 12px rgba(242,194,48,.5);display:block}
+.chapter{position:relative}
+.chapter .ghost{position:absolute;right:0;top:clamp(20px,3vw,34px);font-family:var(--stencil);font-size:clamp(90px,12vw,170px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(237,233,225,.1);pointer-events:none;user-select:none}
+/* bureau record card */
+.dossier{border:1px solid var(--line-2);border-radius:16px;background:linear-gradient(165deg,rgba(22,48,122,.75),rgba(10,24,64,.9));padding:clamp(26px,3.4vw,40px);box-shadow:0 30px 60px -34px rgba(0,0,0,.7)}
+.dossier .d-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line-2);padding-bottom:16px;margin-bottom:18px}
+.dossier .d-top b{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--ink-2)}
+.dossier .d-top svg{width:44px;height:22px;fill:var(--gold)}
+.dossier dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0}
+.dossier dt{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);padding-top:3px}
+.dossier dd{margin:0;font-weight:600;color:var(--ink);font-size:17.5px}
+/* creed band */
+.creed{background:linear-gradient(180deg,rgba(6,15,46,.92),rgba(10,24,64,.88));border-top:1px solid var(--line-1);border-bottom:1px solid var(--line-1)}
+.creed .q{border-left:3px solid var(--gold);padding:6px 0 6px clamp(18px,2.6vw,30px);margin:clamp(26px,3.6vw,40px) 0;max-width:62ch}
+.creed .q p{font-size:clamp(20px,2.4vw,27px);line-height:1.45;color:var(--ink);font-weight:600;margin:0}
+.creed .q.gold p{color:var(--gold)}
+/* proof chips */
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(28px,3.6vw,40px)}
+.pf{border:1px solid var(--line-2);border-radius:14px;padding:22px;background:rgba(10,24,64,.55)}
+.pf b{display:block;font-family:var(--anton);font-size:19px;letter-spacing:.02em;color:var(--ink);margin-bottom:8px}
+.pf span{font-size:15.5px;color:var(--ink-2);line-height:1.55}
+@media(max-width:860px){
+  .record{grid-template-columns:repeat(2,1fr)}
+  .proof{grid-template-columns:1fr 1fr}
+  .chapter .ghost{font-size:84px;opacity:.7}
+}
+@media(max-width:480px){.proof{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true"><symbol id="p2m" viewBox="21.9 21.1 165.7 83.9"><path d="M44.25,76.83h36.12c12.85,0,17.83-.78,22.16-3.44,6.09-3.77,8.64-11.08,8.64-25.15,0-13.96-2.77-20.72-10.2-24.37-4.65-2.33-8.31-2.77-22.6-2.77H21.87c0,10.37,8.41,18.78,18.78,18.78h40.31c4.92,0,9.12,3.83,9.29,8.75.19,5.17-3.95,9.42-9.07,9.42h-40.53c-10.37,0-18.78,8.4-18.78,18.78v28.08h22.38v-28.08Z"/><path d="M168.48,86.13h-47.91v-9.3h36.11c12.86,0,17.84-.78,22.16-3.44,6.1-3.77,8.65-11.08,8.65-25.15,0-13.96-2.77-20.72-10.2-24.37-4.65-2.33-8.31-2.77-22.6-2.77h-48.66c3.35,2.28,5.78,5.31,7.4,9.19,1.11,2.66,1.85,5.8,2.28,9.59h41.78c5.02,0,9.09,4.06,9.09,9.08,0,5.02-4.07,9.09-9.09,9.09h-41.88c-.38,3.15-.97,5.86-1.8,8.24-1.75,5.08-4.59,8.78-8.69,11.32-2.13,1.31-4.35,2.22-6.93,2.84v24.46s19,0,19,0h70.07C187.26,94.54,178.86,86.13,168.48,86.13"/></symbol></svg>
 <canvas id="topo" aria-hidden="true"></canvas>
 <header>
   <div class="hd">
     <button class="hd-menu" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
-    <a class="hd-logo" href="index.html" aria-label="Prime2Performance home"><img class="logo-img" src="assets/img/logo-white.png" alt="Prime 2 Performance"></a>
+    <a class="hd-logo" href="index.html" aria-label="Prime2Performance home"><img class="logo-img" src="assets/img/logo-box.svg" alt="Prime 2 Performance"></a>
     <a class="hd-cart" href="index.html#loadout" aria-label="Build your loadout" style="text-decoration:none">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:17px;height:17px"><path d="M6 7h12l-1.5 13h-9L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
       <span>Loadout</span>
@@ -27,7 +69,7 @@
     <a href="index.html#loadout">Build your loadout</a>
     <a href="index.html#label">Read the label</a>
     <a href="index.html#system">The 24-hour system</a>
-    <a href="story.html">Tim's story</a>
+    <a href="story.html">Tim Haught's story</a>
     <a href="founders.html">The 99 Founders</a>
     <a href="faq.html">Debrief (FAQ)</a>
     <span class="m-small">LAUNCHING Q1 2027 · VETERAN-OWNED · MADE IN THE USA</span>
@@ -35,53 +77,102 @@
 </div>
 <main>
 
-<section class="phero veil" data-stage="#F2C230" data-amp="1" data-lift=".3">
+<section class="phero veil st-hero" data-stage="#F2C230" data-amp="1" data-lift=".3">
   <div class="wrap phero-grid">
     <div>
       <span class="eyebrow rv">The Founder</span>
-      <h1 class="rv" style="font-size:clamp(42px,5.4vw,72px)">Believe There's More Ahead.</h1>
-      <p class="sub rv" style="margin-top:16px">Tim Haught is a Reconnaissance Marine and a retired FBI Special Agent, with operations in twenty-six countries behind him. This is the story the formulas came from.</p>
+      <h1 class="rv">TIM HAUGHT</h1>
+      <span class="role rv">Recon Marine · FBI Special Agent, Ret. · Founder, Prime2Performance</span>
+      <p class="sub rv">Fifty years under the weight bar. Twenty-six countries. Two war zones. One injury that should have ended it. P2 is the system Tim Haught built to stay in the fight, because nobody built it for him.</p>
       <div class="hero-ctas rv" style="margin-top:26px"><a class="btn btn-gold" href="training-pair.html">Start with the pair</a><a class="btn btn-ghost" href="founders.html">Meet the 99 Founders</a></div>
     </div>
     <div class="pshot rv" style="display:block">
-      <figure class="ph cross" style="margin:0"><img src="assets/img/ig-tim-gym-hero.jpg" alt="Tim in his home gym" style="height:clamp(360px,44vw,540px);object-position:50% 20%"><figcaption class="cap">Tim — the home gym, Montana</figcaption></figure>
+      <figure class="ph cross" style="margin:0"><img src="assets/img/ig-tim-gym-hero.jpg" alt="Tim Haught in his home gym" style="height:clamp(360px,44vw,540px);object-position:50% 20%"><figcaption class="cap">Tim Haught · the home gym, Montana</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="section-pad veil rule-top" data-stage="#F2C230" data-amp=".9" data-lift=".2">
+<section class="section-pad veil deep rule-top" data-stage="#FFD95A" data-amp=".9" data-lift=".2">
   <div class="wrap">
+    <span class="eyebrow rv">Service Record</span>
+    <h2 class="rv" style="max-width:24ch">Credibility Is Not A Marketing Claim. It Is A Record.</h2>
+    <div class="record">
+      <div class="rec rv"><span class="num" data-count="26">26</span><span class="lab">Countries where his teams operated</span></div>
+      <div class="rec rv"><span class="num" data-count="12">12</span><span class="lab">Years running companies in Iraq &amp; Afghanistan</span></div>
+      <div class="rec rv"><span class="num">GS&#8209;15</span><span class="lab">Special Agent, FBI · Retired</span></div>
+      <div class="rec rv"><span class="num" data-count="50">50</span><span class="lab">Years under the weight bar</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad veil deep rule-top" data-stage="#F2C230" data-amp=".9" data-lift=".2">
+  <div class="wrap spine-wrap">
+    <div class="spine" aria-hidden="true"><i id="spineFill"></i></div>
     <div class="chapter" style="border-top:none">
+      <span class="ghost" aria-hidden="true">01</span>
       <div>
-        <span class="ch-num">01 · THE SERVICE</span>
-        <h2 class="rv">Twenty-Six Countries.</h2>
-        <p class="rv">Reconnaissance Marine, then FBI Special Agent. Decades of carrying a pack, clearing doors and keeping a standard, in whatever country the work was in.</p>
-        <p class="rv">The training never stopped. It was the job, and then it was the habit, and then it was the identity.</p>
+        <span class="ch-num">01 · THE MARINE</span>
+        <h2 class="rv">It Started In Reconnaissance.</h2>
+        <p class="rv">Tim Haught earned his place as a Reconnaissance Marine, in the community where the standard is simple. Be the one others can rely on when everything is heavy and nothing is certain.</p>
+        <p class="rv">He left the Corps. The standard stayed. So did the training, first as the job, then as the habit, then as the identity.</p>
       </div>
-      <figure class="ph rv"><img src="assets/img/ig-tim-gym-4.jpg" alt="Tim training in a Recon Marines shirt" style="object-position:50% 25%"><figcaption class="cap">Recon Marine, ret. · still putting in the work</figcaption></figure>
+      <figure class="ph rv"><img src="assets/img/ig-tim-gym-4.jpg" alt="Tim Haught training in a Recon Marines shirt" style="object-position:50% 25%"><figcaption class="cap">Recon Marine · still putting in the work</figcaption></figure>
     </div>
     <div class="chapter">
-      <figure class="ph rv"><img src="assets/img/ig-p2-rifle-window.jpg" alt="Rifle and glassing setup at the lodge window"><figcaption class="cap">The standard never lowered</figcaption></figure>
+      <span class="ghost" aria-hidden="true">02</span>
+      <div class="dossier rv">
+        <div class="d-top"><b>PERSONNEL RECORD · FEDERAL BUREAU OF INVESTIGATION</b><svg aria-hidden="true"><use href="#p2m"/></svg></div>
+        <dl>
+          <dt>Name</dt><dd>Haught, Tim</dd>
+          <dt>Position</dt><dd>Special Agent</dd>
+          <dt>Grade</dt><dd>GS&#8209;15</dd>
+          <dt>Status</dt><dd>Retired</dd>
+          <dt>Habit kept</dt><dd>Verify everything. Guess nothing.</dd>
+        </dl>
+      </div>
       <div>
-        <span class="ch-num">02 · THE INJURY</span>
-        <h2 class="rv">Then He Tore Both Hamstring Tendons.</h2>
+        <span class="ch-num">02 · THE BUREAU</span>
+        <h2 class="rv">Then He Carried A Badge.</h2>
+        <p class="rv">Special Agent of the FBI, grade GS&#8209;15, retired. A career spent on cases where the details decide everything and nobody gets to round up, guess, or hide behind fine print.</p>
+        <p class="rv">That habit never retired. It is why every P2 bag prints every dose of every ingredient, with nothing buried in a blend.</p>
+      </div>
+    </div>
+    <div class="chapter">
+      <span class="ghost" aria-hidden="true">03</span>
+      <div>
+        <span class="ch-num">03 · TWO WAR ZONES</span>
+        <h2 class="rv">Twelve Years Where Promises Had Consequences.</h2>
+        <p class="rv">After the Bureau, Tim Haught built and ran risk management companies through twelve years of war in Iraq and Afghanistan. Security and investigations. Medical transport and case management for US government contractors injured across twenty-six countries.</p>
+        <p class="rv">And the hardest duty of that work: delivering death benefits to the spouses and children of the men who did not come home.</p>
+        <p class="rv">Nobody keeps that contract for twelve years by overpromising. You keep it by delivering every time, because the cost of failing is counted in people.</p>
+      </div>
+      <figure class="ph rv"><img src="assets/img/ig-p2-rifle-window.jpg" alt="Rifle and glassing setup at the lodge window"><figcaption class="cap">The standard never lowered</figcaption></figure>
+    </div>
+    <div class="chapter">
+      <span class="ghost" aria-hidden="true">04</span>
+      <figure class="ph rv"><img src="assets/img/ig-tim-gym-5.jpg" alt="Tim Haught training in his home gym"><figcaption class="cap">Showing up anyway</figcaption></figure>
+      <div>
+        <span class="ch-num">04 · THE TEAR</span>
+        <h2 class="rv">Then Both Hamstrings Went.</h2>
         <p class="rv">A double hamstring tendon tear. The kind of injury that ends things quietly: first the training, then the standard, then the plans.</p>
         <p class="rv">At the low point he could not leg curl five pounds. Both legs wrapped, he wobbled into the gym anyway, just to hold on to what he could. It was agonizing.</p>
       </div>
     </div>
     <div class="chapter">
+      <span class="ghost" aria-hidden="true">05</span>
       <div>
-        <span class="ch-num">03 · THE WORK</span>
-        <h2 class="rv">Standard Recovery Was Not Enough.</h2>
-        <p class="rv">So he treated recovery like an operation. He read the research, priced the single-ingredient market, and spent three years formulating what he needed to rebuild, for his own use, at full doses.</p>
-        <p class="rv">Those formulas became P2 Core, P2 Fuel, P2 Zero-Six and P2 Repair.</p>
+        <span class="ch-num">05 · THE REBUILD</span>
+        <h2 class="rv">He Treated Recovery Like An Operation.</h2>
+        <p class="rv">He read the research. He priced the single-ingredient market. For three years he formulated what he needed to rebuild, at full doses, for his own use. No shortcuts, because the patient was him.</p>
+        <p class="rv">Those formulas became P2 Core, P2 Fuel, P2 Zero&#8209;Six and P2 Repair.</p>
       </div>
-      <figure class="ph rv"><img src="assets/img/ig-tim-gym-selfie2.jpg" alt="Tim back at full training" style="object-position:50% 18%"><figcaption class="cap">Back to full training</figcaption></figure>
+      <figure class="ph rv"><img src="assets/img/ig-tim-gym-selfie2.jpg" alt="Tim Haught back at full training" style="object-position:50% 18%"><figcaption class="cap">Back to full training</figcaption></figure>
     </div>
     <div class="chapter">
-      <figure class="ph rv"><img src="assets/img/ig-tim-antelope.jpg" alt="Tim in the mountains during hunting season"><figcaption class="cap">Back in the mountains · hunting season</figcaption></figure>
+      <span class="ghost" aria-hidden="true">06</span>
+      <figure class="ph rv"><img src="assets/img/ig-tim-antelope.jpg" alt="Tim Haught in the mountains during hunting season"><figcaption class="cap">Back in the mountains · hunting season</figcaption></figure>
       <div>
-        <span class="ch-num">04 · ELEVEN MONTHS LATER</span>
+        <span class="ch-num">06 · ELEVEN MONTHS LATER</span>
         <h2 class="rv">Hunting At 11,000 Feet.</h2>
         <p class="rv">Eleven months after the tear, he was hunting in the mountains of Mongolia at 11,000 feet. He found sheep hunting at 57.</p>
         <p class="rv">Not a comeback story about turning back any clock. A story about the next climb.</p>
@@ -90,11 +181,36 @@
   </div>
 </section>
 
+<section class="creed section-pad" data-stage="#FFD95A" data-amp="1" data-lift=".3">
+  <div class="wrap">
+    <span class="eyebrow rv">In His Words</span>
+    <h2 class="rv" style="max-width:22ch">No White Coat On The Label.</h2>
+    <div class="q rv"><p>&ldquo;Competitors hire doctors and surgeons. I&rsquo;ve been the patient, the Marine, the FBI agent, the security professional, and the guy under the weight bar for 50 years.&rdquo;</p></div>
+    <div class="q rv gold"><p>&ldquo;Surgeons fix you after the damage. P2 is built so you don&rsquo;t need one.&rdquo;</p></div>
+    <div class="q rv"><p>&ldquo;Formulated by a man who uses it every day, not a white coat on a label.&rdquo;</p></div>
+    <p class="rv" style="font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);margin-top:26px">TIM HAUGHT · FOUNDER, PRIME2PERFORMANCE</p>
+  </div>
+</section>
+
+<section class="section-pad veil deep rule-top" data-stage="#F2C230" data-amp=".8" data-lift=".2">
+  <div class="wrap">
+    <span class="eyebrow rv">What That History Buys You</span>
+    <h2 class="rv" style="max-width:24ch">The Record Is On The Bag.</h2>
+    <div class="proof">
+      <div class="pf rv"><b>Every dose. Printed.</b><span>Each ingredient and its exact amount, on the label. Investigator&rsquo;s rules.</span></div>
+      <div class="pf rv"><b>Full doses only.</b><span>No proprietary blends and no fairy dusting. The doses the research used.</span></div>
+      <div class="pf rv"><b>Built for men 45+.</b><span>Formulated by the man it was built for, tested in his own training first.</span></div>
+      <div class="pf rv"><b>Made in the USA.</b><span>Veteran-owned. Manufactured in the USA with full transparency.</span></div>
+    </div>
+    <div class="hero-ctas rv" style="margin-top:34px"><a class="btn btn-gold" href="index.html#label">Read the label</a><a class="btn btn-ghost" href="index.html#system">See the 24-hour system</a></div>
+  </div>
+</section>
+
 <section class="fra section-pad veil rule-top" data-stage="#FFD95A" data-amp="1.1" data-lift=".3">
   <div class="wrap">
     <span class="eyebrow rv">The Line That Built The Brand</span>
     <h2 class="rv" style="color:var(--gold);max-width:18ch;margin-left:auto;margin-right:auto">Your First Prime Does Not Have To Be Your Last.</h2>
-    <p class="rv" style="font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2)">TIM · FOUNDER, PRIME2PERFORMANCE</p>
+    <p class="rv" style="font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2)">TIM HAUGHT · FOUNDER, PRIME2PERFORMANCE</p>
     <div class="f-cta rv" style="margin-top:30px"><a class="btn btn-gold" href="training-pair.html">Start with the pair</a></div>
   </div>
 </section></main>
@@ -102,7 +218,7 @@
   <div class="wrap">
     <div class="ft-grid">
       <div class="ft-logo">
-        <img class="logo-img" src="assets/img/logo-white.png" alt="Prime 2 Performance" style="width:230px">
+        <img class="logo-img" src="assets/img/logo-box.svg" alt="Prime 2 Performance" style="width:230px">
         <p class="ft-tag">Performance nutrition for your 2nd prime. Veteran-owned. Made in the USA.</p>
       </div>
       <div class="ft-col">
@@ -116,7 +232,7 @@
       </div>
       <div class="ft-col">
         <h5>Learn</h5>
-        <a href="story.html">Tim's story</a>
+        <a href="story.html">Tim Haught's story</a>
         <a href="index.html#label">Every dose</a>
         <a href="founders.html">The 99 Founders</a>
         <a href="faq.html">Debrief (FAQ)</a>
@@ -138,5 +254,43 @@
 
 
 <script src="assets/js/v2.js"></script>
+<script>
+(function(){
+"use strict";
+var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* gold spine fill follows scroll through the chapters */
+var wrap=document.querySelector('.spine-wrap'), fill=document.getElementById('spineFill');
+if(wrap&&fill){
+  var tick=false;
+  function upd(){
+    tick=false;
+    var r=wrap.getBoundingClientRect(), vh=innerHeight;
+    var p=(vh*.6 - r.top)/(r.height);
+    p=Math.max(0,Math.min(1,p));
+    fill.style.height=(p*100)+'%';
+  }
+  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
+  upd();
+}
+/* count-up on service record */
+if(!reduced && 'IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      io.unobserve(e.target);
+      var el=e.target, end=parseInt(el.getAttribute('data-count'),10), t0=null;
+      function step(ts){
+        if(!t0) t0=ts;
+        var k=Math.min(1,(ts-t0)/900); k=1-Math.pow(1-k,3);
+        el.textContent=Math.round(end*k);
+        if(k<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  },{threshold:.6});
+  document.querySelectorAll('.rec .num[data-count]').forEach(function(el){ io.observe(el); });
+}
+})();
+</script>
 </body>
 </html>

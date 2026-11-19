@@ -34,7 +34,7 @@ var TOPO = (function(){
     ' float lens=exp(-d*d*5.0);',
     ' float inten=mix(0.10,0.34,idx)*uAmp*(0.6+0.9*lens);',
     ' float vig=smoothstep(1.3,0.15,length(uv*vec2(0.85,1.1)));',
-    ' vec3 bg=vec3(0.043,0.086,0.188)+vec3(0.008,0.012,0.020)*h;',
+    ' vec3 bg=vec3(0.051,0.125,0.341)+vec3(0.008,0.014,0.026)*h;',
     ' vec3 col=bg+uColor*line*inten*vig;',
     ' gl_FragColor=vec4(col,1.0);',
     '}'

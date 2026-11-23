@@ -49,6 +49,9 @@
   .chapter .ghost{font-size:84px;opacity:.7}
 }
 @media(max-width:480px){.proof{grid-template-columns:1fr}}
+/* creed: quotes + portrait */
+.creed-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(30px,5vw,64px);align-items:center}
+@media(max-width:860px){.creed-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -122,6 +125,7 @@
       <span class="ghost" aria-hidden="true">02</span>
       <div class="dossier rv">
         <div class="d-top"><b>PERSONNEL RECORD · FEDERAL BUREAU OF INVESTIGATION</b><svg aria-hidden="true"><use href="#p2m"/></svg></div>
+        <img src="assets/img/tim-fbi-badge.jpg" alt="Tim Haught's retired FBI badge — Fidelity, Bravery, Integrity" style="width:100%;height:clamp(200px,24vw,280px);object-fit:cover;object-position:50% 42%;border-radius:10px;border:1px solid var(--line-2);margin-bottom:18px">
         <dl>
           <dt>Name</dt><dd>Haught, Tim</dd>
           <dt>Position</dt><dd>Special Agent</dd>
@@ -135,6 +139,7 @@
         <h2 class="rv">Then He Carried A Badge.</h2>
         <p class="rv">Special Agent of the FBI, grade GS&#8209;15, retired. A career spent on cases where the details decide everything and nobody gets to round up, guess, or hide behind fine print.</p>
         <p class="rv">That habit never retired. It is why every P2 bag prints every dose of every ingredient, with nothing buried in a blend.</p>
+        <figure class="ph rv" style="margin-top:22px"><img src="assets/img/tim-fbi-portrait.jpg" alt="Official FBI portrait of Special Agent Tim Haught" style="height:clamp(300px,30vw,380px);object-position:50% 15%"><figcaption class="cap">Official portrait · Special Agent Tim Haught</figcaption></figure>
       </div>
     </div>
     <div class="chapter">
@@ -166,7 +171,7 @@
         <p class="rv">He applied the same discipline to training, nutrition, and recovery. He read the research, priced the single-ingredient market, and spent three years developing P2 from what he learned.</p>
         <p class="rv">That work became P2 Core, P2 Fuel, P2 Zero&#8209;Six and P2 Repair.</p>
       </div>
-      <figure class="ph rv"><img src="assets/img/ig-tim-gym-selfie2.jpg" alt="Tim Haught back at full training" style="object-position:50% 18%"><figcaption class="cap">Back to full training</figcaption></figure>
+      <figure class="ph rv"><img src="assets/img/tim-gym-2026.jpg" alt="Tim Haught back at full training" style="object-position:50% 20%"><figcaption class="cap">Back to full training</figcaption></figure>
     </div>
     <div class="chapter">
       <span class="ghost" aria-hidden="true">06</span>
@@ -185,10 +190,15 @@
   <div class="wrap">
     <span class="eyebrow rv">In His Words</span>
     <h2 class="rv" style="max-width:22ch">No White Coat On The Label.</h2>
-    <div class="q rv"><p>&ldquo;Competitors hire doctors and surgeons. I&rsquo;ve been the patient, the Marine, the FBI agent, the security professional, and the guy under the weight bar for 50 years.&rdquo;</p></div>
-    <div class="q rv gold"><p>&ldquo;Doctors treat you when you&rsquo;re injured. Prime2Performance is engineered to support daily strength and recovery.&rdquo;</p></div>
-    <div class="q rv"><p>&ldquo;Formulated by a man who uses it every day, not a white coat on a label.&rdquo;</p></div>
-    <p class="rv" style="font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);margin-top:26px">TIM HAUGHT · FOUNDER, PRIME2PERFORMANCE</p>
+    <div class="creed-grid">
+      <div>
+        <div class="q rv"><p>&ldquo;Competitors hire doctors and surgeons. I&rsquo;ve been the patient, the Marine, the FBI agent, the security professional, and the guy under the weight bar for 50 years.&rdquo;</p></div>
+        <div class="q rv gold"><p>&ldquo;Doctors treat you when you&rsquo;re injured. Prime2Performance is engineered to support daily strength and recovery.&rdquo;</p></div>
+        <div class="q rv"><p>&ldquo;Formulated by a man who uses it every day, not a white coat on a label.&rdquo;</p></div>
+        <p class="rv" style="font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--ink-2);margin-top:26px">TIM HAUGHT · FOUNDER, PRIME2PERFORMANCE</p>
+      </div>
+      <figure class="ph rv" style="margin:0"><img src="assets/img/tim-suit-night.jpg" alt="Tim Haught, founder of Prime2Performance" style="height:clamp(380px,40vw,520px);object-position:50% 25%"><figcaption class="cap">Tim Haught · Founder</figcaption></figure>
+    </div>
     <p class="fda-note rv"><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</strong></p>
   </div>
 </section>

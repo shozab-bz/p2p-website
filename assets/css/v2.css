@@ -503,3 +503,46 @@ details.qa .qa-a{padding:0 0 24px;color:var(--ink-2);max-width:68ch}
 /* FDA disclaimer near benefit claims */
 .fda-note{font-family:var(--mono);font-size:11.5px;line-height:1.7;letter-spacing:.04em;max-width:68ch;margin:30px auto 0;text-align:center;color:var(--ink-2);opacity:.8}
 .fda-note.paper{color:#4a5370;opacity:1}
+
+/* ============ ROUND 7 · 25 NOV 2026 ============ */
+/* Ingredient tables — category rows were inheriting td:last-child nowrap and forcing
+   the table past the viewport on phones (Tim's iOS screenshot). */
+.ing-table .cat td{white-space:normal;text-align:left}
+@media(max-width:480px){
+  .ing-table th{padding:12px;font-size:10.5px;letter-spacing:.09em}
+  .ing-table td{padding:11px 12px;font-size:15px}
+  .ing-table td b{font-size:15.5px}
+  .ing-table td span{font-size:13.5px}
+  .ing-table .dose{font-size:17px}
+  .ing-table .cat td{font-size:13px;letter-spacing:.03em}
+}
+@media(max-width:360px){.ing-table th:last-child,.ing-table td:last-child{white-space:normal}}
+/* FDA disclaimer — bold, in a clearly outlined box, linked to claims by asterisk */
+.fda-note{border:1.5px solid rgba(240,236,220,.45);border-radius:12px;padding:15px 20px;opacity:1}
+.fda-note.paper{border-color:rgba(13,32,87,.55)}
+.ft-fda{border:1.5px solid rgba(142,151,179,.6);border-radius:10px;padding:13px 16px;margin-bottom:4px}
+.ft-fda strong{color:#aab2cc}
+/* FAQ — justified paragraphs with space between them (Emmie, 24 Nov) */
+.qa-a p{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto;margin:0 0 14px}
+.qa-a p:last-child{margin-bottom:0}
+.qa-a ul{margin:0 0 14px}
+/* Founder banner — stack the count and CTA cleanly on small screens */
+.hero-founder{flex-wrap:wrap;row-gap:4px}
+.hf-cta{white-space:nowrap}
+.hf-cta::before{content:"·";margin-right:10px;color:var(--ink-2)}
+@media(max-width:480px){
+  .hero-founder{flex-direction:column;align-items:flex-start;gap:7px;border-radius:20px;padding:13px 20px}
+  .hf-cta::before{content:none}
+}
+/* 24-hour system — Core+ / Core− are alternatives: choose one for the day */
+.tl-or{position:relative;display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line-1)}
+.tl-or b{font-family:var(--stencil);font-size:16px;letter-spacing:.14em;color:var(--gold)}
+.tl-or span{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);line-height:1.7}
+.tl-or::before{content:"";position:absolute;left:calc(-1 * clamp(26px,4vw,40px) + 5px);top:50%;width:8px;height:8px;border-radius:50%;background:var(--gold);transform:translateY(-50%)}
+/* Timeline / coming-soon cards — link to the Zero-Six and Repair ingredient lists */
+.tl-card .link-label{display:inline-block;margin-top:12px;padding:0;color:var(--ink)}
+.tl-card .link-label:hover{color:var(--gold)}
+.cs a.link-label{display:inline-block;text-align:center}
+/* Product hero — bag + sachet composite renders are wider than the old bag-only cutouts */
+.pshot img{width:clamp(300px,36vw,480px)}
+.band-shot img{width:clamp(280px,32vw,420px)}

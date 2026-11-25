@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira+Stencil+One&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
 <style>
 /* ============ TOKENS ============ */
 :root{
@@ -424,6 +426,27 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 /* FDA disclaimer near benefit claims */
 .fda-note{font-family:var(--mono);font-size:11.5px;line-height:1.7;letter-spacing:.04em;max-width:68ch;margin:30px auto 0;text-align:center;color:var(--ink-2);opacity:.8}
 .fda-note.paper{color:#4a5370;opacity:1}
+
+/* ============ ROUND 7 · 25 NOV 2026 ============ */
+.fda-note{border:1.5px solid rgba(240,236,220,.45);border-radius:12px;padding:15px 20px;opacity:1}
+.fda-note.paper{border-color:rgba(13,32,87,.55)}
+.ft-fda{border:1.5px solid rgba(142,151,179,.6);border-radius:10px;padding:13px 16px;margin-bottom:4px}
+.ft-fda strong{color:#aab2cc}
+.hero-founder{flex-wrap:wrap;row-gap:4px}
+.hf-cta{white-space:nowrap}
+.hf-cta::before{content:"·";margin-right:10px;color:var(--ink-2)}
+.tl-or{position:relative;display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line-1)}
+.tl-or b{font-family:var(--stencil);font-size:16px;letter-spacing:.14em;color:var(--gold)}
+.tl-or span{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);line-height:1.7}
+.tl-or::before{content:"";position:absolute;left:calc(-1 * clamp(26px,4vw,40px) + 5px);top:50%;width:8px;height:8px;border-radius:50%;background:var(--gold);transform:translateY(-50%)}
+.tl-card .link-label{display:inline-block;margin-top:12px;padding:0;color:var(--ink);min-height:0}
+.tl-card .link-label:hover{color:var(--gold)}
+.cs a.link-label{display:inline-block}
+.band-shot img{width:clamp(280px,32vw,420px)}
+@media(max-width:480px){
+  .hero-founder{flex-direction:column;align-items:flex-start;gap:7px;border-radius:20px;padding:13px 20px}
+  .hf-cta::before{content:none}
+}
 </style>
 </head>
 <body>
@@ -478,7 +501,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
       </div>
       <p class="hero-trust rv"><span>Every dose printed</span><span>Veteran-owned</span><span>Manufactured in Utah, U.S.A., with U.S. and imported ingredients</span></p>
       <p class="hero-launch rv">LAUNCHING Q1 2027</p>
-      <a class="hero-founder rv" href="#founders" id="heroFounder"><b>Founder spots are capped at 99</b> · Become a founder →</a>
+      <a class="hero-founder rv" href="#founders" id="heroFounder"><b>Founder spots are capped at 99</b><span class="hf-cta">Become a founder →</span></a>
     </div>
     <div class="hero-visual rv">
       <div class="hero-45" aria-hidden="true">45+</div>
@@ -504,7 +527,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
     <div class="tl-head">
       <span class="eyebrow rv">The 24-Hour System</span>
       <h2 class="rv">Four Moments. Five Formulas.</h2>
-      <p class="sub rv">Fitness is more than the hour you train. P2 covers all 24. Each formula works on its own, so start with the one you need.</p>
+      <p class="sub rv">Fitness is more than the hour you train. P2 covers all 24. Each formula works on its own, so start with the one you need. P2 Core+ and P2 Core&minus; are alternatives, not a pair: choose one for the day. Core+ is the stimulant option; Core&minus; is stimulant-free.</p>
     </div>
     <div class="tl" id="tl">
       <div class="tl-rail" aria-hidden="true"><i id="tlDraw"></i></div>
@@ -525,6 +548,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
             <span class="d"><b>200 mg</b><span>CoQ10</span></span>
           </div>
           <span class="tl-status">WORKING FORMULA · LAUNCHING Q2 2027</span>
+          <a class="link-label" href="zero-six.html#ingredients">See every Zero-Six ingredient →</a>
         </div></div></div>
       </div>
 
@@ -533,11 +557,11 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <div class="tl-main">
           <span class="tl-time">1200</span>
           <span class="tl-name"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core+</span>
-          <span class="tl-when">30 minutes before training</span>
+          <span class="tl-when">30 minutes before training · the stimulant option</span>
         </div>
         <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-cp">Show doses +</button>
         <div class="tl-panel" id="tlp-cp"><div><div class="tl-card">
-          <p>The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.</p>
+          <p>The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.* Choose Core+ or Core&minus; for the day &mdash; not both.</p>
           <div class="tl-doses">
             <span class="d"><b>8 g</b><span>L-citrulline</span></span>
             <span class="d"><b>5 g</b><span>Creatine</span></span>
@@ -547,16 +571,18 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         </div></div></div>
       </div>
 
+      <div class="tl-or" role="note"><b>OR</b><span>Choose one Core for the day &mdash; not both</span></div>
+
       <div class="tl-row" style="--pc:var(--coreminus)">
         <span class="tl-node" aria-hidden="true"></span>
         <div class="tl-main">
           <span class="tl-time">1700</span>
           <span class="tl-name"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core−</span>
-          <span class="tl-when">30 minutes before training</span>
+          <span class="tl-when">30 minutes before training · the stimulant-free option</span>
         </div>
         <button class="tl-toggle" aria-expanded="false" aria-controls="tlp-cm">Show doses +</button>
         <div class="tl-panel" id="tlp-cm"><div><div class="tl-card">
-          <p>Everything in the Core stack, no stimulants. Caffeine-free for late training.</p>
+          <p>Everything in the Core stack, no stimulants. Caffeine-free for late training.* Choose Core&minus; or Core+ for the day &mdash; not both.</p>
           <div class="tl-doses">
             <span class="d"><b>8 g</b><span>L-citrulline</span></span>
             <span class="d"><b>5 g</b><span>Creatine</span></span>
@@ -601,6 +627,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
             <span class="d"><b>0.3 mg</b><span>Melatonin</span></span>
           </div>
           <span class="tl-status">WORKING FORMULA · LAUNCHING Q2 2027</span>
+          <a class="link-label" href="repair.html#ingredients">See every Repair ingredient →</a>
         </div></div></div>
       </div>
     </div>
@@ -637,15 +664,15 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
     <div class="filters rv" role="group" aria-label="Filter ingredients by what they do">
       <span class="f-lab">Filter by what it does</span>
       <button class="chip" data-f="all" aria-pressed="true">All · 16</button>
-      <button class="chip" data-f="strength" aria-pressed="false">Strength · 3</button>
+      <button class="chip" data-f="strength" aria-pressed="false">Strength · 2</button>
       <button class="chip" data-f="blood" aria-pressed="false">Blood flow · 2</button>
-      <button class="chip" data-f="hydration" aria-pressed="false">Hydration · 5</button>
+      <button class="chip" data-f="hydration" aria-pressed="false">Hydration · 6</button>
       <button class="chip" data-f="focus" aria-pressed="false">Focus · 3</button>
       <button class="chip" data-f="energy" aria-pressed="false">Energy (P2 Core+) · 3</button>
     </div>
     <div class="ing-grid" id="ingGrid"></div>
     <p class="ing-cta rv">Every P2 formula's full label is one tap away. <a href="#loadout">See them in Build Your Loadout.</a></p>
-    <p class="fda-note paper"><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</strong></p>
+    <p class="fda-note paper"><strong>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</strong></p>
   </div>
 </section>
 
@@ -677,17 +704,17 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 <!-- ============ PRODUCT BANDS ============ -->
 <section class="band" style="--pc:var(--coreplus)" data-stage="#E0685A" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag, Huckleberry, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-plus-sachet.webp" alt="P2 Core+ bag and sachet, Huckleberry, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1200 · Before Training, With Caffeine</span>
       <div class="band-name rv"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core+</div>
-      <p class="rv">The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.</p>
+      <p class="rv">The full pump, strength and focus stack plus 200 mg caffeine for the sessions that need more.* One Core per day: Core+ with caffeine, or Core&minus; without.</p>
       <div class="band-stats rv">
         <span class="d"><b data-count="8" data-unit=" g">8 g</b><span>L-citrulline</span></span>
         <span class="d"><b data-count="5" data-unit=" g">5 g</b><span>Creatine</span></span>
         <span class="d"><b data-count="200" data-unit=" mg">200 mg</b><span>Caffeine</span></span>
       </div>
-      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
       <div class="band-ctas rv">
         <button class="btn btn-gold" data-add="core-plus">Add to loadout</button>
         <button class="link-label" data-facts="core-plus">See full label</button>
@@ -698,17 +725,17 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
 <section class="band" style="--pc:var(--coreminus)" data-stage="#6FBF73" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag, Strawberry Watermelon, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-core-minus-sachet.webp" alt="P2 Core− bag and sachet, Strawberry Watermelon, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1700 · Before Training, Stimulant-Free</span>
       <div class="band-name rv"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core−</div>
-      <p class="rv">Everything in the Core stack, no stimulants. Caffeine-free for late training.</p>
+      <p class="rv">Everything in the Core stack, no stimulants. Caffeine-free for late training.* One Core per day: Core&minus; stimulant-free, or Core+ with caffeine.</p>
       <div class="band-stats rv">
         <span class="d"><b data-count="8" data-unit=" g">8 g</b><span>L-citrulline</span></span>
         <span class="d"><b data-count="5" data-unit=" g">5 g</b><span>Creatine</span></span>
         <span class="d"><b data-count="3.2" data-unit=" g">3.2 g</b><span>Beta-alanine</span></span>
       </div>
-      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
       <div class="band-ctas rv">
         <button class="btn btn-gold" data-add="core-minus">Add to loadout</button>
         <button class="link-label" data-facts="core-minus">See full label</button>
@@ -719,17 +746,17 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
 
 <section class="band" style="--pc:var(--fuel)" data-stage="#E8A458" data-amp=".9" data-lift=".1">
   <div class="wrap">
-    <div class="band-shot rv" data-parallax><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag, Tropical Charge, 20 sachets"></div>
+    <div class="band-shot rv" data-parallax><img src="assets/img/bag-fuel-sachet.webp" alt="P2 Fuel bag and sachet, Tropical Charge, 20 sachets"></div>
     <div class="band-info">
       <span class="eyebrow rv">1230 / 1730 · During Training</span>
       <div class="band-name rv"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Fuel</div>
-      <p class="rv">Carbs and electrolytes to keep going in long sessions, heat and altitude.</p>
+      <p class="rv">Carbs and electrolytes to keep going in long sessions, heat and altitude.*</p>
       <div class="band-stats rv">
         <span class="d"><b data-count="30" data-unit=" g">30 g</b><span>Cyclic dextrin</span></span>
         <span class="d"><b data-count="600" data-unit=" mg">600 mg</b><span>Sodium</span></span>
         <span class="d"><b data-count="2" data-unit=" g">2 g</b><span>Taurine</span></span>
       </div>
-      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+      <div class="band-price rv"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
       <div class="band-ctas rv">
         <button class="btn btn-gold" data-add="fuel">Add to loadout</button>
         <button class="link-label" data-facts="fuel">See full label</button>
@@ -800,10 +827,10 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
     <p class="sub rv">Start with one bag, or the Training Pair.</p>
 
     <div class="tiles">
+      <div class="tile hot rv"><span class="t-lab">Subscribe</span><div class="t-price">$59.99</div><p>Per bag, every 30 days</p></div>
       <div class="tile rv"><span class="t-lab">1 Bag</span><div class="t-price">$69.99</div><p>Retail price</p></div>
       <div class="tile rv"><span class="t-lab">2 Bags</span><div class="t-price">$129.99</div><p>Save $9.99 · $119.98 on subscription</p></div>
       <div class="tile rv"><span class="t-lab">3 Bags</span><div class="t-price">$189.99</div><p>Save $19.98</p></div>
-      <div class="tile hot rv"><span class="t-lab">Subscribe</span><div class="t-price">$59.99</div><p>Per bag · about $3 a workout</p></div>
     </div>
     <p class="tiles-note rv">Mix and match any P2 Core−, P2 Core+ and P2 Fuel. Bundle prices apply automatically at checkout. Free shipping on $98+.</p>
 
@@ -825,7 +852,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <div class="prod-img"><img src="assets/img/bag-core-minus.webp" alt="P2 Core− bag"></div>
         <div class="prod-ctx"><span>Before training, stimulant-free</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core−</div>
-        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
         <div class="qty"><button data-q="-1" aria-label="Remove one P2 Core−">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Core−">+</button></div>
         <button class="link-label" data-facts="core-minus">See full label +</button>
       </div>
@@ -833,7 +860,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <div class="prod-img"><img src="assets/img/bag-core-plus.webp" alt="P2 Core+ bag"></div>
         <div class="prod-ctx"><span>Before training, with caffeine</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Core+</div>
-        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
         <div class="qty"><button data-q="-1" aria-label="Remove one P2 Core+">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Core+">+</button></div>
         <button class="link-label" data-facts="core-plus">See full label +</button>
       </div>
@@ -841,7 +868,7 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
         <div class="prod-img"><img src="assets/img/bag-fuel.webp" alt="P2 Fuel bag"></div>
         <div class="prod-ctx"><span>During training</span><span class="prod-tag">Works on its own</span></div>
         <div class="prod-name"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Fuel</div>
-        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>About $3 a workout · $69.99 one-time</p></div>
+        <div class="prod-price"><b>$59.99</b><span class="onsub">on subscription</span><p>$69.99 one-time</p></div>
         <div class="qty"><button data-q="-1" aria-label="Remove one P2 Fuel">−</button><span class="q" data-qty>0</span><button data-q="1" aria-label="Add one P2 Fuel">+</button></div>
         <button class="link-label" data-facts="fuel">See full label +</button>
       </div>
@@ -863,11 +890,13 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
       <div class="cs rv" style="--pc:var(--zerosix)">
         <div class="prod-ctx"><span>Morning · launching Q2 2027</span></div>
         <div class="prod-name" style="color:#4A66C4"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Zero-Six</div>
+        <a class="link-label" href="zero-six.html#ingredients">See the ingredients</a>
         <button class="link-label" data-notify>Get notified</button>
       </div>
       <div class="cs rv" style="--pc:var(--repair)">
         <div class="prod-ctx"><span>Night · launching Q2 2027</span></div>
         <div class="prod-name" style="color:#7D55BD"><span class="p2chip" role="img" aria-label="P2"><svg aria-hidden="true" focusable="false"><use href="#p2m"/></svg></span>Repair</div>
+        <a class="link-label" href="repair.html#ingredients">See the ingredients</a>
         <button class="link-label" data-notify>Get notified</button>
       </div>
     </div>
@@ -929,7 +958,8 @@ dialog.facts::backdrop{background:rgba(5,10,24,.7);backdrop-filter:blur(4px)}
       </div>
     </div>
     <div class="ft-legal">
-      <p><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</strong> Packaging shown is a pre-production rendering.</p>
+      <p class="ft-fda"><strong>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</strong></p>
+      <p>Packaging shown is a pre-production rendering.</p>
       <p>© 2026 Prime2Performance · PO Box 220, Stevensville, MT</p>
     </div>
   </div>
@@ -1138,22 +1168,22 @@ document.querySelectorAll('.tl-toggle').forEach(function(t){
 
 /* ---------- ingredients ---------- */
 var ING = [
-  ['strength','Strength','5 g','Creatine Monohydrate','Strength and power across a training block'],
-  ['strength','Strength','3.2 g','Beta-Alanine','Buffers the acid built up by hard sets'],
-  ['strength','Strength','2.5 g','Betaine Anhydrous','Strength and power support'],
-  ['blood','Blood flow','8 g','L-Citrulline','Converted to arginine, supports nitric oxide'],
-  ['blood','Blood flow','1.5 g','Nitrosigine','Blood flow support'],
-  ['hydration','Hydration','3 g','Glycerol','Draws and holds water in blood and muscle'],
+  ['strength','Strength','5 g','Creatine Monohydrate','Strength and power across a training block*'],
+  ['strength','Strength','3.2 g','Beta-Alanine','Buffers the acid built up by hard sets*'],
+  ['blood','Blood flow','8 g','L-Citrulline','Converted to arginine, supports nitric oxide*'],
+  ['blood','Blood flow','1.5 g','Nitrosigine','Supports blood flow, with L-citrulline*'],
+  ['hydration','Hydration','3 g','Glycerol','Pulls water into the muscle*'],
+  ['hydration','Hydration','2.5 g','Betaine Anhydrous','Pulls water into the muscle; power support*'],
+  ['hydration','Hydration','2 g','Taurine','Pulls water into the muscle; endurance support*'],
   ['hydration','Hydration','750 mg','Sodium','The mineral lost most through sweat'],
-  ['hydration','Hydration','400 mg','Potassium','Fluid balance and muscle contraction'],
-  ['hydration','Hydration','100 mg','Magnesium','Muscle function'],
-  ['hydration','Hydration','2 g','Taurine','Fluid balance and muscle function'],
+  ['hydration','Hydration','400 mg','Potassium','Fluid balance and muscle contraction*'],
+  ['hydration','Hydration','100 mg','Magnesium','Muscle function*'],
   ['focus','Focus','1.5 g','L-Tyrosine','Used to make dopamine and noradrenaline'],
   ['focus','Focus','1 g','Acetyl-L-Carnitine','A form of carnitine that reaches the brain'],
-  ['focus','Focus','300 mg','Alpha-GPC','A choline source for focus and output'],
+  ['focus','Focus','300 mg','Alpha-GPC','A choline source for focus and output*'],
   ['energy','Energy (P2 Core+)','200 mg','Caffeine Anhydrous','About two cups of coffee, stated plainly'],
   ['energy','Energy (P2 Core+)','150 mg','Theobromine','A milder relative of caffeine, from cocoa'],
-  ['energy','Energy (P2 Core+)','100 mg','L-Theanine','Smooths out the caffeine']
+  ['energy','Energy (P2 Core+)','100 mg','L-Theanine','Smooths out the caffeine*']
 ];
 var grid = document.getElementById('ingGrid');
 grid.innerHTML = ING.map(function(x, i){
@@ -1192,7 +1222,7 @@ fCount.innerHTML = claimed === 0
   : '<b>' + claimed + '</b> of 99 claimed · <b>' + openSpots + '</b> open';
 fStatus.textContent = claimed >= 99 ? 'Standby List' : (claimed === 0 ? 'Now Open' : 'Still Open');
 var heroFounder = document.getElementById('heroFounder');
-if (openSpots > 0 && openSpots <= 15) heroFounder.innerHTML = '<b>Only ' + openSpots + ' founder spots left</b> · Become a founder →';
+if (openSpots > 0 && openSpots <= 15) heroFounder.innerHTML = '<b>Only ' + openSpots + ' founder spots left</b><span class="hf-cta">Become a founder →</span>';
 function selectSpot(n){
   selSpot = n;
   fGrid.querySelectorAll('button').forEach(function(x){ x.classList.remove('sel'); });
@@ -1278,7 +1308,7 @@ totals();
 
 /* ---------- supplement facts ---------- */
 var FACTS = {
-  'core-minus': { name:'P2 Core−', serving:'Serving size: 1 sachet (40.9 g)', rows:[
+  'core-minus': { name:'P2 Core−', serving:'Serving size: 1 sachet (42 g)', rows:[
     ['Calories','75','rule'],['Total Carbohydrate','8 g (3%*)'],
     ['Magnesium (as magnesium glycinate)','100 mg (24%)'],['Sodium (as sodium citrate)','750 mg (33%)'],
     ['Potassium (as potassium citrate)','400 mg (9%)','rule'],
